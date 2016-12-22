@@ -1,0 +1,50 @@
+@media only screen and (min-width: 600px) {
+  .services {
+    display: block; }
+
+  ul.topnav li:not(:first-child) {
+    display: inline-block; }
+
+  ul.topnav li.icon {
+    display: none; }
+
+  ul.topnav li a {
+    font-size: 1.2rem; }
+
+  .tablet {
+    display: block; }
+
+  img {
+    max-width: 250px; }
+
+  #map {
+    display: block; } }
+@media only screen and (min-width: 768px) {
+  .wrapper-center {
+    width: 750px; }
+
+  .h1 {
+    font-size: 2.4rem; }
+
+  .h2 {
+    font-size: 2.1rem; }
+
+  .h3 {
+    font-size: 1.8rem; }
+
+  .h4 {
+    font-size: 1.5rem; }
+
+  .h5 {
+    font-size: 1.2rem; }
+
+  .h6 {
+    font-size: 1rem; }
+
+  input[type=submit] {
+    width: 50%; }
+
+  .desktop {
+    display: block; } }
+
+/*# sourceMappingURL=media-queries.css.map */
