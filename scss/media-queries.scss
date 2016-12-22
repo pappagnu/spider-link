@@ -8,6 +8,16 @@
     .tablet {display: block;}
     img {max-width: 250px;}
     #map {display: block;}
+    .topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: transparent;
+      position: fixed;
+      width: 100%;
+      transition: ease 0.5s;
+    }
 }
 
 

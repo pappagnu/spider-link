@@ -221,14 +221,6 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 }
 
 
-#map{
-	width: 100%;
-	height: 400px;
-	background-color: grey;
-  display: none;
-}
-
-
 .topnav {
   list-style-type: none;
   margin: 0;
@@ -337,6 +329,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 }
 .nav-icon:hover {
   background-color: none;
+  cursor:pointer;
 }
 
 /* PADDINGS & MARGINS */

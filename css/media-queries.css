@@ -18,7 +18,17 @@
     max-width: 250px; }
 
   #map {
-    display: block; } }
+    display: block; }
+
+  .topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    transition: ease 0.5s; } }
 @media only screen and (min-width: 768px) {
   .wrapper-center {
     width: 750px; }
