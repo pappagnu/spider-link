@@ -139,7 +139,7 @@ p {
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-  .andreas, .nico, .matte{
+  .circle-img{
     border: 1px solid black;
 		border-radius: 50%;
 		width: 50%;
@@ -149,51 +149,53 @@ p {
 }
 
 /* KONTAKTA OSS BÖRJAR HÄR */
-input[type=text]{
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #E28F9A;
-  padding: 12px 8px;
-  &:focus{
-    background-color: #EFEFD2;
+.contact-form{
+  .text-form{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #E28F9A;
+    padding: 12px 8px;
+    &:focus{
+      background-color: #EFEFD2;
+    }
+  }
+  .textarea-form{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #E28F9A;
+    resize: none;
+    padding: 12px 8px;
+    &:focus{
+      background-color: #EFEFD2;
+    }
+  }
+  .submit-button{
+    outline: none;
+    border: none;
+    background-color: #DC4A5C;
+    width: 100%;
+    padding: 10px;
+    &:hover{
+      background-color: #E48E98;
+    }
+    &:active{
+      background-color: #DF4859;
+    }
   }
 }
-
-textarea{
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #E28F9A;
-  resize: none;
-  padding: 12px 8px;
-  &:focus{
-    background-color: #EFEFD2;
-  }
-}
-
-input[type=submit]{
-  outline: none;
-  border: none;
-  background-color: #DC4A5C;
-  width: 100%;
-  padding: 10px;
-}
-
 
 /* FOOTER BÖRJAR HÄR */
 
-.footer{
-	.footer-box{
-		text-align: center;
-	}
-}
-
-.social{
-  display: inline-flex;
-  li{
-    padding: 5px;
-    a i{
+.footer-box{
+	text-align: center;
+  .social{
+    display: inline-flex;
+    .fa{
       text-decoration: none;
       color: #000000;
+      &:hover{
+        opacity: 0.5;
+      }
     }
   }
 }
@@ -245,9 +247,6 @@ input[type=submit]{
   font-size:36px;
 }
 
-
-
-
   /* ANIMATIONS */
     @-webkit-keyframes fadeIn {
       0%   {opacity: 0;}
@@ -298,6 +297,7 @@ input[type=submit]{
         }
     }
 }
+.no-style{list-style: none;}
 
 /* LINKS */
 .nav-links {
@@ -318,3 +318,8 @@ input[type=submit]{
 .nav-icon:hover {
   background-color: none;
 }
+
+/* PADDINGS & MARGINS */
+.p-5{padding: 5px;}
+.m-0{margin: 0;}
+.p-0{padding: 0;}
