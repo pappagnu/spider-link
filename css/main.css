@@ -180,7 +180,7 @@ p {
   height: 100px;
   background-image: linear-gradient(#F38BD3, #FE7880); }
 
-/* OM OSS BÖRJAR HÄR */
+/* OM OSS B├ûRJAR H├äR */
 .about-us-box {
   margin-bottom: 5px;
   display: flex;
@@ -194,7 +194,7 @@ p {
     height: 50%;
     margin-top: 10px; }
 
-/* KONTAKTA OSS BÖRJAR HÄR */
+/* KONTAKTA OSS B├ûRJAR H├äR */
 input[type=text] {
   outline: none;
   border: none;
@@ -219,7 +219,7 @@ input[type=submit] {
   width: 100%;
   padding: 10px; }
 
-/* FOOTER BÖRJAR HÄR */
+/* FOOTER B├ûRJAR H├äR */
 .footer .footer-box {
   text-align: center; }
 
@@ -283,7 +283,7 @@ ul.topnav li a {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 15px;
   text-decoration: none;
   transition: 0.3s;
   font-size: 5vmin; }
