@@ -2,13 +2,13 @@
   .services {
     display: block; }
 
-  ul.topnav li:not(:first-child) {
+  .nav-item {
     display: inline-block; }
 
-  ul.topnav li.icon {
+  .nav-icon {
     display: none; }
 
-  ul.topnav li a {
+  .nav-links {
     font-size: 1.2rem; }
 
   .tablet {

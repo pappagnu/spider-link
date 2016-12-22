@@ -4,8 +4,9 @@
 function myFunction() {
     var x = document.getElementById("myTopnav");
     var logo = document.getElementsByClassName('logo')[0];
+    //var mq = window.matchMedia( "(min-width: 500px)" );
     if (x.className === "topnav") {
-        x.className += " responsive";
+        x.className = "responsive-nav";
     } else {
         x.className = "topnav";
     }
@@ -14,6 +15,9 @@ function myFunction() {
     } else {
         logo.style.display = 'none';
     }
+    // if (mq.matches) {
+    //
+    // }
 
 }
 

@@ -2,9 +2,9 @@
 
 @media only screen and (min-width:$tablet) {
     .services {display: block;}
-    ul.topnav li:not(:first-child) {display: inline-block;}
-    ul.topnav li.icon {display: none;}
-    ul.topnav li a {font-size: $base-font * 1.2;}
+    .nav-item {display: inline-block;}
+    .nav-icon {display: none;}
+    .nav-links {font-size: $base-font * 1.2;}
     .tablet {display: block;}
     img {max-width: 250px;}
     #map {display: block;}
