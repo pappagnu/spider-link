@@ -1,0 +1,15 @@
+@import 'variables';
+
+@mixin flex($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin fade-in($sec) {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: $sec;
+  animation-name: fadeIn;
+  animation-duration: $sec;
+
+}

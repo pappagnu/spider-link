@@ -1,0 +1,24 @@
+@import 'variables';
+
+@media only screen and (min-width:$tablet) {
+    .services {display: block;}
+    ul.topnav li:not(:first-child) {display: inline-block;}
+    ul.topnav li.icon {display: none;}
+    ul.topnav li a {font-size: $base-font * 1.2;}
+    .tablet {display: block;}
+    img {max-width: 250px;}
+    #map {display: block;}
+}
+
+
+@media only screen and (min-width: $desktop) {
+  .wrapper-center {width: $desktop/1.024;}
+  .h1 {font-size: $base-font * 2.4;}
+  .h2 {font-size: $base-font * 2.1;}
+  .h3 {font-size: $base-font * 1.8;}
+  .h4 {font-size: $base-font * 1.5;}
+  .h5 {font-size: $base-font * 1.2;}
+  .h6 {font-size: $base-font;}
+  input[type=submit]{width: 50%;}
+  .desktop {display: block;}
+}
