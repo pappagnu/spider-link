@@ -198,7 +198,7 @@ p {
 input[type=text] {
   outline: none;
   border: none;
-  border-bottom: 3px solid #E28F9A;
+  border-bottom: 2px solid #E28F9A;
   padding: 12px 8px; }
   input[type=text]:focus {
     background-color: #EFEFD2; }
