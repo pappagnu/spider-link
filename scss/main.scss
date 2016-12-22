@@ -77,7 +77,30 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .tablet {display: none;}
 .desktop {display: none;}
 
-.border {border: red solid;}
+.img-container {
+  display: block;
+  height: 200px;
+  @include flex(center, center);
+  .brand-logo{
+    max-height: 100%;
+  }
+  &:hover{
+    background-color: #E48E98;
+    opacity: 1;
+    .info-brand{
+      display: block;
+      color: #FFFFFF;
+    }
+    .brand-logo{
+      display: none;
+    }
+  }
+  transition: all 2s;
+  .info-brand{
+    display: none;
+  }
+}
+
 
 .box {padding: 1em;}
 .flex-center {@include flex(center, center);}
@@ -111,15 +134,12 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .h6 {font-size: 4vmin;}
 
 
-p {
-  margin: 10px 0 10px 0;
-  font-size: 2vmin;
-}
-
 .services {
   display: none;
   padding-right: 1.5em;
   padding-left: 1.5em;
+  margin: 10px 0 10px 0;
+  font-size: 2vmin;
 }
 
 
@@ -321,5 +341,9 @@ p {
 
 /* PADDINGS & MARGINS */
 .p-5{padding: 5px;}
+.p-10{padding: 10px;}
 .m-0{margin: 0;}
 .p-0{padding: 0;}
+.pb-0{padding-bottom: 0;}
+.pr-0{padding-right: 0;}
+.pl-0{padding-left: 0;}
