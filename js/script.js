@@ -4,7 +4,6 @@
 function myFunction() {
     var x = document.getElementById("myTopnav");
     var logo = document.getElementsByClassName('logo')[0];
-    //var mq = window.matchMedia( "(min-width: 500px)" );
     if (x.className === "topnav") {
         x.className = "responsive-nav";
     } else {
@@ -15,27 +14,10 @@ function myFunction() {
     } else {
         logo.style.display = 'none';
     }
-    // if (mq.matches) {
-    //
-    // }
 
 }
 
 // CONTACT MAP
-function initMap() {
-    var uluru = {
-        lat: -25.363,
-        lng: 131.044
-    };
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: uluru
-    });
-    var marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-    });
-}
 
 //SCROLL FADE IN EFFECT
 window.onscroll = function() {
@@ -47,6 +29,15 @@ function changeMenu() {
     let services = document.getElementById('services');
     let about = document.getElementById('about');
     let contact = document.getElementById('contact');
+    let topnav = document.getElementById("myTopnav");
+    let mq = window.matchMedia( "(min-width: 600px)" );
+    if (scrollBarPosition > 0 && mq.matches) {
+      topnav.style.backgroundColor = "cornflowerblue";
+
+    } else {
+      topnav.style.backgroundColor = "transparent";
+
+    }
     if (scrollBarPosition > 30) {
         services.style.animationName = 'fadeIn';
         services.style.WebkitAnimationName = 'fadeIn';

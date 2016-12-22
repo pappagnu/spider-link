@@ -232,12 +232,6 @@ p {
       .footer-box .social .fa:hover {
         opacity: 0.5; }
 
-#map {
-  width: 100%;
-  height: 400px;
-  background-color: grey;
-  display: none; }
-
 .topnav {
   list-style-type: none;
   margin: 0;
@@ -329,7 +323,8 @@ p {
   color: white; }
 
 .nav-icon:hover {
-  background-color: none; }
+  background-color: none;
+  cursor: pointer; }
 
 /* PADDINGS & MARGINS */
 .p-5 {
