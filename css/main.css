@@ -28,7 +28,7 @@ img {
 
 /* EXTRA MOBILE PHONE GRID */
 .col-m-6 {
-  width: 50%; }
+  width: 66.66%; }
 
 /* TABLET COLUMN GRID */
 @media only screen and (min-width: 600px) {
@@ -68,7 +68,7 @@ img {
   .col-t-12 {
     width: 100%; } }
 /* DESKTOP COLUMN GRID */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .col-d-1 {
     width: 8.33%; }
 
