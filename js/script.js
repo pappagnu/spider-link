@@ -30,7 +30,7 @@ function changeMenu() {
     let topnav = document.getElementById("myTopnav");
     let mq = window.matchMedia( "(min-width: 600px)" );
     if (scrollBarPosition > 0 && mq.matches) {
-      topnav.style.backgroundColor = "cornflowerblue";
+      topnav.style.backgroundColor = "black";
 
     } else {
       topnav.style.backgroundColor = "transparent";

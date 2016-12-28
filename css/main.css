@@ -127,7 +127,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 2s; }
+  transition: all 1s; }
   .img-container .brand-logo {
     max-height: 100%; }
   .img-container:hover {
@@ -149,7 +149,7 @@ img {
   flex-wrap: wrap; }
 
 .box {
-  padding: 1em; }
+  padding: 2em; }
 
 .flex-center {
   display: flex;
@@ -158,7 +158,8 @@ img {
 
 /* ICONS */
 .material-icons.md-48 {
-  font-size: 48px; }
+  font-size: 48px;
+  color: white; }
 
 .fa {
   text-decoration: none;
@@ -179,7 +180,8 @@ img {
   text-transform: uppercase; }
 
 .h2 {
-  font-size: 6vmin; }
+  font-size: 6vmin;
+  color: white; }
 
 .h3 {
   font-size: 5.5vmin; }
@@ -194,14 +196,15 @@ img {
   font-size: 4vmin; }
 
 .section-header {
-  font-size: 10vmin; }
+  font-size: 6vmin;
+  padding: 2rem 0 2rem 0; }
 
 .services {
   display: none;
   padding-right: 1.5em;
   padding-left: 1.5em;
   margin: 10px 0 10px 0;
-  font-size: 2vmin; }
+  font-size: 2.2vmin; }
 
 .text-center {
   text-align: center; }
@@ -223,8 +226,11 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 300px;
+  min-height: 100px;
   background-image: url(../pics/parallax.jpg); }
+
+.parallax {
+  display: none; }
 
 /* FORMS */
 .contact-form .text-form {
@@ -245,11 +251,13 @@ img {
 .contact-form .submit-button {
   outline: none;
   border: none;
+  border-radius: 25px;
   background-color: #DC4A5C;
-  width: 100%;
+  width: 70%;
   padding: 10px; }
   .contact-form .submit-button:hover {
-    background-color: #E48E98; }
+    background-color: black;
+    color: white; }
   .contact-form .submit-button:active {
     background-color: #DF4859; }
 
@@ -356,6 +364,12 @@ img {
 .p-10 {
   padding: 10px; }
 
+.p-40 {
+  padding: 40px; }
+
+.p-70 {
+  padding: 70px; }
+
 .m-0 {
   margin: 0; }
 
@@ -365,18 +379,24 @@ img {
 .pb-0 {
   padding-bottom: 0; }
 
+.pb-10 {
+  padding-bottom: 10px; }
+
 .pr-0 {
   padding-right: 0; }
 
 .pl-0 {
   padding-left: 0; }
 
+.pt-0 {
+  padding-top: 0; }
+
+.mb-15 {
+  margin-bottom: 15px; }
+
 /* COLORS */
 .bgc-yellow {
   background-color: #eff0d1; }
-
-.bgc-pink {
-  background-color: #e48e98; }
 
 .bgc-red {
   background-color: #df4859; }
@@ -384,7 +404,13 @@ img {
 .bgc-black {
   background-color: black; }
 
+.bgc-paradise-pink {
+  background-color: #DF4859; }
+
 .tc-white {
   color: white; }
+
+.tc-rudy-pink {
+  color: #E48E98; }
 
 /*# sourceMappingURL=main.css.map */
