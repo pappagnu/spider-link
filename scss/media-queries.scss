@@ -6,6 +6,7 @@
     .nav-icon {display: none;}
     .nav-links {font-size: $base-font * 1.2;}
     .tablet {display: block;}
+    .contact-form .submit-button {width: 20%;}
     img {max-width: 250px;}
     #map {display: block;}
     .topnav {
@@ -29,6 +30,8 @@
   .h4 {font-size: $base-font * 1.4;}
   .h5 {font-size: $base-font * 1.2;}
   .h6 {font-size: $base-font;}
+  .parallax {display: block;}
+  .contact-form .submit-button {width: 20%;}
   input[type=submit]{width: 50%;}
   .desktop {display: block;}
   .servies {font-size: 24px;}

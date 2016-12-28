@@ -31,7 +31,7 @@ function changeMenu() {
     const mobile = window.matchMedia("(max-width: 600px)");
 
     if (scrollBarPosition > 0 && mq.matches) {
-        topnav.style.backgroundColor = "cornflowerblue";
+        topnav.style.backgroundColor = "black";
     } else {
         topnav.style.backgroundColor = "transparent";
 
