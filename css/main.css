@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* MAIN SETTINGS */
 * {
   box-sizing: border-box; }
@@ -122,8 +121,32 @@ img {
 .desktop {
   display: none; }
 
-.border {
-  border: red solid; }
+.img-container {
+  display: block;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 2s; }
+  .img-container .brand-logo {
+    max-height: 100%; }
+  .img-container:hover {
+    background-color: #E48E98;
+    opacity: 1; }
+    .img-container:hover .info-brand {
+      display: block;
+      color: #FFFFFF; }
+    .img-container:hover .brand-logo {
+      display: none; }
+  .img-container .info-brand {
+    display: none; }
+
+.about-us-box {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
 .box {
   padding: 1em; }
@@ -136,6 +159,12 @@ img {
 /* ICONS */
 .material-icons.md-48 {
   font-size: 48px; }
+
+.fa {
+  text-decoration: none;
+  color: white; }
+  .fa:hover {
+    opacity: 0.5; }
 
 /* TEXT SETTINGS */
 .h1,
@@ -164,14 +193,15 @@ img {
 .h6 {
   font-size: 4vmin; }
 
-p {
-  margin: 10px 0 10px 0;
-  font-size: 2vmin; }
+.section-header {
+  font-size: 10vmin; }
 
 .services {
   display: none;
   padding-right: 1.5em;
-  padding-left: 1.5em; }
+  padding-left: 1.5em;
+  margin: 10px 0 10px 0;
+  font-size: 2vmin; }
 
 .text-center {
   text-align: center; }
@@ -180,21 +210,23 @@ p {
   height: 100px;
   background-image: linear-gradient(#F38BD3, #FE7880); }
 
-/* OM OSS BÖRJAR HÄR */
-.about-us-box {
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap; }
-  .about-us-box .circle-img {
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 50%;
-    height: 50%;
-    margin-top: 10px; }
+/* IMAGES */
+.circle-img {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin-top: 10px; }
 
-/* KONTAKTA OSS BÖRJAR HÄR */
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  background-image: url(../pics/parallax.jpg); }
+
+/* FORMS */
 .contact-form .text-form {
   outline: none;
   border: none;
@@ -220,30 +252,6 @@ p {
     background-color: #E48E98; }
   .contact-form .submit-button:active {
     background-color: #DF4859; }
-
-/* FOOTER BÖRJAR HÄR */
-.footer-box {
-  text-align: center; }
-  .footer-box .social {
-    display: inline-flex; }
-    .footer-box .social .fa {
-      text-decoration: none;
-      color: #000000; }
-      .footer-box .social .fa:hover {
-        opacity: 0.5; }
-
-.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent; }
-
-.logo {
-  margin: 10px 0 0 10px;
-  float: left;
-  width: 35px;
-  height: 40px; }
 
 #topnav {
   text-align: right;
@@ -276,8 +284,20 @@ p {
     opacity: 0; }
   100% {
     opacity: 1; } }
-/* IMAGES */
 /* LISTS */
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent; }
+
+.logo {
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 35px;
+  height: 40px; }
+
 .nav-item {
   display: none; }
 
@@ -307,6 +327,9 @@ p {
 .no-style {
   list-style: none; }
 
+.inline-flex {
+  display: inline-flex; }
+
 /* LINKS */
 .nav-links {
   display: inline-block;
@@ -330,10 +353,38 @@ p {
 .p-5 {
   padding: 5px; }
 
+.p-10 {
+  padding: 10px; }
+
 .m-0 {
   margin: 0; }
 
 .p-0 {
   padding: 0; }
+
+.pb-0 {
+  padding-bottom: 0; }
+
+.pr-0 {
+  padding-right: 0; }
+
+.pl-0 {
+  padding-left: 0; }
+
+/* COLORS */
+.bgc-yellow {
+  background-color: #eff0d1; }
+
+.bgc-pink {
+  background-color: #e48e98; }
+
+.bgc-red {
+  background-color: #df4859; }
+
+.bgc-black {
+  background-color: black; }
+
+.tc-white {
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

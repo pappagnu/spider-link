@@ -17,8 +17,6 @@ function myFunction() {
 
 }
 
-// CONTACT MAP
-
 //SCROLL FADE IN EFFECT
 window.onscroll = function() {
     changeMenu();
