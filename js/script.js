@@ -17,43 +17,79 @@ function myFunction() {
 
 }
 
-//SCROLL FADE IN EFFECT
+//SCROLL EFFECTS
 window.onscroll = function() {
     changeMenu();
 };
 
 function changeMenu() {
-    let scrollBarPosition = window.pageYOffset | document.body.scrollTop;
-    let services = document.getElementById('services');
-    let about = document.getElementById('about');
-    let contact = document.getElementById('contact');
-    let topnav = document.getElementById("myTopnav");
-    let mq = window.matchMedia( "(min-width: 600px)" );
+    const scrollBarPosition = window.pageYOffset | document.body.scrollTop;
+    const scroller = document.getElementById('scroller');
+    const navLinks = document.getElementsByClassName('nav-links');
+    const topnav = document.getElementById("myTopnav");
+    const mq = window.matchMedia("(min-width: 600px)");
+    const mobile = window.matchMedia("(max-width: 600px)");
+
     if (scrollBarPosition > 0 && mq.matches) {
-      topnav.style.backgroundColor = "cornflowerblue";
+        topnav.style.backgroundColor = "cornflowerblue";
+    } else {
+        topnav.style.backgroundColor = "transparent";
+
+    }
+
+    if (scrollBarPosition => 0) {
+        navLinks[0].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+        for (let i = 0; i < navLinks.length; i++) {
+            if (i !== 0) {
+                navLinks[i].style.backgroundColor = 'transparent';
+            }
+        }
+    }
+
+    if (scrollBarPosition > 830) {
+        navLinks[1].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+        for (let i = 0; i < navLinks.length; i++) {
+            if (i != 1) {
+                navLinks[i].style.backgroundColor = 'transparent';
+            }
+        }
+    }
+
+    if (scrollBarPosition > 1600) {
+        navLinks[2].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+        for (let i = 0; i < navLinks.length; i++) {
+            if (i !== 2) {
+                navLinks[i].style.backgroundColor = 'transparent';
+            }
+        }
+    }
+
+    if (scrollBarPosition > 2600) {
+        navLinks[3].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+        for (let i = 0; i < navLinks.length; i++) {
+            if (i !== 3) {
+                navLinks[i].style.backgroundColor = 'transparent';
+            }
+        }
+    }
+    if (scrollBarPosition > 3100) {
+        navLinks[4].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+        for (let i = 0; i < navLinks.length; i++) {
+            if (i !== 4) {
+                navLinks[i].style.backgroundColor = 'transparent';
+            }
+        }
+    }
+
+    if (mobile.matches) {
+        if (scrollBarPosition => 0) {
+            scroller.style.display = "none";
+        }
+        if (scrollBarPosition > 830) {
+            scroller.style.display = "block";
+        }
 
     } else {
-      topnav.style.backgroundColor = "transparent";
-
-    }
-    if (scrollBarPosition > 30) {
-        services.style.animationName = 'fadeIn';
-        services.style.WebkitAnimationName = 'fadeIn';
-        services.style.animationDuration = '2s';
-        services.style.WebkitAnimationDuration = '2s';
-    }
-
-    if (scrollBarPosition > 750) {
-        about.style.animationName = 'fadeIn';
-        about.style.WebkitAnimationName = 'fadeIn';
-        about.style.animationDuration = '2s';
-        about.style.WebkitAnimationDuration = '2s';
-      }
-
-    if (scrollBarPosition > 1080) {
-            contact.style.animationName = 'fadeIn';
-            contact.style.WebkitAnimationName = 'fadeIn';
-            contact.style.animationDuration = '2s';
-            contact.style.WebkitAnimationDuration = '2s';
+        scroller.style.display = "none";
     }
 }
