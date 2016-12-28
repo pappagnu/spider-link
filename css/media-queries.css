@@ -14,6 +14,9 @@
   .tablet {
     display: block; }
 
+  .contact-form .submit-button {
+    width: 20%; }
+
   img {
     max-width: 250px; }
 
@@ -29,9 +32,9 @@
     position: fixed;
     width: 100%;
     transition: ease 0.5s; } }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .wrapper-center {
-    width: 750px; }
+    width: 1000px; }
 
   .h1 {
     font-size: 2rem; }
@@ -50,6 +53,12 @@
 
   .h6 {
     font-size: 1rem; }
+
+  .parallax {
+    display: block; }
+
+  .contact-form .submit-button {
+    width: 20%; }
 
   input[type=submit] {
     width: 50%; }
