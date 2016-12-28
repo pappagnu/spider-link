@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="shortcut icon" type="image/png" href="pics/logo.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat" rel="stylesheet">
 </head>
 
 <body>
@@ -39,6 +39,8 @@
 
      </div>
   </div>
+
+  <!-- UPPDRAG -->
     <section class="wrapper" id="work">
         <h1 class="h1">Uppdrag</h1>
         <article class="row pb-0 pr-0 pl-0">
@@ -90,8 +92,14 @@
           </div>
         </article>
       </section>
+
+      <!--- PARALLAX -->
+      <div class="bgimg-1 flex-center">
+        <h1 class="section-header text-center tc-white">Tjänster</h1>
+      </div>
+
+    <!-- TJÄNSTER -->
     <section class="wrapper" id="services">
-        <h1 class="h1">Våra Tjänster</h1>
         <article class="row">
             <div class="col-d-4 col-t-4 col-m-6 box">
                 <div class="flex-center">
@@ -144,9 +152,14 @@
             </div>
         </article>
     </section>
+
+    <!--- PARALLAX -->
+    <div class="bgimg-1 flex-center">
+      <h1 class="section-header text-center tc-white">Om</h1>
+    </div>
+
     <!-- OM OSS -->
-    <section class="wrapper-center" id="about">
-        <h1 class="h1">Om oss</h1>
+    <section class="wrapper" id="about">
         <article class="row">
             <div class="col-t-4 about-us-box">
                 <img class="circle-img" src="pics/Matte.png">
@@ -162,13 +175,16 @@
             </div>
         </article>
     </section>
+
+    <!--- PARALLAX -->
+    <div class="bgimg-1 flex-center">
+      <h1 class="section-header text-center tc-white">Kontakt</h1>
+    </div>
+
     <!-- KONTAKTA OSS -->
     <section class="wrapper" id="contact">
-      <h1 class="h1 text-center">Kontakt</h1>
         <article class="row">
-          <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.562541938133!2d-66.15490898423475!3d43.98909553866284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b56223b4d3ddecd%3A0x2c373825d55a844e!2sSpider+Rd%2C+Port+Maitland%2C+NS+B0W+2V0%2C+Kanada!5e0!3m2!1ssv!2sse!4v1482424323917" width="100%" height="600px" rameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
+          <div class="tablet" id="map" style="width:100%;height:500px"></div>
         </article>
         <article class="row wrapper-center">
             <form class="contact-form">
@@ -182,25 +198,26 @@
         </article>
     </section>
     <!-- FOOTER -->
-    <footer class="wrapper-center text-center">
+    <footer class="wrapper text-center bgc-black tc-white">
+      <section class="wrapper-center">
         <article class="row">
-                <div class="col-t-4 footer-box">
-                  <h3 class="h3">BESÖK OSS</h3>
+                <div class="col-t-4">
+                  <h4 class="h4">BESÖK OSS</h4>
                   <ul class="no-style p-0 m-0">
                     <li>Spindelnätet 1</li>
                     <li>123 45 Spindelstaden</li>
                   </ul>
                 </div>
-                <div class="col-t-4 footer-box">
-                  <h3 class="h3">KONTAKT</h3>
+                <div class="col-t-4">
+                  <h4 class="h4">KONTAKT</h4>
                   <ul class="no-style m-0 p-0">
                     <li>spider@spiderlink.se</li>
                     <li>88 - 888 888 88</li>
                   </ul>
                 </div>
-                <div class="col-t-4 footer-box">
-                    <h3 class="h3">FÖLJ OSS</h3>
-                    <ul class="social no-style m-0 p-0">
+                <div class="col-t-4">
+                    <h4 class="h4">FÖLJ OSS</h4>
+                    <ul class="inline-flex no-style m-0 p-0">
                       <li class="p-5">
                         <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
                       </li>
@@ -216,8 +233,22 @@
                     </ul>
                 </div>
         </article>
+      </section>
     </footer>
-    <script src="js/script.js"></script>
+    <script>
+    function myMap() {
+      let mapCanvas = document.getElementById("map");
+      let mapOptions = {
+        center: new google.maps.LatLng(43.9890955, -66.154909),
+        zoom: 10,
+        scrollwheel: false
+      };
+      let map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+    </script>
     <script src="https://use.fontawesome.com/cb3d9e3790.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
