@@ -20,7 +20,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 [class*="col-"] {width:$w12;}
 
 /* EXTRA MOBILE PHONE GRID */
-.col-m-6 {width: $w8;}
+.col-m-6 {width: $w6;}
 
 /* TABLET COLUMN GRID */
 
@@ -271,7 +271,6 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
     100% {opacity: 1;}
     }
 
-
 /* LISTS */
 
 .topnav {
@@ -338,6 +337,10 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
   font-size: 5vmin;
 }
 
+.active {
+  background-color: rgba(223, 72, 89, 0.5);
+}
+
 .nav-icon {
   font-size: $base-font * 1.5;
   text-decoration: none;
@@ -347,6 +350,17 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
   background-color: none;
   cursor:pointer;
 }
+
+.scrollToTop{
+	position:fixed;
+	bottom: 0;
+	left:45vw;
+    i
+    {
+    color: #e48e98;
+  }
+}
+
 
 /* PADDINGS & MARGINS */
 .p-5{padding: 5px;}
