@@ -89,7 +89,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
     opacity: 1;
     .info-brand{
       display: block;
-      color: #FFFFFF;
+      color: #2a2b2f;
     }
     .brand-logo{
       display: none;
@@ -98,11 +98,12 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
   transition: all 1s;
   .info-brand{
     display: none;
+    padding: 1.5em;
   }
 }
 
 .about-us-box{
-	margin-bottom: 5px;
+	margin-bottom: 2rem;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -117,7 +118,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 .material-icons.md-48 {
   font-size: 48px;
-  color: white;
+  color: #4B4D54;
 }
 
 .fa{
@@ -156,14 +157,14 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 .section-header {
   font-size: 6vmin;
-  padding: 2rem 0 2rem 0;
+  padding: 4rem 0 2rem 0;
 }
 
 
 .services {
   display: none;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
+  padding-right: 2em;
+  padding-left: 2em;
   margin: 10px 0 10px 0;
   font-size: 2.2vmin;
 }
@@ -189,15 +190,22 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 }
 
 .bgimg-1 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100px;
-    background-image: url(../pics/parallax.jpg);
+    min-height: 300px;
+    background-image: url(../pics/pinklady.jpg);
 }
 
-.parallax {display: none;}
+.bgimg-2 {
+  min-height: 300px;
+  background-image: url(../pics/pinklady2.jpg)
+}
+
+.parallax {
+  display: none;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* FORMS */
 .contact-form{
@@ -222,17 +230,17 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
   }
   .submit-button{
     outline: none;
-    border: none;
+    border: 2px solid #DC4A5C;
     border-radius: 25px;
-    background-color: #DC4A5C;
+    background-color: white;
     width: 70%;
     padding: 10px;
+    color: #4B4D54;
+    transition: all 0.5s;
+    cursor: pointer;
     &:hover{
-      background-color: black;
+      background-color: #DC4A5C;
       color: white;
-    }
-    &:active{
-      background-color: #DF4859;
     }
   }
 }
@@ -290,6 +298,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 .nav-item {
   display: none;
+  min-height: 40px;
 }
 
 .responsive-nav {
@@ -312,11 +321,9 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
     .nav-item {
         float: none;
         display: inline;
-
         .nav-links {
             display: block;
             text-align: left;
-
             &:hover {
                 background-color: rgba(223, 72, 89, 0.5);
             }
@@ -335,6 +342,12 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
   text-decoration: none;
   transition: 0.3s;
   font-size: 5vmin;
+  min-height: 40px;
+}
+
+.links{
+  text-decoration: none;
+  color: #2a2b2f;
 }
 
 .active {
@@ -374,6 +387,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .pr-0{padding-right: 0;}
 .pl-0{padding-left: 0;}
 .pt-0{padding-top: 0;}
+.pt-115{padding-top: 115px;}
 .mb-15{margin-bottom: 15px;}
 
 /* COLORS */
@@ -393,10 +407,22 @@ background-color: #df4859;
   background-color: #DF4859;
 }
 
+.bgc-eggshell {
+  background-color: #EFF0D1;
+}
+
 .tc-white {
   color: white;
 }
 
 .tc-rudy-pink {
   color: #E48E98;
+}
+
+.tc-grey {
+  color: #4B4D54;
+}
+
+.tc-headerblack {
+  color: #2a2b2f;
 }

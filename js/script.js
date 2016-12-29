@@ -46,7 +46,7 @@ function changeMenu() {
         }
     }
 
-    if (scrollBarPosition > 830) {
+    if (scrollBarPosition > 610) {
         navLinks[1].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i != 1) {
@@ -55,7 +55,7 @@ function changeMenu() {
         }
     }
 
-    if (scrollBarPosition > 1600) {
+    if (scrollBarPosition > 1650) {
         navLinks[2].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i !== 2) {
@@ -64,7 +64,7 @@ function changeMenu() {
         }
     }
 
-    if (scrollBarPosition > 2600) {
+    if (scrollBarPosition > 2750) {
         navLinks[3].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i !== 3) {
