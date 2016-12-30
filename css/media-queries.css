@@ -1,4 +1,42 @@
 @media only screen and (min-width: 600px) {
+
+  .header{
+    font-size: 4rem;
+    top: 30%;
+
+  }
+
+  .p {
+  font-size: 1rem;
+  margin: 5px;
+  }
+  .h1 {
+    font-size: 2rem; }
+
+  .h2 {
+    font-size: 1.8rem; }
+
+  .h3 {
+    font-size: 1.2rem; }
+
+  .h4 {
+    font-size: 1rem; }
+
+  .h5 {
+    font-size: 1.2rem; }
+
+  .h6 {
+    font-size: 1rem; }
+
+   .parallax {
+    display: block;
+    padding-top: 115px;
+  } 
+
+  .section-header {
+  font-size: vmin;
+  }
+
   .services {
     display: block; }
 
@@ -37,7 +75,7 @@
     width: 1000px; }
 
   .h1 {
-    font-size: 2rem; }
+    font-size: 2.5rem; }
 
   .h2 {
     font-size: 1.8rem; }
@@ -67,6 +105,9 @@
     display: block; }
 
   .servies {
-    font-size: 24px; } }
+    font-size: 24px; }
+
+  .mt-50-mobile {
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=media-queries.css.map */
