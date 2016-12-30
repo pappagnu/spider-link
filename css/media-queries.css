@@ -67,6 +67,9 @@
     display: block; }
 
   .servies {
-    font-size: 24px; } }
+    font-size: 24px; }
+
+  .mt-50-mobile {
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=media-queries.css.map */
