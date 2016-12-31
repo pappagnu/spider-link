@@ -10,7 +10,7 @@
   float: left; }
 
 .row {
-  padding: 0.4em; }
+  padding: 0.5em; }
 
 .row::after {
   content: "";
@@ -159,6 +159,7 @@ img {
 .about-us-box {
   font-size: 2.2vmin;
   margin-bottom: 3rem;
+  padding: 2em;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -196,12 +197,12 @@ img {
   /*text-transform: uppercase;*/ }
 
 .h2 {
-  font-size: 6vmin;
+  font-size: 5vmin;
   color: white; }
 
 .h3 {
   font-size: 6.5vmin;
-  margin: 20px; }
+  margin: 10px; }
 
 .h4 {
   font-size: 5vmin;
@@ -221,7 +222,7 @@ img {
 .services {
   display: none;
   padding: 0 1rem 0 1rem;
-  margin: 10px 20px 60px 20px;
+  margin: 10px 0 60px 0;
   font-size: 2.3vmin; }
 
 .text-center {
