@@ -70,7 +70,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .wrapper-center {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  margin-right: auto;
+   margin-right: auto;
   margin-left: auto;
 }
 
@@ -249,6 +249,9 @@ height: 250px;
 
 .parallax {
   /*display: none;*/
+.parallax {
+  display: none;
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

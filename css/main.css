@@ -111,7 +111,9 @@ img {
 
 .wrapper-center {
   padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-left: 0.5rem
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -159,6 +161,7 @@ img {
 .about-us-box {
   font-size: 2.2vmin;
   margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -216,13 +219,17 @@ img {
 .section-header {
   font-size: 8vmin;
   padding: 3rem 0 2rem 0;
+  font-size: 6vmin;
+  padding: 4rem 0 2rem 0;
   text-align: center; }
 
 .services {
   display: none;
   padding: 0 1rem 0 1rem;
   margin: 10px 20px 60px 20px;
-  font-size: 2.3vmin; }
+  font-size: 2.3vmin; 
+  margin: 10px 0 60px 0;
+  font-size: 2.2vmin; }
 
 .text-center {
   text-align: center; }
@@ -249,12 +256,16 @@ img {
   min-height: 300px;
   background-image: url(../pics/pinklady2.jpg); }
 
+
 .bgimg-3 {
   min-height: 300px;
   background-image: url(../pics/pinklady3.jpg); }
 
 .parallax {
   /*display: none;*/
+
+.parallax {
+  display: none;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -453,6 +464,12 @@ img {
 
 .mb-48 {
   margin-bottom: 48px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+  .mb-15 {
+  margin-bottom: 15px; }
 
 .mt-50 {
   margin-top: 50px; }
