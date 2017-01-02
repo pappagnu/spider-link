@@ -68,8 +68,8 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 }
 
 .wrapper-center {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -142,16 +142,14 @@ height: 250px;
 }
 
 .about-us-box{
-  font-size: 2.2vmin;
-	margin-bottom: 3rem;
-  padding: 2em;
+	margin-bottom: 4rem;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
 }
 
-.box {padding: 2em;}
+.box {padding: 2.2em;}
 .flex-center {@include flex(center, center);}
 
 
@@ -166,15 +164,15 @@ height: 250px;
 }
 
 /* TEXT SETTINGS */
+p {
+  font-size: 5vmin; margin: 0;
+}
+
 .h1,
 .h2,
 .h3 {
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-.p {
-  font-size: 5vmin;
-  margin: 5px;
+  margin-top: 8px;
+  margin-bottom: 5px;
 }
 
 .h1{
@@ -183,23 +181,25 @@ height: 250px;
   /*text-transform: uppercase;*/
 }
 .h2 {
-  font-size: 5vmin;
+  font-size: 6vmin;
   color: white;
 }
 
-.h3 {font-size: 6.5vmin; margin: 10px;}
-
-.h4 {
+.h3 {font-size: 5.5vmin;}
+ul{
   font-size: 5vmin;
-  margin: 5px;}
+}
+.h4 {font-size: 5vmin; margin: 5px;}
 
 .h5 {font-size: 4.5vmin;}
 
 .h6 {font-size: 4vmin;}
 
+
+
 .section-header {
-  font-size: 8vmin;
-  padding: 3rem 0 2rem 0;
+  font-size: 10vmin;
+  padding: 4rem 0 2rem 0;
   text-align: center;
 }
 
@@ -208,7 +208,7 @@ height: 250px;
   display: none;
   padding: 0 1rem 0 1rem;
   margin: 10px 0 60px 0;
-  font-size: 2.3vmin;
+  font-size: 2.2vmin;
 }
 
 
@@ -249,7 +249,6 @@ height: 250px;
 }
 
 .parallax {
-  /*display: none;*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -310,11 +309,11 @@ height: 250px;
 
 .header{
   position:absolute;
-  top: 50%;
+  top: 45%;
   text-align:center;
   width:100%;
   color: #EFF0D1;
-  font-size:36px;
+  font-size:22px;
 }
 
   /* ANIMATIONS */
@@ -427,22 +426,24 @@ height: 250px;
 /* PADDINGS & MARGINS */
 .p-5{padding: 5px;}
 .p-10{padding: 10px;}
+.p-25{padding: 25px;}
 .p-40{padding: 40px;}
 .p-70{padding: 70px;}
 .m-0{margin: 0;}
 .p-0{padding: 0;}
 .pb-0{padding-bottom: 0;}
 .pb-10{padding-bottom: 10px;}
-.pb-20{padding-bottom: 20px;}
+.pb-45{padding-bottom: 45px;}
 .pr-0{padding-right: 0;}
 .pl-0{padding-left: 0;}
 .pt-0{padding-top: 0;}
-.pt-20{padding-top: 20px;}
 .pt-40 {padding-top: 40px;}
 .pt-115{padding-top: 115px;}
-.mb-25{margin-bottom: 25px;}
-.mb-48{margin-bottom: 48px;}
+.mb-15{margin-bottom: 15px;}
+.mb-64{margin-bottom: 64px;}
 .mt-50 {margin-top: 50px;}
+.mt-5{margin-top: 17px;}  //korr Om oss mitten bild
+
 
 /* COLORS */
 .bgc-yellow {
@@ -480,3 +481,6 @@ background-color: #df4859;
 .tc-headerblack {
   color: #2a2b2f;
 }
+
+/*EXTRA*/
+.linje {margin-top: 15px; margin-bottom: 15px;}
