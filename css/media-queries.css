@@ -1,4 +1,37 @@
 @media only screen and (min-width: 600px) {
+
+  .wrapper-contact {
+  width: 70%; margin-right: auto;
+  margin-left: auto;} 
+
+  .h1 {
+    font-size: 2rem; width: 80%; }
+
+  .h2 {
+    font-size: 1.4rem; }
+
+  .h3 {
+    font-size: 1.2rem; }
+
+  .h4 {
+    font-size: 1rem; }
+
+  .h5 {
+    font-size: 0.8rem; }
+
+  .h6 {
+    font-size: 0.6rem; } 
+
+  p {font-size: 1rem;}
+
+  ul{font-size: 0.8rem;}
+
+  .header{
+  font-size: 5vmin;}
+
+  .section-header {
+  font-size: 5vmin;}
+
   .services {
     display: block; }
 
@@ -18,7 +51,7 @@
     width: 20%; }
 
   img {
-    max-width: 250px; }
+    max-width: 150px; }
 
   #map {
     display: block; }
@@ -34,34 +67,45 @@
     transition: ease 0.5s; } }
 @media only screen and (min-width: 1024px) {
   .wrapper-center {
-    width: 1000px; }
+    width: 90%;} 
+
+  .wrapper-contact {
+    width: 60%; margin-right: auto;
+  margin-left: auto;} 
 
   .h1 {
-    font-size: 2rem; }
+    font-size: 2.2rem; width: 80%;}
 
   .h2 {
-    font-size: 1.8rem; }
-
-  .h3 {
     font-size: 1.6rem; }
 
-  .h4 {
+  .h3 {
     font-size: 1.4rem; }
 
-  .h5 {
+  .h4 {
     font-size: 1.2rem; }
 
-  .h6 {
+  .h5 {
     font-size: 1rem; }
 
-  .parallax {
-    display: block; }
+  .h6 {
+    font-size: 0.8rem; }
+
+  p {font-size: 1.2rem;}
+
+  ul{font-size: 1rem;}
+
+  .section-header {
+  font-size: 6vmin;}
 
   .contact-form .submit-button {
     width: 20%; }
 
   input[type=submit] {
     width: 50%; }
+
+  img {
+  max-width: 170px; }
 
   .desktop {
     display: block; }
@@ -70,6 +114,8 @@
     font-size: 24px; }
 
   .mt-50-mobile {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+
+  
 
 /*# sourceMappingURL=media-queries.css.map */

@@ -10,7 +10,7 @@
   float: left; }
 
 .row {
-  padding: 1em; }
+  padding: 0.5em; }
 
 .row::after {
   content: "";
@@ -157,14 +157,14 @@ img {
   opacity: 1; }
 
 .about-us-box {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap; }
 
 .box {
-  padding: 2em; }
+  padding: 2.2em; }
 
 .flex-center {
   display: flex;
@@ -179,16 +179,20 @@ img {
     opacity: 0.5; }
 
 /* TEXT SETTINGS */
+p {
+  font-size: 5vmin;
+  margin: 0; }
+
 .h1,
 .h2,
 .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-top: 8px;
+  margin-bottom: 5px; }
 
 .h1 {
   font-size: 7vmin;
   text-align: center;
-  text-transform: uppercase; }
+  /*text-transform: uppercase;*/ }
 
 .h2 {
   font-size: 6vmin;
@@ -197,8 +201,12 @@ img {
 .h3 {
   font-size: 5.5vmin; }
 
-.h4 {
+ul {
   font-size: 5vmin; }
+
+.h4 {
+  font-size: 5vmin;
+  margin: 5px; }
 
 .h5 {
   font-size: 4.5vmin; }
@@ -207,7 +215,7 @@ img {
   font-size: 4vmin; }
 
 .section-header {
-  font-size: 6vmin;
+  font-size: 10vmin;
   padding: 4rem 0 2rem 0;
   text-align: center; }
 
@@ -242,8 +250,11 @@ img {
   min-height: 300px;
   background-image: url(../pics/pinklady2.jpg); }
 
+.bgimg-3 {
+  min-height: 300px;
+  background-image: url(../pics/pinklady3.jpg); }
+
 .parallax {
-  display: none;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -293,11 +304,11 @@ img {
 
 .header {
   position: absolute;
-  top: 30%;
+  top: 45%;
   text-align: center;
   width: 100%;
   color: #EFF0D1;
-  font-size: 36px; }
+  font-size: 22px; }
 
 /* ANIMATIONS */
 @-webkit-keyframes fadeIn {
@@ -398,6 +409,9 @@ img {
 .p-10 {
   padding: 10px; }
 
+.p-25 {
+  padding: 25px; }
+
 .p-40 {
   padding: 40px; }
 
@@ -415,6 +429,9 @@ img {
 
 .pb-10 {
   padding-bottom: 10px; }
+
+.pb-45 {
+  padding-bottom: 45px; }
 
 .pr-0 {
   padding-right: 0; }
@@ -434,8 +451,14 @@ img {
 .mb-15 {
   margin-bottom: 15px; }
 
+.mb-64 {
+  margin-bottom: 64px; }
+
 .mt-50 {
   margin-top: 50px; }
+
+.mt-5 {
+  margin-top: 17px; }
 
 /* COLORS */
 .bgc-yellow {
@@ -464,5 +487,10 @@ img {
 
 .tc-headerblack {
   color: #2a2b2f; }
+
+/*EXTRA*/
+.linje {
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 /*# sourceMappingURL=main.css.map */
