@@ -1,11 +1,20 @@
 @media only screen and (min-width: 600px) {
+  .square {
+    width: 165px;
+    height: 165px; }
+
+  .rectangle {
+    width: 288px;
+    height: 172px; }
 
   .wrapper-contact {
-  width: 70%; margin-right: auto;
-  margin-left: auto;} 
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto; }
 
   .h1 {
-    font-size: 2rem; width: 80%; }
+    font-size: 2rem;
+    width: 80%; }
 
   .h2 {
     font-size: 1.4rem; }
@@ -20,17 +29,25 @@
     font-size: 0.8rem; }
 
   .h6 {
-    font-size: 0.6rem; } 
+    font-size: 0.6rem; }
 
-  p {font-size: 1rem;}
+  p {
+    font-size: 1rem; }
 
-  ul{font-size: 0.8rem;}
+  ul {
+    font-size: 0.8rem; }
 
-  .header{
-  font-size: 5vmin;}
+  .parallax {
+    display: none; }
+
+  .services {
+    display: block; }
+
+  .header {
+    font-size: 5vmin; }
 
   .section-header {
-  font-size: 5vmin;}
+    font-size: 5vmin; }
 
   .services {
     display: block; }
@@ -65,16 +82,42 @@
     position: fixed;
     width: 100%;
     transition: ease 0.5s; } }
+@media only screen and (max-width: 600px) {
+  .parallax {
+    display: none; } }
 @media only screen and (min-width: 1024px) {
+  .rectangle {
+    width: 368px;
+    height: 232px; }
+
+  .square {
+    width: 245px;
+    height: 250px; }
+
+  .parallax {
+    display: block;
+    display: flex; }
+
+  .bgimg-1fix {
+    display: none; }
+
+  .bgimg-2fix {
+    display: none; }
+
+  .bgimg-3fix {
+    display: none; }
+
   .wrapper-center {
-    width: 90%;} 
+    width: 90%; }
 
   .wrapper-contact {
-    width: 60%; margin-right: auto;
-  margin-left: auto;} 
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto; }
 
   .h1 {
-    font-size: 2.2rem; width: 80%;}
+    font-size: 2.2rem;
+    width: 70%; }
 
   .h2 {
     font-size: 1.6rem; }
@@ -91,12 +134,14 @@
   .h6 {
     font-size: 0.8rem; }
 
-  p {font-size: 1.2rem;}
+  p {
+    font-size: 1.2rem; }
 
-  ul{font-size: 1rem;}
+  ul {
+    font-size: 1rem; }
 
   .section-header {
-  font-size: 6vmin;}
+    font-size: 6vmin; }
 
   .contact-form .submit-button {
     width: 20%; }
@@ -105,17 +150,12 @@
     width: 50%; }
 
   img {
-  max-width: 170px; }
+    max-width: 170px; }
 
   .desktop {
     display: block; }
 
-  .servies {
-    font-size: 24px; }
-
   .mt-50-mobile {
-    margin-top: 0px; }
-
-  
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=media-queries.css.map */

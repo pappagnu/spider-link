@@ -126,8 +126,8 @@ img {
   overflow: hidden; }
 
 .square {
-  width: 250px;
-  height: 250px; }
+  width: 220px;
+  height: 220px; }
 
 .rectangle {
   width: 350px;
@@ -195,7 +195,7 @@ p {
   /*text-transform: uppercase;*/ }
 
 .h2 {
-  font-size: 6vmin;
+  font-size: 4vmin;
   color: white; }
 
 .h3 {
@@ -215,7 +215,7 @@ ul {
   font-size: 4vmin; }
 
 .section-header {
-  font-size: 10vmin;
+  font-size: 7vmin;
   padding: 4rem 0 2rem 0;
   text-align: center; }
 
@@ -246,13 +246,31 @@ ul {
   min-height: 300px;
   background-image: url(../pics/pinklady.jpg); }
 
+.bgimg-1fix {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../pics/pinklady-fix.jpg); }
+
 .bgimg-2 {
   min-height: 300px;
   background-image: url(../pics/pinklady2.jpg); }
 
+.bgimg-2fix {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../pics/pinklady2-fix.jpg); }
+
 .bgimg-3 {
   min-height: 300px;
   background-image: url(../pics/pinklady3.jpg); }
+
+.bgimg-3fix {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../pics/pinklady3-fix.jpg); }
 
 .parallax {
   background-attachment: fixed;
@@ -281,7 +299,7 @@ ul {
   border: 2px solid #DC4A5C;
   border-radius: 25px;
   background-color: white;
-  width: 70%;
+  width: 60%;
   padding: 10px;
   color: #4B4D54;
   transition: all 0.5s;
@@ -323,6 +341,7 @@ ul {
     opacity: 1; } }
 /* LISTS */
 .topnav {
+  z-index: 1;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -435,6 +454,9 @@ ul {
 
 .pr-0 {
   padding-right: 0; }
+
+.pr-10 {
+  padding-right: 10px; }
 
 .pl-0 {
   padding-left: 0; }
