@@ -65,7 +65,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .wrapper {
   margin-right: auto;
   margin-left: auto;
-}
+ }
 
 .wrapper-center {
   padding-right: 1rem;
@@ -236,6 +236,7 @@ ul{
 .bgimg-1 {
     min-height: 300px;
     background-image: url(../pics/pinklady.jpg);
+    background-size: cover;
 }
 
 .bgimg-2 {

@@ -244,7 +244,8 @@ ul {
 
 .bgimg-1 {
   min-height: 300px;
-  background-image: url(../pics/pinklady.jpg); }
+  background-image: url(../pics/pinklady.jpg);
+  background-size: cover; }
 
 .bgimg-2 {
   min-height: 300px;
