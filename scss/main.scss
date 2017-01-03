@@ -11,7 +11,7 @@
 
 .row {padding: 0.5em;}
 
-.row::after {content:""; clear:both; display:block;}
+.row:after {content:""; clear:both; display:block;}
 
 img {max-width: $w12; height:auto; vertical-align: middle;}
 
@@ -76,31 +76,6 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 .tablet {display: none;}
 .desktop {display: none;}
-
-// .img-container {
-//   display: block;
-//   height: 200px;
-//   @include flex(center, center);
-//   .brand-logo{
-//     max-height: 100%;
-//   }
-//   &:hover{
-//     background-color: #E48E98;
-//     opacity: 1;
-//     .info-brand{
-//       display: block;
-//       color: #2a2b2f;
-//     }
-//     .brand-logo{
-//       display: none;
-//     }
-//   }
-//   transition: all 1s;
-//   .info-brand{
-//     display: none;
-//     padding: 1.5em;
-//   }
-// }
 
 .info-brand {
   position: relative;
@@ -276,6 +251,10 @@ ul{
   background-size: cover;
 }
 
+.grow {
+  width: 85%;
+}
+
 /* FORMS */
 .contact-form{
   .text-form{
@@ -314,21 +293,20 @@ ul{
   }
 }
 
-#topnav {
+.topnav {
   text-align:right;
   margin: auto;
   background-color: transparent;
 }
 
-#front-cover {
-  width: 100%;
+.fp-header{
   height: 100vh;
   background-image: url(../pics/header1.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.header{
+.header-text{
   position:absolute;
   top: 45%;
   text-align:center;
@@ -338,14 +316,9 @@ ul{
 }
 
   /* ANIMATIONS */
-    @-webkit-keyframes fadeIn {
-      0%   {opacity: 0;}
-      100% {opacity: 1;}
-    }
-
-    @keyframes fadeIn {
-    0%   {opacity: 0;}
-    100% {opacity: 1;}
+    .ease-08 {
+      -webkit-transition: all 0.8s ease;
+      transition: all 0.8s ease;
     }
 
 /* LISTS */
@@ -359,6 +332,10 @@ ul{
   background-color: transparent;
 }
 
+.desktop-nav {
+  margin: 0;
+  padding: 5px;
+}
 .logo {
   margin: 10px 0 0 10px;
   float: left;
@@ -377,17 +354,12 @@ ul{
   margin: 0;
 }
 
-.icon {display: block;}
 
 .nav-item:hover {
   background-color: rgba(223, 72, 89, 0.5);
 }
 
 .responsive-nav {
-    .icon {
-        right: 0;
-        top: 0;
-    }
     .nav-item {
         float: none;
         display: inline;
@@ -434,7 +406,13 @@ ul{
   cursor:pointer;
 }
 
+.nav-logo {
+  float: left;
+  padding: 5px;
+}
+
 .scrollToTop{
+  display: none;
   position:fixed;
   bottom: 0;
   left:45vw;
