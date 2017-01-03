@@ -12,7 +12,7 @@
 .row {
   padding: 0.5em; }
 
-.row::after {
+.row:after {
   content: "";
   clear: both;
   display: block; }
@@ -278,6 +278,9 @@ ul {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.grow {
+  width: 85%; }
+
 /* FORMS */
 .contact-form .text-form {
   outline: none;
@@ -308,19 +311,18 @@ ul {
     background-color: #DC4A5C;
     color: white; }
 
-#topnav {
+.topnav {
   text-align: right;
   margin: auto;
   background-color: transparent; }
 
-#front-cover {
-  width: 100%;
+.fp-header {
   height: 100vh;
   background-image: url(../pics/header1.jpg);
   background-size: cover;
   background-position: center; }
 
-.header {
+.header-text {
   position: absolute;
   top: 45%;
   text-align: center;
@@ -329,16 +331,10 @@ ul {
   font-size: 22px; }
 
 /* ANIMATIONS */
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+.ease-08 {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease; }
+
 /* LISTS */
 .topnav {
   z-index: 1;
@@ -347,6 +343,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: transparent; }
+
+.desktop-nav {
+  margin: 0;
+  padding: 5px; }
 
 .logo {
   margin: 10px 0 0 10px;
@@ -363,15 +363,9 @@ ul {
   padding: 0;
   margin: 0; }
 
-.icon {
-  display: block; }
-
 .nav-item:hover {
   background-color: rgba(223, 72, 89, 0.5); }
 
-.responsive-nav .icon {
-  right: 0;
-  top: 0; }
 .responsive-nav .nav-item {
   float: none;
   display: inline; }
@@ -414,7 +408,12 @@ ul {
   background-color: none;
   cursor: pointer; }
 
+.nav-logo {
+  float: left;
+  padding: 5px; }
+
 .scrollToTop {
+  display: none;
   position: fixed;
   bottom: 0;
   left: 45vw; }

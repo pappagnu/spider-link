@@ -1,41 +1,62 @@
 // jshint esversion:6
-
-// MOBILE NAVBAR
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    var logo = document.getElementsByClassName('logo')[0];
-    if (x.className === "topnav") {
-        x.className = "responsive-nav";
-    } else {
-        x.className = "topnav";
+// TOGGLE NAVBARS
+const hamburger = document.getElementById('hamburger');
+hamburger.onclick = function() {
+    const desktopNav = document.getElementById("desktop-nav");
+    const logo = document.getElementsByClassName('logo')[0];
+    if (desktopNav.className !== "responsive-nav") {
+        desktopNav.className = "responsive-nav";
+    }
+    else {
+      desktopNav.className -= "responsive-nav";
     }
     if (logo.style.display === "none") {
         logo.style.display = 'block';
     } else {
         logo.style.display = 'none';
     }
-
-}
-
-//SCROLL EFFECTS
-window.onscroll = function() {
-    changeMenu();
 };
 
-function changeMenu() {
+// SCROLL EFFECTS
+window.onscroll = function() {
+    scrollEffects();
+};
+
+function scrollEffects() {
     const scrollBarPosition = window.pageYOffset | document.body.scrollTop;
     const scroller = document.getElementById('scroller');
     const navLinks = document.getElementsByClassName('nav-links');
-    const topnav = document.getElementById("myTopnav");
-    const mq = window.matchMedia("(min-width: 600px)");
+    const desktopNav = document.getElementById("desktop-nav");
+    const logo = document.getElementById("logo");
+    const desktop = window.matchMedia("(min-width: 1024px)");
     const mobile = window.matchMedia("(max-width: 600px)");
 
-    if (scrollBarPosition > 0 && mq.matches) {
-        topnav.style.backgroundColor = "black";
-    } else {
-        topnav.style.backgroundColor = "transparent";
+    if (scrollBarPosition > 0 && desktop.matches) {
+        desktopNav.style.backgroundColor = "black";
+        desktopNav.style.padding = "12px";
+        logo.style.padding = "8px";
+        logo.style.width = "115%";
+        for (let i = 0; i < navLinks.length; i++) {
+          navLinks[i].style.fontSize = "24px";
+        }
+    } else if (scrollBarPosition === 0 && desktop.matches) {
+        desktopNav.style.backgroundColor = "transparent";
+        desktopNav.style.padding = "5px";
+        logo.style.padding = "0px";
+        for (let i = 0; i < navLinks.length; i++) {
+          navLinks[i].style.fontSize = "19.2px";
+          logo.style.width = "100%";
+        }
 
     }
+
+    if (scrollBarPosition > 0 && desktop.matches === false && mobile.matches === false) {
+        desktopNav.style.backgroundColor = "black";
+      }
+
+      else if (scrollBarPosition === 0 && desktop.matches === false && mobile.matches === false) {
+          desktopNav.style.backgroundColor = "transparent";
+        }
 
     if (scrollBarPosition => 0) {
         navLinks[0].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
@@ -82,16 +103,13 @@ function changeMenu() {
     }
 
     if (mobile.matches) {
-        if (scrollBarPosition => 0) {
-            scroller.style.display = "none";
-        }
-        if (scrollBarPosition > 5070) {
+        if (scrollBarPosition > 1500) {
             scroller.style.display = "block";
         }
-
-    } else {
+        else if (scrollBarPosition < 1500) {
         scroller.style.display = "none";
-    }
+      }
+  }
 }
 
 // CONTACT MAP
