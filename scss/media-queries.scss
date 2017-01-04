@@ -1,13 +1,37 @@
 @import 'variables';
 
 @media only screen and (min-width:$tablet) {
+    .square {
+      width: 165px;
+      height: 165px;
+    }
+    .rectangle {
+      width: 288px;
+      height: 172px;
+    }
+    .wrapper-contact {
+      width: 70%; margin-right: auto;
+      margin-left: auto;
+    } 
+    .h1 {font-size: 2rem; width: 80%;}
+    .h2 {font-size: 1.4rem;}
+    .h3 {font-size: 1.2rem;}
+    .h4 {font-size: 1rem;}
+    .h5 {font-size: 0.8rem;}
+    .h6 {font-size: 0.6rem;}
+    p {font-size: 1rem;}
+    ul {font-size: 0.8rem;}
+    .parallax {display: none;}
+    .services {display: block;}
+    .header {font-size: 5vmin;}
+    .section-header {font-size: 5vmin;}
     .services {display: block;}
     .nav-item {display: inline-block;}
     .nav-icon {display: none;}
     .nav-links {font-size: $base-font * 1.2;}
     .tablet {display: block;}
     .contact-form .submit-button {width: 20%;}
-    img {max-width: 250px;}
+    img {max-width: 150px;}
     #map {display: block;}
     .topnav {
       list-style-type: none;
@@ -21,19 +45,46 @@
     }
 }
 
+@media only screen and (max-width: $tablet) {
+  .parallax {display: none;}
+}
 
 @media only screen and (min-width: $desktop) {
-  .wrapper-center {width: $desktop/1.024;}
-  .h1 {font-size: $base-font * 2;}
-  .h2 {font-size: $base-font * 1.8;}
-  .h3 {font-size: $base-font * 1.6;}
-  .h4 {font-size: $base-font * 1.4;}
-  .h5 {font-size: $base-font * 1.2;}
-  .h6 {font-size: $base-font;}
-  .parallax {display: block;}
+  .rectangle {
+    width: 368px;
+    height: 232px;
+  }
+  .square {
+    width: 245px;
+    height: 250px;
+  }
+  .parallax {
+    display: block;
+    display: flex;
+  }
+  .bgimg-1fix {display: none;}
+  .bgimg-2fix {display: none;}
+  .bgimg-3fix {display: none;}
+  .wrapper-center {width: 90%;}
+  .wrapper-contact {
+    width: 60%; margin-right: auto;
+    margin-left: auto;
+  } 
+  .h1 {
+    font-size: 2.2rem;
+    width: 70%;
+  }
+  .h2 {font-size: 1.6rem;}
+  .h3 {font-size: 1.4rem;}
+  .h4 {font-size: 1.2rem;}
+  .h5 {font-size: 1rem;}
+  .h6 {font-size: 0.8rem;}
+  p {font-size: 1.2rem;}
+  ul{font-size: 1rem;}
+  .section-header {font-size: 6vmin;}
   .contact-form .submit-button {width: 20%;}
   input[type=submit]{width: 50%;}
+  img {max-width: 170px;}
   .desktop {display: block;}
-  .servies {font-size: 24px;}
   .mt-50-mobile {margin-top: 0px;}
 }

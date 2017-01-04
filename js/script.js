@@ -46,7 +46,7 @@ function changeMenu() {
         }
     }
 
-    if (scrollBarPosition > 610) {
+    if (scrollBarPosition > 600) {
         navLinks[1].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i != 1) {
@@ -55,7 +55,7 @@ function changeMenu() {
         }
     }
 
-    if (scrollBarPosition > 1650) {
+    if (scrollBarPosition > 1850) {
         navLinks[2].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i !== 2) {
@@ -64,7 +64,7 @@ function changeMenu() {
         }
     }
 
-    if (scrollBarPosition > 2750) {
+    if (scrollBarPosition > 3070) {
         navLinks[3].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i !== 3) {
@@ -72,7 +72,7 @@ function changeMenu() {
             }
         }
     }
-    if (scrollBarPosition > 3100) {
+    if (scrollBarPosition > 3950) {
         navLinks[4].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i !== 4) {
@@ -85,7 +85,7 @@ function changeMenu() {
         if (scrollBarPosition => 0) {
             scroller.style.display = "none";
         }
-        if (scrollBarPosition > 830) {
+        if (scrollBarPosition > 5070) {
             scroller.style.display = "block";
         }
 

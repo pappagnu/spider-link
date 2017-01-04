@@ -108,8 +108,8 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 }
 
 .square {
-width: 250px;
-height: 250px;
+width: 220px;
+height: 220px;
 }
 
 .rectangle {
@@ -181,7 +181,7 @@ p {
   /*text-transform: uppercase;*/
 }
 .h2 {
-  font-size: 6vmin;
+  font-size: 4vmin;
   color: white;
 }
 
@@ -198,7 +198,7 @@ ul{
 
 
 .section-header {
-  font-size: 10vmin;
+  font-size: 7vmin;
   padding: 4rem 0 2rem 0;
   text-align: center;
 }
@@ -217,20 +217,20 @@ ul{
 }
 
 .skills{
-	height: 100px;
-	background-image: linear-gradient(#F38BD3, #FE7880);
+  height: 100px;
+  background-image: linear-gradient(#F38BD3, #FE7880);
 }
 
 /* IMAGES */
 
   .circle-img{
-		border-radius: 50%;
-		width: 50%;
-		height: 50%;
-		margin-top: 10px;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-  	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-  	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 }
 
 .bgimg-1 {
@@ -239,14 +239,35 @@ ul{
     background-size: cover;
 }
 
+.bgimg-1fix {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../pics/pinklady-fix.jpg);
+}
+
 .bgimg-2 {
   min-height: 300px;
   background-image: url(../pics/pinklady2.jpg)
 }
 
+.bgimg-2fix {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../pics/pinklady2-fix.jpg);
+}
+
 .bgimg-3 {
   min-height: 300px;
   background-image: url(../pics/pinklady3.jpg)
+}
+
+.bgimg-3fix {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../pics/pinklady3-fix.jpg);
 }
 
 .parallax {
@@ -282,7 +303,7 @@ ul{
     border: 2px solid #DC4A5C;
     border-radius: 25px;
     background-color: white;
-    width: 70%;
+    width: 60%;
     padding: 10px;
     color: #4B4D54;
     transition: all 0.5s;
@@ -331,6 +352,7 @@ ul{
 /* LISTS */
 
 .topnav {
+  z-index: 1;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -414,9 +436,9 @@ ul{
 }
 
 .scrollToTop{
-	position:fixed;
-	bottom: 0;
-	left:45vw;
+  position:fixed;
+  bottom: 0;
+  left:45vw;
     i
     {
     color: #e48e98;
@@ -436,6 +458,7 @@ ul{
 .pb-10{padding-bottom: 10px;}
 .pb-45{padding-bottom: 45px;}
 .pr-0{padding-right: 0;}
+.pr-10{padding-right: 10px;}
 .pl-0{padding-left: 0;}
 .pt-0{padding-top: 0;}
 .pt-40 {padding-top: 40px;}
