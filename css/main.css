@@ -202,6 +202,8 @@ img {
 
 .about-us-box {
   margin-bottom: 4rem;
+  font-size: 2.2vmin;
+  margin-bottom: 3rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -277,15 +279,15 @@ ul {
   font-size: 4vmin; }
 
 .section-header {
-  font-size: 7vmin;
-  padding: 4rem 0 2rem 0;
+  font-size: 8vmin;
+  padding: 3rem 0 2rem 0;
   text-align: center; }
 
 .services {
   display: none;
   padding: 0 1rem 0 1rem;
-  margin: 10px 0 60px 0;
-  font-size: 2.2vmin; }
+  margin: 10px 20px 60px 20px;
+  font-size: 2.3vmin; }
 
 .text-center {
   text-align: center; }
@@ -336,261 +338,219 @@ ul {
   background-image: url(../pics/pinklady3-fix.jpg); }
 
 .parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.grow {
-  width: 85%; }
-
-/* FORMS */
-.contact-form .text-form {
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #E28F9A;
-  padding: 12px 8px; }
-  .contact-form .text-form:focus {
-    background-color: #EFEFD2; }
-.contact-form .textarea-form {
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #E28F9A;
-  resize: none;
-  padding: 12px 8px; }
-  .contact-form .textarea-form:focus {
-    background-color: #EFEFD2; }
-.contact-form .submit-button {
-  outline: none;
-  border: 2px solid #DC4A5C;
-  border-radius: 25px;
-  background-color: white;
-  width: 60%;
-  padding: 10px;
-  color: #4B4D54;
-  transition: all 0.5s;
-  cursor: pointer; }
-  .contact-form .submit-button:hover {
-    background-color: #DC4A5C;
+  /*display: none;*/
+  /* FORMS */
+  /* ANIMATIONS */
+  /* LISTS */
+  /* LINKS */
+  /* PADDINGS & MARGINS */
+  /* COLORS */
+  /*EXTRA*/ }
+  .parallax .parallax {
+    display: none;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .parallax .grow {
+    width: 85%; }
+  .parallax .contact-form .text-form {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #E28F9A;
+    padding: 12px 8px; }
+    .parallax .contact-form .text-form:focus {
+      background-color: #EFEFD2; }
+  .parallax .contact-form .textarea-form {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #E28F9A;
+    resize: none;
+    padding: 12px 8px; }
+    .parallax .contact-form .textarea-form:focus {
+      background-color: #EFEFD2; }
+  .parallax .contact-form .submit-button {
+    outline: none;
+    border: 2px solid #DC4A5C;
+    border-radius: 25px;
+    background-color: white;
+    width: 60%;
+    padding: 10px;
+    color: #4B4D54;
+    transition: all 0.5s;
+    cursor: pointer; }
+    .parallax .contact-form .submit-button:hover {
+      background-color: #DC4A5C;
+      color: white; }
+  .parallax .topnav {
+    text-align: right;
+    background-color: transparent;
+    z-index: 3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+  .parallax .fp-header {
+    height: 100vh;
+    background-image: url(../pics/header1.jpg);
+    background-size: cover;
+    background-position: center; }
+  .parallax .header-text {
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    color: #EFF0D1;
+    font-size: 22px; }
+  .parallax .ease-08 {
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease; }
+  .parallax .desktop-nav {
+    margin: 0;
+    padding: 5px; }
+  .parallax .logo {
+    margin: 10px 0 0 10px;
+    float: left;
+    width: 35px;
+    height: 40px; }
+  .parallax .nav-item {
+    display: none;
+    min-height: 40px; }
+  .parallax .responsive-nav {
+    position: relative;
+    padding: 0;
+    margin: 0; }
+  .parallax .nav-links:hover {
+    color: rgba(223, 72, 89, 0.5);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .parallax .responsive-nav .nav-item {
+    float: none;
+    display: inline; }
+    .parallax .responsive-nav .nav-item .nav-links {
+      display: block;
+      text-align: left; }
+      .parallax .responsive-nav .nav-item .nav-links:hover {
+        color: rgba(223, 72, 89, 0.5);
+        -webkit-transition: all 0.8s ease;
+        transition: all 0.8s ease; }
+  .parallax .no-style {
+    list-style: none; }
+  .parallax .inline-flex {
+    display: inline-flex; }
+  .parallax .nav-links {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 5vmin;
+    min-height: 40px; }
+  .parallax .links {
+    text-decoration: none;
+    color: #2a2b2f; }
+  .parallax .active {
+    color: rgba(223, 72, 89, 0.5); }
+  .parallax .nav-icon {
+    font-size: 1.5rem;
+    text-decoration: none;
     color: white; }
-
-.topnav {
-  text-align: right;
-  background-color: transparent;
-  z-index: 3;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
-
-.fp-header {
-  height: 100vh;
-  background-image: url(../pics/header1.jpg);
-  background-size: cover;
-  background-position: center; }
-
-.header-text {
-  position: absolute;
-  top: 45%;
-  text-align: center;
-  width: 100%;
-  color: #EFF0D1;
-  font-size: 22px; }
-
-/* ANIMATIONS */
-.ease-08 {
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease; }
-
-/* LISTS */
-.desktop-nav {
-  margin: 0;
-  padding: 5px; }
-
-.logo {
-  margin: 10px 0 0 10px;
-  float: left;
-  width: 35px;
-  height: 40px; }
-
-.nav-item {
-  display: none;
-  min-height: 40px; }
-
-.responsive-nav {
-  position: relative;
-  padding: 0;
-  margin: 0; }
-
-.nav-links:hover {
-  color: rgba(223, 72, 89, 0.5);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-.responsive-nav .nav-item {
-  float: none;
-  display: inline; }
-  .responsive-nav .nav-item .nav-links {
-    display: block;
-    text-align: left; }
-    .responsive-nav .nav-item .nav-links:hover {
-      color: rgba(223, 72, 89, 0.5);
-      -webkit-transition: all 0.8s ease;
-      transition: all 0.8s ease; }
-
-.no-style {
-  list-style: none; }
-
-.inline-flex {
-  display: inline-flex; }
-
-/* LINKS */
-.nav-links {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 5px 15px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 5vmin;
-  min-height: 40px; }
-
-.links {
-  text-decoration: none;
-  color: #2a2b2f; }
-
-.active {
-  color: rgba(223, 72, 89, 0.5); }
-
-.nav-icon {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white; }
-
-.nav-icon:hover {
-  background-color: none;
-  cursor: pointer; }
-
-.nav-logo {
-  float: left;
-  padding: 5px; }
-
-.scrollToTop {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 45vw; }
-  .scrollToTop i {
-    color: #e48e98; }
-
-/* PADDINGS & MARGINS */
-.p-5 {
-  padding: 5px; }
-
-.p-10 {
-  padding: 10px; }
-
-.p-25 {
-  padding: 25px; }
-
-.p-40 {
-  padding: 40px; }
-
-.p-70 {
-  padding: 70px; }
-
-.m-0 {
-  margin: 0; }
-
-.p-0 {
-  padding: 0; }
-
-.pb-0 {
-  padding-bottom: 0; }
-
-.pb-10 {
-  padding-bottom: 10px; }
-
-.pb-45 {
-  padding-bottom: 45px; }
-
-.pr-0 {
-  padding-right: 0; }
-
-.pr-10 {
-  padding-right: 10px; }
-
-.pl-0 {
-  padding-left: 0; }
-
-.pt-0 {
-  padding-top: 0; }
-
-.pt-40 {
-  padding-top: 40px; }
-
-.pt-115 {
-  padding-top: 115px; }
-
-.mb-15 {
-  margin-bottom: 15px; }
-
-.mb-64 {
-  margin-bottom: 64px; }
-
-.mt-50 {
-  margin-top: 50px; }
-
-.ml-10 {
-  margin-left: 10px; }
-
-.mt-5 {
-  margin-top: 17px; }
-
-/* COLORS */
-.bgc-red {
-  background-color: #df4859; }
-
-.bgc-black {
-  background-color: black; }
-
-.bgc-paradise-pink {
-  background-color: #DF4859; }
-
-.bgc-eggshell {
-  background-color: #EFF0D1; }
-
-.tc-white {
-  color: white; }
-
-.tc-rudy-pink {
-  color: #E48E98; }
-
-.tc-grey {
-  color: #4B4D54; }
-
-.tc-headerblack {
-  color: #2a2b2f; }
-
-/*EXTRA*/
-.linje {
-  margin-top: 15px;
-  margin-bottom: 15px; }
-
-.focus-box:nth-child(3n+1) .service-icon:hover {
-  border: 10px solid #DF4859; }
-
-.focus-box:nth-child(3n+2) .service-icon:hover {
-  border: 10px solid #E48E98; }
-
-.focus-box:nth-child(3n+3) .service-icon:hover {
-  border: 10px solid #EFF0D1; }
-
-.focus-box .service-icon {
-  border-radius: 50%;
-  border: 10px solid #ececec;
-  position: relative;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  .parallax .nav-icon:hover {
+    background-color: none;
+    cursor: pointer; }
+  .parallax .nav-logo {
+    float: left;
+    padding: 5px; }
+  .parallax .scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 45vw; }
+    .parallax .scrollToTop i {
+      color: #e48e98; }
+  .parallax .p-5 {
+    padding: 5px; }
+  .parallax .p-10 {
+    padding: 10px; }
+  .parallax .p-25 {
+    padding: 25px; }
+  .parallax .p-40 {
+    padding: 40px; }
+  .parallax .p-70 {
+    padding: 70px; }
+  .parallax .m-0 {
+    margin: 0; }
+  .parallax .p-0 {
+    padding: 0; }
+  .parallax .pb-0 {
+    padding-bottom: 0; }
+  .parallax .pb-10 {
+    padding-bottom: 10px; }
+  .parallax .pb-45 {
+    padding-bottom: 45px; }
+  .parallax .pr-0 {
+    padding-right: 0; }
+  .parallax .pr-10 {
+    padding-right: 10px; }
+  .parallax .pl-0 {
+    padding-left: 0; }
+  .parallax .pt-0 {
+    padding-top: 0; }
+  .parallax .pt-40 {
+    padding-top: 40px; }
+  .parallax .pt-115 {
+    padding-top: 115px; }
+  .parallax .mb-15 {
+    margin-bottom: 15px; }
+  .parallax .mb-64 {
+    margin-bottom: 64px; }
+  .parallax .pt-20 {
+    padding-top: 20px; }
+  .parallax .pt-40 {
+    padding-top: 40px; }
+  .parallax .pt-115 {
+    padding-top: 115px; }
+  .parallax .mb-25 {
+    margin-bottom: 25px; }
+  .parallax .mb-48 {
+    margin-bottom: 48px; }
+  .parallax .mt-50 {
+    margin-top: 50px; }
+  .parallax .ml-10 {
+    margin-left: 10px; }
+  .parallax .mt-5 {
+    margin-top: 17px; }
+  .parallax .bgc-red {
+    background-color: #df4859; }
+  .parallax .bgc-black {
+    background-color: black; }
+  .parallax .bgc-paradise-pink {
+    background-color: #DF4859; }
+  .parallax .bgc-eggshell {
+    background-color: #EFF0D1; }
+  .parallax .tc-white {
+    color: white; }
+  .parallax .tc-rudy-pink {
+    color: #E48E98; }
+  .parallax .tc-grey {
+    color: #4B4D54; }
+  .parallax .tc-headerblack {
+    color: #2a2b2f; }
+  .parallax .linje {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .parallax .focus-box:nth-child(3n+1) .service-icon:hover {
+    border: 10px solid #DF4859; }
+  .parallax .focus-box:nth-child(3n+2) .service-icon:hover {
+    border: 10px solid #E48E98; }
+  .parallax .focus-box:nth-child(3n+3) .service-icon:hover {
+    border: 10px solid #EFF0D1; }
+  .parallax .focus-box .service-icon {
+    border-radius: 50%;
+    border: 10px solid #ececec;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
