@@ -81,7 +81,19 @@
     background-color: transparent;
     position: fixed;
     width: 100%;
-    transition: ease 0.5s; } }
+    transition: ease 0.5s; }
+
+  .grow {
+    width: 100%; }
+
+  .mobile {
+    display: none; }
+
+  .scrollToTop {
+    display: none; }
+
+  #logo {
+    width: 90%; } }
 @media only screen and (max-width: 600px) {
   .parallax {
     display: none; } }
@@ -156,6 +168,9 @@
     display: block; }
 
   .mt-50-mobile {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+
+  #logo {
+    width: 100%; } }
 
 /*# sourceMappingURL=media-queries.css.map */
