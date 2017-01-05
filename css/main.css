@@ -389,7 +389,6 @@ ul {
   background-position: center; }
 
 .header-text {
-  position: absolute;
   top: 45%;
   text-align: center;
   width: 100%;
@@ -403,6 +402,7 @@ ul {
 
 /* LISTS */
 .desktop-nav {
+  display: none;
   margin: 0;
   padding: 5px; }
 
@@ -411,27 +411,6 @@ ul {
   float: left;
   width: 35px;
   height: 40px; }
-
-.nav-item {
-  display: none;
-  min-height: 40px; }
-
-.responsive-nav {
-  position: relative;
-  padding: 0;
-  margin: 0; }
-
-.nav-item:hover {
-  background-color: rgba(223, 72, 89, 0.5); }
-
-.responsive-nav .nav-item {
-  float: none;
-  display: inline; }
-  .responsive-nav .nav-item .nav-links {
-    display: block;
-    text-align: left; }
-    .responsive-nav .nav-item .nav-links:hover {
-      background-color: rgba(223, 72, 89, 0.5); }
 
 .no-style {
   list-style: none; }
@@ -446,28 +425,62 @@ ul {
   text-align: center;
   padding: 5px 15px;
   text-decoration: none;
-  transition: 0.3s;
   font-size: 5vmin;
   min-height: 40px; }
+
+.nav-links:hover {
+  color: rgba(223, 72, 89, 0.5);
+  transition: all 0.3s ease; }
 
 .links {
   text-decoration: none;
   color: #2a2b2f; }
 
 .active {
-  background-color: rgba(223, 72, 89, 0.5); }
+  color: rgba(223, 72, 89, 0.5); }
 
 .nav-icon {
   font-size: 1.5rem;
   text-decoration: none;
-  color: white; }
+  color: white;
+  z-index: 4;
+  position: absolute;
+  right: 0;
+  top: 0; }
 
 .nav-icon:hover {
   background-color: none;
   cursor: pointer; }
 
+input[type="checkbox"] {
+  visibility: hidden; }
+
+input[type="checkbox"]:checked + label {
+  color: rgba(223, 72, 89, 0.5); }
+
+input[type="checkbox"]:checked ~ .responsive-nav {
+  display: block; }
+
+input[type="checkbox"]:checked ~ .test {
+  display: block; }
+
+.responsive-nav {
+  display: none;
+  text-align: center;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 3; }
+
 .nav-logo {
-  float: left;
+  z-index: 4;
+  position: absolute;
+  left: 0;
+  top: 0;
   padding: 5px; }
 
 .scrollToTop {
@@ -535,6 +548,9 @@ ul {
 
 .mt-50 {
   margin-top: 50px; }
+
+.mt-200 {
+  margin-top: 200px; }
 
 .ml-10 {
   margin-left: 10px; }

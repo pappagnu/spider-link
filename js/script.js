@@ -1,21 +1,21 @@
 // jshint esversion:6
 // TOGGLE NAVBARS
-const hamburger = document.getElementById('hamburger');
-hamburger.onclick = function() {
-    const desktopNav = document.getElementById("desktop-nav");
-    const logo = document.getElementsByClassName('logo')[0];
-    if (desktopNav.className !== "responsive-nav") {
-        desktopNav.className = "responsive-nav";
-    }
-    else {
-      desktopNav.className -= "responsive-nav";
-    }
-    if (logo.style.display === "none") {
-        logo.style.display = 'block';
-    } else {
-        logo.style.display = 'none';
-    }
-};
+// const hamburger = document.getElementById('hamburger');
+// hamburger.onclick = function() {
+//     const desktopNav = document.getElementById("desktop-nav");
+//     const logo = document.getElementsByClassName('logo')[0];
+//     if (desktopNav.className !== "responsive-nav") {
+//         desktopNav.className = "responsive-nav";
+//     }
+//     else {
+//       desktopNav.className -= "responsive-nav";
+//     }
+//     if (logo.style.display === "none") {
+//         logo.style.display = 'block';
+//     } else {
+//         logo.style.display = 'none';
+//     }
+// };
 
 // SCROLL EFFECTS
 window.onscroll = function() {
