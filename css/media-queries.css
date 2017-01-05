@@ -67,9 +67,7 @@
   .contact-form .submit-button {
     width: 20%; }
 
-  img {
-    max-width: 150px; }
-
+  /*img {max-width: 150px;}*/
   #map {
     display: block; }
 
@@ -161,9 +159,7 @@
   input[type=submit] {
     width: 50%; }
 
-  img {
-    max-width: 170px; }
-
+  /*img {max-width: 170px;}*/
   .desktop {
     display: block; }
 
