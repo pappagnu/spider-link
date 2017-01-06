@@ -1,21 +1,4 @@
 // jshint esversion:6
-// TOGGLE NAVBARS
-const hamburger = document.getElementById('hamburger');
-hamburger.onclick = function() {
-    const desktopNav = document.getElementById("desktop-nav");
-    const logo = document.getElementsByClassName('logo')[0];
-    if (desktopNav.className !== "responsive-nav") {
-        desktopNav.className = "responsive-nav";
-    }
-    else {
-      desktopNav.className -= "responsive-nav";
-    }
-    if (logo.style.display === "none") {
-        logo.style.display = 'block';
-    } else {
-        logo.style.display = 'none';
-    }
-};
 
 // SCROLL EFFECTS
 window.onscroll = function() {
@@ -31,24 +14,25 @@ function scrollEffects() {
     const desktop = window.matchMedia("(min-width: 1024px)");
     const mobile = window.matchMedia("(max-width: 600px)");
 
-    if (scrollBarPosition > 0 && desktop.matches) {
-        desktopNav.style.backgroundColor = "black";
+    if (scrollBarPosition => 0 && desktop.matches) {
+        desktopNav.style.backgroundColor = "transparent";
         desktopNav.style.padding = "12px";
         logo.style.padding = "8px";
         logo.style.width = "115%";
         for (let i = 0; i < navLinks.length; i++) {
           navLinks[i].style.fontSize = "24px";
         }
-    } else if (scrollBarPosition === 0 && desktop.matches) {
-        desktopNav.style.backgroundColor = "transparent";
-        desktopNav.style.padding = "5px";
-        logo.style.padding = "0px";
-        for (let i = 0; i < navLinks.length; i++) {
-          navLinks[i].style.fontSize = "19.2px";
-          logo.style.width = "100%";
-        }
+      }
+        if (scrollBarPosition > 900 && desktop.matches) {
+            desktopNav.style.backgroundColor = "black";
+            desktopNav.style.padding = "5px";
+            logo.style.padding = "0px";
+            logo.style.width = "90%";
+            for (let i = 0; i < navLinks.length; i++) {
+              navLinks[i].style.fontSize = "19.2px";
+              }
+            }
 
-    }
 
     if (scrollBarPosition > 0 && desktop.matches === false && mobile.matches === false) {
         desktopNav.style.backgroundColor = "black";
@@ -58,49 +42,44 @@ function scrollEffects() {
           desktopNav.style.backgroundColor = "transparent";
         }
 
+  if (mobile.matches === false) {
     if (scrollBarPosition => 0) {
-        navLinks[0].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+        navLinks[0].style.color = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i !== 0) {
-                navLinks[i].style.backgroundColor = 'transparent';
+                navLinks[i].style.color = 'white';
             }
         }
-    }
-
-    if (scrollBarPosition > 600) {
-        navLinks[1].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+    } else if (scrollBarPosition > 600) {
+        navLinks[1].style.color = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i != 1) {
-                navLinks[i].style.backgroundColor = 'transparent';
+                navLinks[i].style.color = 'white';
             }
         }
-    }
-
-    if (scrollBarPosition > 1850) {
-        navLinks[2].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+    } else if (scrollBarPosition > 1850 && mobile.matches === false) {
+        navLinks[2].style.color = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i !== 2) {
-                navLinks[i].style.backgroundColor = 'transparent';
+                navLinks[i].style.color = 'white';
             }
         }
-    }
-
-    if (scrollBarPosition > 3070) {
-        navLinks[3].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+    } else if (scrollBarPosition > 3070) {
+        navLinks[3].style.color = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i !== 3) {
-                navLinks[i].style.backgroundColor = 'transparent';
+                navLinks[i].style.color = 'white';
             }
         }
-    }
-    if (scrollBarPosition > 3950) {
-        navLinks[4].style.backgroundColor = 'rgba(223, 72, 89, 0.5)';
+    } else if (scrollBarPosition > 3950) {
+        navLinks[4].style.color = 'rgba(223, 72, 89, 0.5)';
         for (let i = 0; i < navLinks.length; i++) {
             if (i !== 4) {
-                navLinks[i].style.backgroundColor = 'transparent';
+                navLinks[i].style.color = 'white';
             }
         }
     }
+  }
 
     if (mobile.matches) {
         if (scrollBarPosition > 1500) {

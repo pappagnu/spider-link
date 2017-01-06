@@ -16,31 +16,36 @@
 <body>
   <header class="fp-header">
     <nav class="topnav">
-      <a class="nav-icon pr-10" id="hamburger">☰</a>
-          <a class="nav-logo"><img class="ease-08 grow" id="logo" src="pics/spider-logo2.png"></a>
-          <span class="row mobile">
-      </span>
-          <ul class="desktop-nav ease-08" id="desktop-nav">
-            <li class="nav-item"><a class="active nav-links" href="#">Hem</a></li>
-            <li class="nav-item"><a class="nav-links" href="#work">Uppdrag</a></li>
-            <li class="nav-item"><a class="nav-links" href="#services">Våra tjänster</a></li>
-            <li class="nav-item"><a class="nav-links" href="#about">Om oss</a></li>
-            <li class="nav-item"><a class="nav-links" href="#contact">Kontakt</a></li>
+        <a class="nav-logo"><img class="linear-05" id="logo" src="pics/spider-logo2.png"></a>
+      <input type="checkbox" id="hamburger"/>
+      <label for="hamburger" class="nav-icon"><span></span></label>
+      <ul class="responsive-nav">
+        <li class="nav-item mt-200"><a class="nav-links" href="#work">Uppdrag</a></li>
+        <li class="nav-item"><a class="nav-links" href="#services">Våra tjänster</a></li>
+        <li class="nav-item"><a class="nav-links" href="#about">Om oss</a></li>
+        <li class="nav-item"><a class="nav-links" href="#contact">Kontakt</a></li>
+      </ul>
+          <ul class="desktop-nav tablet linear-05" id="desktop-nav">
+            <li class="nav-item"><a class="active nav-links linear-05" href="#">Hem</a></li>
+            <li class="nav-item"><a class="nav-links linear-05" href="#work">Uppdrag</a></li>
+            <li class="nav-item"><a class="nav-links linear-05" href="#services">Våra tjänster</a></li>
+            <li class="nav-item"><a class="nav-links linear-05" href="#about">Om oss</a></li>
+            <li class="nav-item"><a class="nav-links linear-05" href="#contact">Kontakt</a></li>
        </ul>
      </nav>
-          <div class="header-text">
-          <h1>Spider Link</h1>
-          </div>
+          <div class="flex-center">
+          <span class="header-text">Spider Link</span>
+            </div>
   </header>
 
-    <!-- VERKSAMHETSBESKRIVNING --> 
+    <!-- VERKSAMHETSBESKRIVNING -->
 
     <section class="wrapper-center">
       <article class="row wrapper-center">
          <div class="col-m-12 mb-15">
           <h1 class="h1 main-header m-0 tc-headerblack">Vi är byrån för dig som inte vill krångla till det</h1>
           <p class="description text-center wrapper-p tc-grey">Varmt välkommen till Spider-Link i Stockholm. Vi arbetar med alla faser inom webbrelaterad utveckling och erbjuder helhetslösningar med webbhotell och support.</p>
-        </div>  
+        </div>
         <div class="col-m-12 col-t-6 textbox">
           <h3 class="h3 tc-headerblack">Vi hjälper till med er strategi, planering och utveckling</h3>
           <p class="description tc-grey">Oavsett vilket uppdrag vi har vill vi alltid leverera något utöver det vanliga. Det gemensamma med alla våra uppdrag är att de alltid kräver smarta och kreativa lösningar från oss.</p>
@@ -49,7 +54,7 @@
           <h3 class="h3 tc-headerblack">Webbplatser för frontend och backend</h3>
           <p class="description tc-grey">Vi försöker alltid ligga steget före med nya, innovativa och spännande idéer och använder oss av den senaste tekniken inom webbutveckling. </p>
         </div>
-      </article>  
+      </article>
      </section>
   <!-- UPPDRAG -->
     <section class="wrapper-center">
@@ -59,8 +64,8 @@
         <h2 class="section-header tc-headerblack">Uppdrag</h2>
         <p class="description text-center wrapper-p tc-grey">Vi är tacksamma att kunna få arbeta ihop med några av de största varumärkena i Sveriges som IKEA, Volvo och H&M samtidigt som vi har små lokala företag som uppdragsgivare. Så ta en titt på våra case och hör av dig när du vill se mer!</p>
         </div>
-      </article>  
-    </section>   
+      </article>
+    </section>
 
     <section class="wrapper-center" id="work">
       <article class="row pb-45 pr-0 pl-0 wrapper-center">
@@ -146,7 +151,7 @@
       </div>
 
     <!-- TJÄNSTER -->
-    <section class="wrapper-center">
+    <section class="wrapper-center" id="services">
         <h2 class="h2 section-header tc-headerblack m-0">Tjänster</h2>
         <article class="row">
               <div class="col-d-4 col-t-6 col-m-6 box">
