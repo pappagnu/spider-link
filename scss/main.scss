@@ -5,7 +5,7 @@
 
 * {box-sizing:border-box;}
 
-.canvas {font: 1em 'Roboto', sans-serif; line-height: 1.5;}
+.canvas {font: 1em 'Roboto', sans-serif; line-height: 1.6; overflow-x: hidden;}
 
 [class*="col-"] {float:left;}
 
@@ -68,10 +68,15 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 }
 
 .wrapper-center {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+.wrapper-p {
+      width: 100%;
+      margin: auto;
 }
 
 .tablet {display: none;}
@@ -177,7 +182,8 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
   flex-wrap: wrap;
 }*/
 
-.box {padding: 2.2em;}
+.box {padding: 2.1em;}
+.textbox {padding: 1.5em 0 1.5em 0;}
 .flex-center {@include flex(center, center);}
 
 
@@ -232,8 +238,8 @@ left: 25px;
   /*text-transform: uppercase;*/
 }
 .h2 {
-  font-size: 4vmin;
-  color: white;
+  font-size: 6vmin;
+
 }
 
 .h3 {font-size: 5.5vmin;}
@@ -246,11 +252,19 @@ ul{
 
 .h6 {font-size: 4vmin;}
 
+.description {
+  font-size: 1em;
+}
 
+.main-header{
+  font-size: 8.5vmin;
+  padding: 3rem 0.5rem 1rem 0.5rem;
+  text-align: center;
+}
 
 .section-header {
   font-size: 7vmin;
-  padding: 4rem 0 2rem 0;
+  padding: 3rem 0 2rem 0;
   text-align: center;
 }
 
@@ -372,13 +386,12 @@ ul{
 }
 
 .topnav {
-  text-align:right;
   background-color: transparent;
-  z-index: 3;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  width: 100%;
+  z-index: 4;
 }
 
 .fp-header{
@@ -401,12 +414,19 @@ ul{
       transition: all 0.8s ease;
     }
 
+    .linear-05 {
+      -webkit-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+    }
+
 /* LISTS */
 
 .desktop-nav {
   display: none;
   margin: 0;
   padding: 5px;
+  text-align: right;
+  list-style-type: none;
 }
 .logo {
   margin: 10px 0 0 10px;
@@ -529,6 +549,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 
 .responsive-nav {
   display: none;
+  list-style-type: none;
   text-align: center;
   background-color: black;
   position: absolute;
@@ -537,7 +558,6 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   height: 100%;
   margin: 0;
   padding: 0;
-  z-index: 3;
 }
 
 .nav-logo {
