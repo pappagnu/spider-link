@@ -5,7 +5,7 @@
 
 * {box-sizing:border-box;}
 
-.canvas {font: 1em 'Roboto', sans-serif; line-height: 1.5;}
+.canvas {font: 1em 'Roboto', sans-serif; line-height: 1.6;}
 
 [class*="col-"] {float:left;}
 
@@ -68,10 +68,15 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 }
 
 .wrapper-center {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+.wrapper-p {
+      width: 100%;
+      margin: auto;
 }
 
 .tablet {display: none;}
@@ -177,7 +182,8 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
   flex-wrap: wrap;
 }*/
 
-.box {padding: 2.2em;}
+.box {padding: 2.1em;}
+.textbox {padding: 1.5em 0 1.5em 0;}
 .flex-center {@include flex(center, center);}
 
 
@@ -232,8 +238,8 @@ left: 25px;
   /*text-transform: uppercase;*/
 }
 .h2 {
-  font-size: 4vmin;
-  color: white;
+  font-size: 6vmin;  
+
 }
 
 .h3 {font-size: 5.5vmin;}
@@ -246,11 +252,19 @@ ul{
 
 .h6 {font-size: 4vmin;}
 
+.description {
+  font-size: 1em;
+}
 
+.main-header{
+  font-size: 8.5vmin;
+  padding: 3rem 0.5rem 1rem 0.5rem;
+  text-align: center;
+}
 
 .section-header {
   font-size: 7vmin;
-  padding: 4rem 0 2rem 0;
+  padding: 3rem 0 2rem 0;
   text-align: center;
 }
 
@@ -584,3 +598,4 @@ background-color: #df4859;
   flex-direction: column;
   flex-wrap: wrap;
   }
+

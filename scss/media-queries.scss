@@ -9,23 +9,38 @@
       width: 288px;
       height: 172px;
     }
+
+    
+    .wrapper-p {
+      width: 70%;
+    }
+    
+    .wrapper-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
     .wrapper-contact {
       width: 70%; margin-right: auto;
       margin-left: auto;
     }
-    .h1 {font-size: 2rem; width: 80%;}
-    .h2 {font-size: 1.4rem;}
-    .h3 {font-size: 1.2rem;}
+    .header-text{font-size: 2rem; top:30%;}
+    .h1 {font-size: 2.2rem;}
+    .h2 {font-size: 1.8rem;}
+    .h3 {font-size: 1.3rem;}
     .h4 {font-size: 1rem;}
     .h5 {font-size: 0.8rem;}
     .h6 {font-size: 0.6rem;}
     p {font-size: 1rem;}
     ul {font-size: 0.8rem;}
+    .description {font-size: 1em;}
+    .box {padding: 2.4em;}
+    .textbox {padding: 3em;}
     .parallax {display: none;}
-    .services {display: block;}
+    .services {display: block; font-size: 1em;}
+    .main-header{font-size: 5vmin} 
     .header {font-size: 5vmin;}
-    .section-header {font-size: 5vmin;}
-    .services {display: block;}
+    .section-header {font-size: 4vmin; padding: 3rem 0 1.5rem 0;}
     .nav-item {display: inline-block;}
     .nav-icon {display: none;}
     .nav-links {font-size: $base-font * 1.2;}
@@ -56,6 +71,9 @@
 }
 
 @media only screen and (min-width: $desktop) {
+  body {
+    margin: auto;
+  }
   .rectangle {
     width: 368px;
     height: 232px;
@@ -63,7 +81,12 @@
   .square {
     width: 245px;
     height: 250px;
-  }
+  }  
+
+  .wrapper-p {
+      width: 50%;
+    }
+
   .parallax {
     display: block;
     display: flex;
@@ -76,22 +99,23 @@
     width: 60%; margin-right: auto;
     margin-left: auto;
   }
-  .h1 {
-    font-size: 2.2rem;
-    width: 70%;
-  }
-  .h2 {font-size: 1.6rem;}
+  .header-text{font-size: 3rem; top:30%;}
+  .h1 {font-size: 2.4rem;}
+  .h2 {font-size: 2rem;}
   .h3 {font-size: 1.4rem;}
   .h4 {font-size: 1.2rem;}
   .h5 {font-size: 1rem;}
   .h6 {font-size: 0.8rem;}
-  p {font-size: 1.2rem;}
-  ul{font-size: 1rem;}
-  .section-header {font-size: 6vmin;}
+   p {font-size: 1.2rem;}
+   ul{font-size: 1rem;}
+   box {padding: 2em;}
+  .section-header {font-size: 5vmin; padding: 3rem 0 1.5rem 0;}
+  .services{font-size: 1em;}
   .contact-form .submit-button {width: 20%;}
   input[type=submit]{width: 50%;}
   /*img {max-width: 170px;}*/
   .desktop {display: block;}
   .mt-50-mobile {margin-top: 0px;}
   #logo{width: 100%};
+  .description {font-size: 1em;}
 }

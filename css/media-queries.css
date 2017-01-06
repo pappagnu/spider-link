@@ -7,20 +7,30 @@
     width: 288px;
     height: 172px; }
 
+  .wrapper-p {
+    width: 70%; }
+
+  .wrapper-center {
+    margin-right: auto;
+    margin-left: auto; }
+
   .wrapper-contact {
     width: 70%;
     margin-right: auto;
     margin-left: auto; }
 
-  .h1 {
+  .header-text {
     font-size: 2rem;
-    width: 80%; }
+    top: 30%; }
+
+  .h1 {
+    font-size: 2.2rem; }
 
   .h2 {
-    font-size: 1.4rem; }
+    font-size: 1.8rem; }
 
   .h3 {
-    font-size: 1.2rem; }
+    font-size: 1.3rem; }
 
   .h4 {
     font-size: 1rem; }
@@ -37,20 +47,31 @@
   ul {
     font-size: 0.8rem; }
 
+  .description {
+    font-size: 1em; }
+
+  .box {
+    padding: 2.4em; }
+
+  .textbox {
+    padding: 3em; }
+
   .parallax {
     display: none; }
 
   .services {
-    display: block; }
+    display: block;
+    font-size: 1em; }
+
+  .main-header {
+    font-size: 5vmin; }
 
   .header {
     font-size: 5vmin; }
 
   .section-header {
-    font-size: 5vmin; }
-
-  .services {
-    display: block; }
+    font-size: 4vmin;
+    padding: 3rem 0 1.5rem 0; }
 
   .nav-item {
     display: inline-block; }
@@ -96,6 +117,9 @@
   .parallax {
     display: none; } }
 @media only screen and (min-width: 1024px) {
+  body {
+    margin: auto; }
+
   .rectangle {
     width: 368px;
     height: 232px; }
@@ -103,6 +127,9 @@
   .square {
     width: 245px;
     height: 250px; }
+
+  .wrapper-p {
+    width: 50%; }
 
   .parallax {
     display: block;
@@ -125,12 +152,15 @@
     margin-right: auto;
     margin-left: auto; }
 
+  .header-text {
+    font-size: 3rem;
+    top: 30%; }
+
   .h1 {
-    font-size: 2.2rem;
-    width: 70%; }
+    font-size: 2.4rem; }
 
   .h2 {
-    font-size: 1.6rem; }
+    font-size: 2rem; }
 
   .h3 {
     font-size: 1.4rem; }
@@ -150,8 +180,15 @@
   ul {
     font-size: 1rem; }
 
+  box {
+    padding: 2em; }
+
   .section-header {
-    font-size: 6vmin; }
+    font-size: 5vmin;
+    padding: 3rem 0 1.5rem 0; }
+
+  .services {
+    font-size: 1em; }
 
   .contact-form .submit-button {
     width: 20%; }
@@ -167,6 +204,9 @@
     margin-top: 0px; }
 
   #logo {
-    width: 100%; } }
+    width: 100%; }
+
+  .description {
+    font-size: 1em; } }
 
 /*# sourceMappingURL=media-queries.css.map */
