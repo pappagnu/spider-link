@@ -1,16 +1,11 @@
 @media only screen and (min-width: 600px) {
-  .square {
-    width: 165px;
-    height: 165px; }
-
-  .rectangle {
-    width: 288px;
-    height: 172px; }
-
   .wrapper-contact {
     width: 70%;
     margin-right: auto;
     margin-left: auto; }
+
+  .desktop-nav {
+    display: block; }
 
   .h1 {
     font-size: 2rem;
@@ -67,9 +62,7 @@
   .contact-form .submit-button {
     width: 20%; }
 
-  img {
-    max-width: 150px; }
-
+  /*img {max-width: 150px;}*/
   #map {
     display: block; }
 
@@ -98,14 +91,6 @@
   .parallax {
     display: none; } }
 @media only screen and (min-width: 1024px) {
-  .rectangle {
-    width: 368px;
-    height: 232px; }
-
-  .square {
-    width: 245px;
-    height: 250px; }
-
   .parallax {
     display: block;
     display: flex; }
@@ -161,9 +146,7 @@
   input[type=submit] {
     width: 50%; }
 
-  img {
-    max-width: 170px; }
-
+  /*img {max-width: 170px;}*/
   .desktop {
     display: block; }
 

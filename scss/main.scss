@@ -169,13 +169,13 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
     transform: rotateY(0deg);
 }
 
-.about-us-box{
+/*.about-us-box{
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-}
+}*/
 
 .box {padding: 2.2em;}
 .flex-center {@include flex(center, center);}
@@ -389,11 +389,10 @@ ul{
 }
 
 .header-text{
-  top: 45%;
   text-align:center;
-  width:100%;
   color: #EFF0D1;
-  font-size:22px;
+  font-size:60px;
+  margin-top: 45vh;
 }
 
   /* ANIMATIONS */
@@ -446,17 +445,67 @@ ul{
 }
 
 .nav-icon {
-  font-size: $base-font * 1.5;
-  text-decoration: none;
-  color: white;
-  z-index: 4;
   position: absolute;
-  right: 0;
+	display:  inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 25px;
+  color: white;
   top: 0;
+  right: 0;
+  z-index: 4;
+  cursor: pointer;
 }
-.nav-icon:hover {
-  background-color: none;
-  cursor:pointer;
+
+.nav-icon span {
+  margin: 0 auto;
+	position: absolute;
+	top: 12px;
+  -webkit-transition-duration: 0s; transition-duration: 0s;
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+
+input[type="checkbox"]:checked ~ .nav-icon span {
+  background-color: rgba(0,0,0,0.0);
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+
+.nav-icon span:before, .nav-icon span:after {
+  position: absolute;
+	content: '';
+}
+
+.nav-icon span, .nav-icon span:before, .nav-icon span:after {
+  width: 30px;
+	height: 6px;
+	background-color: white;
+	display: block;
+}
+
+.nav-icon span:before {
+  margin-top: -12px;
+  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+
+input[type="checkbox"]:checked ~ .nav-icon span:before {
+  margin-top: 0;
+	-webkit-transform: rotate(45deg); transform: rotate(45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
+.nav-icon span:after {
+  margin-top: 12px;
+  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+
+input[type="checkbox"]:checked ~ .nav-icon span:after {
+  margin-top: 0;
+	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
 }
 
 input[type="checkbox"] {
@@ -471,10 +520,12 @@ input[type="checkbox"]:checked ~ .responsive-nav{
   display: block;
 }
 
-
-input[type="checkbox"]:checked ~ .test{
-  display: block;
+input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
+  transition: all 0.8s ease;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
 }
+
 
 .responsive-nav {
   display: none;
@@ -501,7 +552,7 @@ input[type="checkbox"]:checked ~ .test{
   display: none;
   position:fixed;
   bottom: 0;
-  left:45vw;
+  right: 25px;
     i
     {
     color: #e48e98;
@@ -569,3 +620,32 @@ background-color: #df4859;
 
 /*EXTRA*/
 .linje {margin-top: 15px; margin-bottom: 15px;}
+
+
+.about-border-box:nth-child(3n+1) .service-icon:hover {
+ border: 10px solid #DF4859;
+       }
+.about-border-box:nth-child(3n+2) .service-icon:hover{
+  border: 10px solid #E48E98;
+}
+.about-border-box:nth-child(3n+3) .service-icon:hover {
+  border: 10px solid #EFF0D1;
+}
+
+.service-icon {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  border: 10px solid #ececec;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  }
+
+.about-border-box {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }

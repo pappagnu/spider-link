@@ -1,18 +1,11 @@
 @import 'variables';
 
 @media only screen and (min-width:$tablet) {
-    .square {
-      width: 165px;
-      height: 165px;
-    }
-    .rectangle {
-      width: 288px;
-      height: 172px;
-    }
     .wrapper-contact {
       width: 70%; margin-right: auto;
       margin-left: auto;
     }
+    .desktop-nav {display: block;}
     .h1 {font-size: 2rem; width: 80%;}
     .h2 {font-size: 1.4rem;}
     .h3 {font-size: 1.2rem;}
@@ -31,7 +24,7 @@
     .nav-links {font-size: $base-font * 1.2;}
     .tablet {display: block;}
     .contact-form .submit-button {width: 20%;}
-    img {max-width: 150px;}
+    /*img {max-width: 150px;}*/
     #map {display: block;}
     .topnav {
       list-style-type: none;
@@ -56,14 +49,6 @@
 }
 
 @media only screen and (min-width: $desktop) {
-  .rectangle {
-    width: 368px;
-    height: 232px;
-  }
-  .square {
-    width: 245px;
-    height: 250px;
-  }
   .parallax {
     display: block;
     display: flex;
@@ -90,7 +75,7 @@
   .section-header {font-size: 6vmin;}
   .contact-form .submit-button {width: 20%;}
   input[type=submit]{width: 50%;}
-  img {max-width: 170px;}
+  /*img {max-width: 170px;}*/
   .desktop {display: block;}
   .mt-50-mobile {margin-top: 0px;}
   #logo{width: 100%};
