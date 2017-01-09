@@ -20,6 +20,9 @@
     top: 1em;
     left: 0.5em;
   }
+  .spider-logo-footer {
+    display: block;
+  }
 }
 
 @media only screen and (min-width:$medium-phone) {
@@ -40,6 +43,10 @@
   .brand-3 {
     top: 0;
     left: 1.2em;
+  }
+  .spider-logo-footer {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -63,6 +70,9 @@
   top: 0.4em;
   left: 0.1em;
   font-size: 3.8vmin;
+}
+.spider-logo-footer {
+  display: none;
 }
 
 }
