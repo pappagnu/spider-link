@@ -13,7 +13,10 @@
 
   .brand-3 {
     top: 1em;
-    left: 0.5em; } }
+    left: 0.5em; }
+
+  .spider-logo-footer {
+    display: block; } }
 @media only screen and (min-width: 375px) {
   .brand-logo {
     top: 3em;
@@ -29,7 +32,11 @@
 
   .brand-3 {
     top: 0;
-    left: 1.2em; } }
+    left: 1.2em; }
+
+  .spider-logo-footer {
+    display: block;
+    margin: 0 auto; } }
 @media only screen and (min-width: 425px) {
   .brand-logo {
     top: 2.5em;
@@ -46,7 +53,10 @@
   .brand-3 {
     top: 0.4em;
     left: 0.1em;
-    font-size: 3.8vmin; } }
+    font-size: 3.8vmin; }
+
+  .spider-logo-footer {
+    display: none; } }
 @media only screen and (min-width: 600px) {
   .wrapper-p {
     width: 70%; }

@@ -22,11 +22,11 @@ function scrollEffects() {
                 if (i !== 4) {
                     navLinks[i].style.color = 'white';
                 }
-            }
-            for (let i = 0; i < navLinks.length; i++) {
-              navLinks[i].style.fontSize = "24px";
-            }
+             }
+        for (let i = 0; i < navLinks.length; i++) {
+          navLinks[i].style.fontSize = "24px";
         }
+      }
         if (scrollBarPosition > 900) {
               navLinks[5].style.color = 'rgba(223, 72, 89, 0.5)';
               desktopNav.style.backgroundColor = "black";
