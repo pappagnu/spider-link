@@ -16,7 +16,8 @@
     left: 0.5em; }
 
   .spider-logo-footer {
-    display: block; } }
+    display: block;
+    margin: 0 auto; } }
 @media only screen and (min-width: 375px) {
   .brand-logo {
     top: 3em;
@@ -61,7 +62,7 @@
   .wrapper-p {
     width: 70%; }
 
-  .wrapper {
+  .wrapper-text {
     width: 80%; }
 
   .wrapper-center {
@@ -115,7 +116,7 @@
     display: none; }
 
   .nav-links {
-    font-size: 1.2rem; }
+    font-size: 19px; }
 
   .tablet {
     display: block; }
@@ -140,6 +141,9 @@
 
   #logo {
     width: 90%; }
+
+  #hamburger {
+    display: none; }
 
   .panel {
     width: 240px;
@@ -201,7 +205,7 @@
   .wrapper-center {
     width: 90%; }
 
-  .wrapper {
+  .wrapper-text {
     width: 80%; }
 
   .wrapper-p {

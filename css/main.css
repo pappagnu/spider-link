@@ -240,7 +240,6 @@ img {
   -moz-transform: rotateY(0deg);
   transform: rotateY(0deg); }
 
-
 .box {
   padding: 2.1em; }
 
@@ -269,18 +268,6 @@ p {
   font-size: 4vmin;
   font-style: italic;
   position: absolute; }
-
-.brand-1 {
-  top: 75px;
-  left: 25px; }
-
-.brand-2 {
-  top: 60px;
-  left: 25px; }
-
-.brand-3 {
-  top: 40px;
-  left: 25px; }
 
 p {
   font-size: 1rem; }
@@ -459,6 +446,9 @@ li {
 .nav-links:hover {
   color: rgba(223, 72, 89, 0.5);
   transition: all 0.3s ease; }
+
+.nav-mobile:hover {
+  color: rgba(223, 72, 89, 0.5); }
 
 .links {
   text-decoration: none;

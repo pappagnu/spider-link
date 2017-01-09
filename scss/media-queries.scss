@@ -22,6 +22,7 @@
   }
   .spider-logo-footer {
     display: block;
+    margin: 0 auto;
   }
 }
 
@@ -81,7 +82,7 @@
     .wrapper-p {
       width: 70%;
     }
-    .wrapper{
+    .wrapper-text{
       width: 80%;
     }
 
@@ -107,7 +108,7 @@
     /*.header {font-size: 5vmin;}*/
     .nav-item {display: inline-block;}
     .nav-icon {display: none;}
-    .nav-links {font-size: $base-font * 1.2;}
+    .nav-links {font-size: 19px;}
     .tablet {display: block;}
     .contact-form .submit-button {width: 20%;}
     #map {display: block;}
@@ -179,7 +180,7 @@
   .bgimg-2fix {display: none;}
   .bgimg-3fix {display: none;}
   .wrapper-center {width:90%;}
-  .wrapper{width: 80%;}
+  .wrapper-text{width: 80%;}
   .wrapper-p{width: 60%;}
   .wrapper-contact {
     width: 60%; margin-right: auto;
