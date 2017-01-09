@@ -22,6 +22,7 @@
   }
   .spider-logo-footer {
     display: block;
+    margin: 0 auto;
   }
 }
 
@@ -81,6 +82,9 @@
     .wrapper-p {
       width: 70%;
     }
+    .wrapper-text{
+      width: 80%;
+    }
 
     .wrapper-center {
   margin-right: auto;
@@ -90,23 +94,18 @@
       width: 70%; margin-right: auto;
       margin-left: auto;
     }
-    .header-text{font-size: 2rem; top:30%;}
-    .h1 {font-size: 2.2rem;}
-    .h2 {font-size: 1.8rem;}
-    .h3 {font-size: 1.3rem;}
-    .h4 {font-size: 1rem;}
-    .h5 {font-size: 0.8rem;}
-    .h6 {font-size: 0.6rem;}
-    p {font-size: 1rem;}
-    ul {font-size: 0.8rem;}
-    .description {font-size: 1em;}
-    .box {padding: 2.4em;}
-    .textbox {padding: 3em;}
+    .header-text{font-size: 5rem;}
+    h1{font-size: 2.8em;}
+    h2{font-size: 2em;}
+    h3{font-size: 1.3em;}
+    h4{font-size: 1em;}
+    h5{font-size: 2em;}
+    li {font-size: 1em;}
+    .box {padding: 2.2em;}
+    .textbox{padding: 2em;}
     .parallax {display: none;}
     .services {display: block; font-size: 1em;}
-    .main-header{font-size: 5vmin}
-    .header {font-size: 5vmin;}
-    .section-header {font-size: 4vmin; padding: 3rem 0 1.5rem 0;}
+    /*.header {font-size: 5vmin;}*/
     .nav-item {display: inline-block;}
     .nav-icon {display: none;}
     .nav-links {font-size: 19px;}
@@ -120,6 +119,7 @@
     .mobile {display: none;}
     .scrollToTop {display: none;}
     #logo {width: 90%;}
+    #hamburger {display: none;}
     .panel {
         width: 240px;
         height: 240px;
@@ -175,40 +175,31 @@
   body {
     margin: auto;
   }
-  .wrapper-p {
-      width: 50%;
-    }
-
-  .parallax {
-    display: block;
-    display: flex;
-  }
+  
   .bgimg-1fix {display: none;}
   .bgimg-2fix {display: none;}
   .bgimg-3fix {display: none;}
-  .wrapper-center {width: 90%;}
+  .wrapper-center {width:90%;}
+  .wrapper-text{width: 80%;}
+  .wrapper-p{width: 60%;}
   .wrapper-contact {
     width: 60%; margin-right: auto;
     margin-left: auto;
   }
-  .header-text{font-size: 3rem; top:30%;}
-  .h1 {font-size: 2.4rem;}
-  .h2 {font-size: 2rem;}
-  .h3 {font-size: 1.4rem;}
-  .h4 {font-size: 1.2rem;}
-  .h5 {font-size: 1rem;}
-  .h6 {font-size: 0.8rem;}
-   p {font-size: 1.2rem;}
-   ul{font-size: 1rem;}
-  .section-header {font-size: 5vmin; padding: 3rem 0 1.5rem 0;}
+  .textbox{padding: 1.8em;}
+  .header-text{font-size: 6rem;}
+  h4{font-size: 1.2em;}
+  li {font-size: 1.2em;}
+  .parallax {
+    display: block;
+    display: flex;
+  }
   .services{font-size: 1em;}
   .contact-form .submit-button {width: 20%;}
   input[type=submit]{width: 50%;}
   .desktop {display: block;}
-  .mt-50-mobile {margin-top: 0px;}
   #logo{width: 115%; padding: 8px;}
   #desktop-nav {padding: 12px;}
-  .description {font-size: 1em;}
   .nav-links {font-size: 24px;}
   .panel {width: 95%; height: 40vmin;}
   .panel-rectangle {width: 96.5%;}
