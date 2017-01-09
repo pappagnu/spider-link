@@ -5,7 +5,7 @@
 
 * {box-sizing:border-box;}
 
-.canvas {font: 1em 'Roboto', sans-serif; line-height: 1.6; overflow-x: hidden;}
+.canvas {font: 1em 'Roboto', sans-serif; line-height: 1.5; overflow-x: hidden;}
 
 [class*="col-"] {float:left;}
 
@@ -63,13 +63,14 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 /* MAIN CONTAINERS */
 
 .wrapper {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
 
 .wrapper-center {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -174,16 +175,9 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
     transform: rotateY(0deg);
 }
 
-/*.about-us-box{
-  margin-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}*/
 
 .box {padding: 2.1em;}
-.textbox {padding: 1.5em 0 1.5em 0;}
+.textbox{padding: 0.5em;}
 .flex-center {@include flex(center, center);}
 
 
@@ -225,55 +219,17 @@ top: 40px;
 left: 25px;
 }
 
-.h1,
-.h2,
-.h3 {
-  margin-top: 8px;
-  margin-bottom: 5px;
-}
 
-.h1{
-  font-size: 7vmin;
-  text-align: center;
-  /*text-transform: uppercase;*/
-}
-.h2 {
-  font-size: 6vmin;
-
-}
-
-.h3 {font-size: 5.5vmin;}
-ul{
-  font-size: 5vmin;
-}
-.h4 {font-size: 5vmin; margin: 5px;}
-
-.h5 {font-size: 4.5vmin;}
-
-.h6 {font-size: 4vmin;}
-
-.description {
-  font-size: 1em;
-}
-
-.main-header{
-  font-size: 8.5vmin;
-  padding: 3rem 0.5rem 1rem 0.5rem;
-  text-align: center;
-}
-
-.section-header {
-  font-size: 7vmin;
-  padding: 3rem 0 2rem 0;
-  text-align: center;
-}
-
+p{font-size: 1rem;}
+h1{font-size: 1.7em;}
+h2{font-size: 1.6em;}
+h3{font-size: 1.1em; margin-bottom: 0;}
+h4{font-size: 1em; margin-bottom: 0;}
+h5{font-size: 1.2em;}
+li{font-size: 1em;}
 
 .services {
   display: none;
-  padding: 0 1rem 0 1rem;
-  margin: 10px 0 60px 0;
-  font-size: 2.2vmin;
 }
 
 
@@ -402,11 +358,16 @@ ul{
 }
 
 .header-text{
-  text-align:center;
-  color: #EFF0D1;
-  font-size:60px;
-  margin-top: 45vh;
+  position:absolute;
+  top: 40%;
+  margin: auto;
+  width:100%;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
 }
+
+
 
   /* ANIMATIONS */
     .ease-08 {
@@ -598,11 +559,15 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 .pt-40 {padding-top: 40px;}
 .pt-115{padding-top: 115px;}
 .mb-15{margin-bottom: 15px;}
+.mb-20{margin-bottom: 20px;}
 .mb-64{margin-bottom: 64px;}
 .mt-50 {margin-top: 50px;}
 .mt-200 {margin-top: 200px};
 .ml-10 {margin-left: 10px;}
-.mt-5{margin-top: 17px;}  //korr Om oss mitten bild
+.my-30{margin-top: 30px; margin-bottom: 30px;}
+.my-50{margin-top: 50px; margin-bottom: 50px;}
+
+
 
 
 /* COLORS */
@@ -663,9 +628,15 @@ background-color: #df4859;
   }
 
 .about-border-box {
+  margin: auto;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   }
+
+.font-bold {
+  font-weight: bold;
+}
+

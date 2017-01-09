@@ -2,6 +2,9 @@
   .wrapper-p {
     width: 70%; }
 
+  .wrapper {
+    width: 80%; }
+
   .wrapper-center {
     margin-right: auto;
     margin-left: auto; }
@@ -12,41 +15,31 @@
     margin-left: auto; }
 
   .header-text {
-    font-size: 2rem;
-    top: 30%; }
+    font-size: 5rem; }
 
-  .h1 {
-    font-size: 2.2rem; }
+  h1 {
+    font-size: 2.8em; }
 
-  .h2 {
-    font-size: 1.8rem; }
+  h2 {
+    font-size: 2em; }
 
-  .h3 {
-    font-size: 1.3rem; }
+  h3 {
+    font-size: 1.3em; }
 
-  .h4 {
-    font-size: 1rem; }
+  h4 {
+    font-size: 1em; }
 
-  .h5 {
-    font-size: 0.8rem; }
+  h5 {
+    font-size: 2em; }
 
-  .h6 {
-    font-size: 0.6rem; }
-
-  p {
-    font-size: 1rem; }
-
-  ul {
-    font-size: 0.8rem; }
-
-  .description {
+  li {
     font-size: 1em; }
 
   .box {
-    padding: 2.4em; }
+    padding: 2.2em; }
 
   .textbox {
-    padding: 3em; }
+    padding: 2em; }
 
   .parallax {
     display: none; }
@@ -55,16 +48,7 @@
     display: block;
     font-size: 1em; }
 
-  .main-header {
-    font-size: 5vmin; }
-
-  .header {
-    font-size: 5vmin; }
-
-  .section-header {
-    font-size: 4vmin;
-    padding: 3rem 0 1.5rem 0; }
-
+  /*.header {font-size: 5vmin;}*/
   .nav-item {
     display: inline-block; }
 
@@ -104,13 +88,6 @@
   body {
     margin: auto; }
 
-  .wrapper-p {
-    width: 50%; }
-
-  .parallax {
-    display: block;
-    display: flex; }
-
   .bgimg-1fix {
     display: none; }
 
@@ -123,42 +100,32 @@
   .wrapper-center {
     width: 90%; }
 
+  .wrapper {
+    width: 80%; }
+
+  .wrapper-p {
+    width: 60%; }
+
   .wrapper-contact {
     width: 60%;
     margin-right: auto;
     margin-left: auto; }
 
+  .textbox {
+    padding: 1.8em; }
+
   .header-text {
-    font-size: 3rem;
-    top: 30%; }
+    font-size: 6rem; }
 
-  .h1 {
-    font-size: 2.4rem; }
+  h4 {
+    font-size: 1.2em; }
 
-  .h2 {
-    font-size: 2rem; }
+  li {
+    font-size: 1.2em; }
 
-  .h3 {
-    font-size: 1.4rem; }
-
-  .h4 {
-    font-size: 1.2rem; }
-
-  .h5 {
-    font-size: 1rem; }
-
-  .h6 {
-    font-size: 0.8rem; }
-
-  p {
-    font-size: 1.2rem; }
-
-  ul {
-    font-size: 1rem; }
-
-  .section-header {
-    font-size: 5vmin;
-    padding: 3rem 0 1.5rem 0; }
+  .parallax {
+    display: block;
+    display: flex; }
 
   .services {
     font-size: 1em; }
@@ -172,18 +139,12 @@
   .desktop {
     display: block; }
 
-  .mt-50-mobile {
-    margin-top: 0px; }
-
   #logo {
     width: 115%;
     padding: 8px; }
 
   #desktop-nav {
     padding: 12px; }
-
-  .description {
-    font-size: 1em; }
 
   .nav-links {
     font-size: 24px; } }
