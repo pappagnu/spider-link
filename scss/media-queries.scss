@@ -1,5 +1,72 @@
 @import 'variables';
 
+@media only screen and (min-width:$small-phone){
+  .brand-logo {
+    top: 3.5em;
+    left: 7em;
+  }
+
+  .brand-1 {
+    top: 3em;
+    left: 0.8em;
+  }
+
+  .brand-2 {
+    top: 1.5em;
+    left: 1em;
+  }
+
+  .brand-3 {
+    top: 1em;
+    left: 0.5em;
+  }
+}
+
+@media only screen and (min-width:$medium-phone) {
+  .brand-logo {
+    top: 3em;
+    left: 8.2em;
+  }
+  .brand-1 {
+    top: 1.8em;
+    left: 1.2em;
+  }
+
+  .brand-2 {
+    top: 0.8em;
+    left: 1em;
+  }
+
+  .brand-3 {
+    top: 0;
+    left: 1.2em;
+  }
+}
+
+@media only screen and (min-width:$large-phone) {
+  .brand-logo {
+  top: 2.5em;
+  left: 9em;
+}
+
+.brand-1 {
+  top: 1em;
+  left: 0.7em;
+}
+
+.brand-2 {
+  top: 0;
+  left: 1em;
+}
+
+.brand-3 {
+  top: 0.4em;
+  left: 0.1em;
+  font-size: 3.8vmin;
+}
+
+}
+
 @media only screen and (min-width:$tablet) {
     .wrapper-p {
       width: 70%;
@@ -36,14 +103,58 @@
     .tablet {display: block;}
     .contact-form .submit-button {width: 20%;}
     #map {display: block;}
+    #hamburger {display: none;}
     .topnav {
       position: fixed;
     }
     .mobile {display: none;}
     .scrollToTop {display: none;}
     #logo {width: 90%;}
+    .panel {
+        width: 240px;
+        height: 240px;
+      }
+      .brand-logo {
+        top: 5.2em;
+        left: 5.2em;
+      }
+      .brand-logo-rectangle {
+        top: 2.5em;
+        left: 8em;
+      }
+  .brand-text {
+    font-size: 0.8rem;
+  }
+  .brand-person {
+    font-size: 0.9rem;
+  }
+  .brand-1 {
+    top: 2.5em;
+    left: 0.5em;
+  }
+  .brand-2 {
+  top: 2em;
+  left: 0;
+  }
 
-    #hamburger {display: none;}
+  .brand-3 {
+  top: 2em;
+  left: 0;
+  }
+
+  .brand-4 {
+  top: 2em;
+  left: 0;
+  }
+
+  .brand-5 {
+  top: 2em;
+  left: 0;
+  }
+  .panel-rectangle {
+      width: 360px;
+      height: 180px;
+  }
 }
 
 @media only screen and (max-width: $tablet) {
@@ -89,4 +200,45 @@
   #desktop-nav {padding: 12px;}
   .description {font-size: 1em;}
   .nav-links {font-size: 24px;}
+  .panel {width: 95%; height: 40vmin;}
+  .panel-rectangle {width: 96.5%;}
+  .brand-text {font-size: 2.8vmin;}
+  .brand-person {
+    font-size: 2.5vmin;
+  }
+  .brand-1 {
+    top: 9%;
+    left: 4%;
+  }
+
+  .brand-2 {
+  top: 2%;
+  left: 2%;
+  }
+
+  .brand-3 {
+  top: 1%;
+  left: 2%;
+  }
+
+  .brand-4 {
+  top: 22%;
+  left: 2%;
+  }
+
+  .brand-5 {
+  top: 22%;
+  left: 2%;
+  }
+
+  .brand-logo {
+    top: 35%;
+    left: 34%;
+  }
+
+  .brand-logo-rectangle {
+    top: 28%;
+    left: 34%;
+  }
+
 }
