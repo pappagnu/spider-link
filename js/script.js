@@ -23,7 +23,7 @@ function scrollEffects() {
           navLinks[i].style.fontSize = "24px";
         }
       }
-        if (scrollBarPosition > 900 && desktop.matches) {
+        if (scrollBarPosition > 550 && desktop.matches) {
             desktopNav.style.backgroundColor = "black";
             desktopNav.style.padding = "5px";
             logo.style.padding = "0px";

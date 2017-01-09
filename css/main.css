@@ -128,9 +128,9 @@ img {
   display: none; }
 
 .panel {
-  width: 400px;
-  height: 400px;
-  margin: auto;
+  width: 100%;
+  height: 200px;
+  margin: 8px auto;
   position: relative; }
 
 .card {
@@ -162,13 +162,16 @@ img {
 
 .brand-logo {
   position: absolute;
-  top: 110px;
-  left: 110px; }
+  width: 30%; }
+
+.brand-logo-rectangle {
+  position: absolute;
+  width: 30%; }
 
 .brand-person {
   font-style: oblique;
   font-weight: bolder;
-  font-size: 1.5rem; }
+  font-size: 4vmin; }
 
 .back {
   z-index: 1;
@@ -176,6 +179,13 @@ img {
   -ms-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   transform: rotateY(-180deg); }
+
+.back-x {
+  z-index: 1;
+  -webkit-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  transform: rotateX(-180deg); }
 
 .brand-image-2 {
   background-image: url(../pics/brand2-bg.jpg);
@@ -192,6 +202,16 @@ img {
   background-position: center;
   background-size: cover; }
 
+.brand-image-4 {
+  background-image: url(../pics/brand4-bg.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.brand-image-5 {
+  background-image: url(../pics/brand5-bg.jpg);
+  background-position: center;
+  background-size: cover; }
+
 .panel:hover .front {
   z-index: 1;
   -webkit-transform: rotateY(180deg);
@@ -199,12 +219,27 @@ img {
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
+.panel:hover .front-x {
+  z-index: 1;
+  -webkit-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  transform: rotateX(180deg); }
+
 .panel:hover .back {
   z-index: 2;
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   transform: rotateY(0deg); }
+
+.panel:hover .back-x {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  transform: rotateY(0deg); }
+
 
 .box {
   padding: 2.1em; }
@@ -231,7 +266,7 @@ p {
 
 .brand-text {
   color: white;
-  font-size: 1.4rem;
+  font-size: 4vmin;
   font-style: italic;
   position: absolute; }
 
@@ -619,9 +654,6 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
   margin-bottom: 50px; }
 
 /* COLORS */
-.bgc-red {
-  background-color: #df4859; }
-
 .bgc-black {
   background-color: black; }
 
@@ -630,6 +662,15 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
 
 .bgc-eggshell {
   background-color: #EFF0D1; }
+
+.bgc-blue-bird {
+  background-color: #55adbd; }
+
+.bgc-green-sparrow {
+  background-color: #9fbd55; }
+
+.bgc-grey-wolf {
+  background-color: #959596; }
 
 .tc-white {
   color: white; }
