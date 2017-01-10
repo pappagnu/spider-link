@@ -79,6 +79,7 @@
   left: 0.1em;
   font-size: 3.8vmin;
 }
+
 .spider-logo-footer {
    display: block;
    margin: 0 auto;
@@ -115,6 +116,10 @@
    .textbox{padding: 2em;}
    .parallax {display: none;}
    .services {display: block; font-size: 1em;}
+   .service-icon {
+    height: 170px;
+    width: 170px;
+    }
    .nav-item {display: inline-block;}
    .nav-icon {display: none;}
    .nav-links {font-size: 19px;}
@@ -208,7 +213,7 @@
   .header-text{font-size: 6rem;}
   .header-text2{font-size: 2rem;}
   h4{font-size: 1.2em;}
-  li {font-size: 1.2em;}
+  li {font-size: 1.1em;}
   .parallax {
     display: block;
     display: flex;
