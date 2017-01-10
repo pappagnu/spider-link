@@ -563,11 +563,22 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 .scrollToTop{
   display: none;
   position:fixed;
+  height: 25px;
+  width: 45px;
+  border-radius: 10px;
+  background-color: #38383b;
   bottom: 0;
-  right: 25px;
+  right: 0;
     i
     {
-    color: #e48e98;
+    color: white;
+    font-size: 24px;
+    left: 9px;
+    top: 7px;
+    position: absolute;
+  }
+  &:hover {
+    opacity: 0.8;
   }
 }
 
@@ -676,4 +687,3 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 .font-bold {
   font-weight: bold;
 }
-
