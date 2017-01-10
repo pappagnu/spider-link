@@ -24,6 +24,12 @@
     display: block;
     margin: 0 auto;
   }
+
+  .wrapper-contact {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media only screen and (min-width:$medium-phone) {
@@ -49,7 +55,8 @@
     display: block;
     margin: 0 auto;
   }
-}
+
+ }
 
 @media only screen and (min-width:$large-phone) {
   .brand-logo {
@@ -73,79 +80,78 @@
   font-size: 3.8vmin;
 }
 .spider-logo-footer {
-  display: none;
+   display: block;
+   margin: 0 auto;
 }
 
 }
 
 @media only screen and (min-width:$tablet) {
-    .wrapper-p {
-      width: 70%;
-    }
-    .wrapper-text{
-      width: 80%;
-    }
-
-    .wrapper-center {
-  margin-right: auto;
+  .wrapper-center {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 90%;
   margin-left: auto;
-}
-    .wrapper-contact {
-      width: 70%; margin-right: auto;
-      margin-left: auto;
+  margin-right: auto;
+  }
+  .wrapper-p {
+   width: 70%;
+   margin: auto;
+ }  
+
+  .wrapper-contact {
+   width: 70%; margin-right: auto;
+   margin-left: auto;
+ }
+  .header-text{font-size: 5rem;}
+  .header-text2{font-size: 1.7rem}
+   h1{font-size: 2.8em;}
+   h2{font-size: 2em;}
+   h3{font-size: 1.3em;}
+   h4{font-size: 1em;}
+   h5{font-size: 2em;}
+   li {font-size: 1em;}
+   .box {padding: 2.2em;}
+   .textbox{padding: 2em;}
+   .parallax {display: none;}
+   .services {display: block; font-size: 1em;}
+   .nav-item {display: inline-block;}
+   .nav-icon {display: none;}
+   .nav-links {font-size: 19px;}
+   .tablet {display: block;}
+   .contact-form .submit-button {width: 20%;}
+   #map {display: block;}
+   #hamburger {display: none;}
+   .topnav {position: fixed;}
+   .scrollToTop {display: none;}
+   #logo {width: 90%;}
+   #hamburger {display: none;}
+   .panel {
+     width: 240px;
+     height: 240px;
     }
-    .header-text{font-size: 5rem;}
-    h1{font-size: 2.8em;}
-    h2{font-size: 2em;}
-    h3{font-size: 1.3em;}
-    h4{font-size: 1em;}
-    h5{font-size: 2em;}
-    li {font-size: 1em;}
-    .box {padding: 2.2em;}
-    .textbox{padding: 2em;}
-    .parallax {display: none;}
-    .services {display: block; font-size: 1em;}
-    /*.header {font-size: 5vmin;}*/
-    .nav-item {display: inline-block;}
-    .nav-icon {display: none;}
-    .nav-links {font-size: 19px;}
-    .tablet {display: block;}
-    .contact-form .submit-button {width: 20%;}
-    #map {display: block;}
-    #hamburger {display: none;}
-    .topnav {
-      position: fixed;
+    .brand-logo {
+      top: 5.2em;
+      left: 5.2em;
     }
-    .mobile {display: none;}
-    .scrollToTop {display: none;}
-    #logo {width: 90%;}
-    #hamburger {display: none;}
-    .panel {
-        width: 240px;
-        height: 240px;
-      }
-      .brand-logo {
-        top: 5.2em;
-        left: 5.2em;
-      }
-      .brand-logo-rectangle {
-        top: 2.5em;
-        left: 8em;
-      }
-  .brand-text {
-    font-size: 0.8rem;
-  }
-  .brand-person {
-    font-size: 0.9rem;
-  }
-  .brand-1 {
-    top: 2.5em;
-    left: 0.5em;
-  }
-  .brand-2 {
-  top: 2em;
-  left: 0;
-  }
+    .brand-logo-rectangle {
+      top: 2.5em;
+      left: 8em;
+    }
+   .brand-text {
+     font-size: 0.8rem;
+    }
+   .brand-person {
+     font-size: 0.9rem;
+    } 
+   .brand-1 {
+     top: 2.5em;
+     left: 0.5em;
+    }
+   .brand-2 {
+     top: 2em;
+     left: 0;
+    }
 
   .brand-3 {
   top: 2em;
@@ -165,6 +171,9 @@
       width: 360px;
       height: 180px;
   }
+  .spider-logo-footer {
+   display: none;
+}
 }
 
 @media only screen and (max-width: $tablet) {
@@ -179,15 +188,25 @@
   .bgimg-1fix {display: none;}
   .bgimg-2fix {display: none;}
   .bgimg-3fix {display: none;}
-  .wrapper-center {width:90%;}
-  .wrapper-text{width: 80%;}
-  .wrapper-p{width: 60%;}
+
+  .wrapper-center {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .wrapper-p{width: 60%; margin: auto;}
   .wrapper-contact {
-    width: 60%; margin-right: auto;
+    width: 60%;
+    margin-right: auto;
     margin-left: auto;
   }
-  .textbox{padding: 1.8em;}
+
+  .textbox{padding: 2em;}
   .header-text{font-size: 6rem;}
+  .header-text2{font-size: 2rem;}
   h4{font-size: 1.2em;}
   li {font-size: 1.2em;}
   .parallax {
@@ -241,5 +260,4 @@
     top: 28%;
     left: 34%;
   }
-
 }
