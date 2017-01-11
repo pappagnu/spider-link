@@ -3,7 +3,7 @@
   box-sizing: border-box; }
 
 .canvas {
-  font: 1em 'Roboto', sans-serif;
+  font: 1em 'roboto', sans-serif;
   line-height: 1.5;
   overflow-x: hidden; }
 
@@ -32,7 +32,7 @@ img {
   width: 50%; }
 
 /* TABLET COLUMN GRID */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .col-t-1 {
     width: 8.33%; }
 
@@ -258,7 +258,8 @@ h1 {
   margin-bottom: 0; }
 
 h2 {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  font-weight: bold; }
 
 h3 {
   font-size: 1.1em;
@@ -266,10 +267,10 @@ h3 {
 
 h4 {
   font-size: 1em;
-  margin-bottom: 0; }
+  margin: 0; }
 
 h5 {
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 li {
   font-size: 1em; }
@@ -292,6 +293,9 @@ li {
 
 a {
   text-decoration: none; }
+
+.font-bold {
+  font-weight: bold; }
 
 /* IMAGES */
 .circle-img {
@@ -622,6 +626,10 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
 .ml-10 {
   margin-left: 10px; }
 
+.my-15 {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
 .my-50 {
   margin-top: 50px;
   margin-bottom: 50px; }
@@ -658,10 +666,6 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
   color: #2a2b2f; }
 
 /*EXTRA*/
-.linje {
-  margin-top: 15px;
-  margin-bottom: 15px; }
-
 .about-border-box:nth-child(3n+1) .service-icon:hover {
   border: 10px solid #DF4859; }
 
@@ -672,8 +676,8 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
   border: 10px solid #EFF0D1; }
 
 .service-icon {
-  height: 170px;
-  width: 170px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   border: 10px solid #ececec;
   position: relative;
@@ -687,8 +691,5 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap; }
-
-.font-bold {
-  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
