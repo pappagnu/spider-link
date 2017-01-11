@@ -67,10 +67,10 @@ function scrollEffects() {
     }
   }
   if (mobile.matches) {
-      if (scrollBarPosition > 1500) {
+      if (scrollBarPosition > 1600) {
           scroller.style.display = "block";
       }
-      if (scrollBarPosition < 1500) {
+      if (scrollBarPosition < 1600) {
       scroller.style.display = "none";
     }
   }

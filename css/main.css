@@ -27,8 +27,6 @@ img {
 [class*="col-"] {
   width: 100%; }
 
-/* EXTRA MOBILE PHONE GRID */
-/*.col-m-6 {width: $w6;} */
 /* TABLET COLUMN GRID */
 @media only screen and (min-width: 660px) {
   .col-t-1 {
@@ -566,10 +564,21 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
 .scrollToTop {
   display: none;
   position: fixed;
+  height: 25px;
+  width: 45px;
+  border-radius: 10px;
+  background-color: #38383b;
   bottom: 0;
-  right: 25px; }
+  right: 0; }
   .scrollToTop i {
-    color: #e48e98; }
+    color: white;
+    font-size: 24px;
+    left: 10px;
+    top: 8px;
+    position: absolute; }
+  .scrollToTop:hover {
+    opacity: 0.8;
+    transition: all .3s ease; }
 
 /* PADDINGS */
 .p-0 {
