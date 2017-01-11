@@ -20,7 +20,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 [class*="col-"] {width:$w12;}
 
 /* EXTRA MOBILE PHONE GRID */
-.col-m-6 {width: $w6;}
+/*.col-m-6 {width: $w6;} */
 
 /* TABLET COLUMN GRID */
 
@@ -111,18 +111,15 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 .brand-logo {
   position: absolute;
+  margin: auto;
   width: 30%;
-}
+  }
+
 
 .brand-logo-rectangle {
   position: absolute;
+  margin: auto;
   width: 30%;
-}
-
-.brand-person {
-  font-style: oblique;
-  font-weight: bolder;
-  font-size: 4vmin;
 }
 
 .back {
@@ -204,7 +201,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 
 .box {padding: 2.1em;}
-.textbox{padding: 0.5em;}
+.textbox{padding-top: 1em; padding-bottom: 1em;}
 .flex-center {@include flex(center, center);}
 
 
@@ -220,7 +217,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 /* TEXT SETTINGS */
 
-p{font-size: 1rem; margin-top: 0.5rem;}
+p{font-size: 1rem; margin-top: 0.5rem; margin-bottom: 0;}
 h1{font-size: 1.7em; margin-bottom: 0;}
 h2{font-size: 1.6em; font-weight: bold;}
 h3{font-size: 1.1em; margin: 0;}
@@ -229,10 +226,18 @@ h5{font-size: 1.3em;}
 li{font-size: 1em;}
 
 .brand-text {
-  color: white;
-  font-size: 4vmin;
+  font-size: 0.8rem;
   font-style: italic;
   position: absolute;
+  margin: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.brand-person {
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 1.1rem;
 }
 
 .services {
@@ -244,7 +249,7 @@ li{font-size: 1em;}
 }
 
 .skills{
-  height: 100px;
+  height: 100pxblockquote;
   background-image: linear-gradient(#F38BD3, #FE7880);
 }
 
