@@ -27,12 +27,8 @@ img {
 [class*="col-"] {
   width: 100%; }
 
-/* EXTRA MOBILE PHONE GRID */
-.col-m-6 {
-  width: 50%; }
-
 /* TABLET COLUMN GRID */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 660px) {
   .col-t-1 {
     width: 8.33%; }
 
@@ -152,16 +148,13 @@ img {
 
 .brand-logo {
   position: absolute;
+  margin: auto;
   width: 30%; }
 
 .brand-logo-rectangle {
   position: absolute;
+  margin: auto;
   width: 30%; }
-
-.brand-person {
-  font-style: oblique;
-  font-weight: bolder;
-  font-size: 4vmin; }
 
 .back {
   z-index: 1;
@@ -234,7 +227,8 @@ img {
   padding: 2.1em; }
 
 .textbox {
-  padding: 0.5em; }
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 .flex-center {
   display: flex;
@@ -251,7 +245,8 @@ img {
 /* TEXT SETTINGS */
 p {
   font-size: 1rem;
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem;
+  margin-bottom: 0; }
 
 h1 {
   font-size: 1.7em;
@@ -276,10 +271,17 @@ li {
   font-size: 1em; }
 
 .brand-text {
-  color: white;
-  font-size: 4vmin;
+  font-size: 0.8rem;
   font-style: italic;
-  position: absolute; }
+  position: absolute;
+  margin: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; }
+
+.brand-person {
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 1.1rem; }
 
 .services {
   display: none; }
@@ -288,7 +290,7 @@ li {
   text-align: center; }
 
 .skills {
-  height: 100px;
+  height: 100pxblockquote;
   background-image: linear-gradient(#F38BD3, #FE7880); }
 
 a {
