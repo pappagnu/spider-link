@@ -28,7 +28,7 @@ img {
   width: 100%; }
 
 /* TABLET COLUMN GRID */
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 600px) {
   .col-t-1 {
     width: 8.33%; }
 
@@ -149,12 +149,9 @@ img {
 .brand-logo {
   position: absolute;
   margin: auto;
-  width: 30%; }
-
-.brand-logo-rectangle {
-  position: absolute;
-  margin: auto;
-  width: 30%; }
+  top: 3em;
+  right: 6em;
+  width: 32%; }
 
 .back {
   z-index: 1;
@@ -271,17 +268,20 @@ li {
   font-size: 1em; }
 
 .brand-text {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-style: italic;
   position: absolute;
   margin: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem; }
+  width: 80%;
+  top: 2em;
+  left: 2em; }
 
 .brand-person {
+  font-size: 1rem;
+  position: absolute;
+  margin: auto;
   font-style: oblique;
-  font-weight: bolder;
-  font-size: 1.1rem; }
+  font-weight: bolder; }
 
 .services {
   display: none; }
