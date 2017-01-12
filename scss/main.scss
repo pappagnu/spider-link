@@ -110,15 +110,10 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .brand-logo {
   position: absolute;
   margin: auto;
-  width: 30%;
+  top: 3em;
+  right: 6em;
+  width: 32%;
   }
-
-
-.brand-logo-rectangle {
-  position: absolute;
-  margin: auto;
-  width: 30%;
-}
 
 .back {
     z-index: 1;
@@ -223,20 +218,25 @@ h4{font-size: 1em; margin:0;}
 h5{font-size: 1.3em;}
 li{font-size: 1em;}
 
-.brand-text {
-  font-size: 0.8rem;
-  font-style: italic;
-  position: absolute;
-  margin: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
 
-.brand-person {
-  font-style: oblique;
-  font-weight: bolder;
-  font-size: 1.1rem;
-}
+.brand-text {
+    font-size: 0.9rem;
+    font-style: italic;
+    position: absolute;
+    margin: auto;
+    width: 80%;
+    top: 2em;
+    left: 2em;
+    }
+
+
+  .brand-person {
+    font-size: 1rem;
+    position: absolute;
+    margin: auto;
+    font-style: oblique;
+    font-weight: bolder;
+     }
 
 .services {
   display: none;
