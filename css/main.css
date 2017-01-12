@@ -31,76 +31,56 @@ img {
 @media only screen and (min-width: 660px) {
   .col-t-1 {
     width: 8.33%; }
-
   .col-t-2 {
     width: 16.66%; }
-
   .col-t-3 {
     width: 25%; }
-
   .col-t-4 {
     width: 33.33%; }
-
   .col-t-5 {
     width: 41.66%; }
-
   .col-t-6 {
     width: 50%; }
-
   .col-t-7 {
     width: 58.33%; }
-
   .col-t-8 {
     width: 66.66%; }
-
   .col-t-9 {
     width: 75%; }
-
   .col-t-10 {
     width: 83.33%; }
-
   .col-t-11 {
     width: 91.66%; }
-
   .col-t-12 {
     width: 100%; } }
+
 /* DESKTOP COLUMN GRID */
 @media only screen and (min-width: 1024px) {
   .col-d-1 {
     width: 8.33%; }
-
   .col-d-2 {
     width: 16.66%; }
-
   .col-d-3 {
     width: 25%; }
-
   .col-d-4 {
     width: 33.33%; }
-
   .col-d-5 {
     width: 41.66%; }
-
   .col-d-6 {
     width: 50%; }
-
   .col-d-7 {
     width: 58.33%; }
-
   .col-d-8 {
     width: 66.66%; }
-
   .col-d-9 {
     width: 75%; }
-
   .col-d-10 {
     width: 83.33%; }
-
   .col-d-11 {
     width: 91.66%; }
-
   .col-d-12 {
     width: 100%; } }
+
 /* MAIN CONTAINERS */
 .wrapper-center {
   padding-right: 0.5rem;
@@ -122,15 +102,10 @@ img {
 .card {
   width: 100%;
   height: 100%;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
-  -moz-transition: all .5s;
   -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   position: absolute;
   top: 0px;
   left: 0px; }
@@ -159,16 +134,12 @@ img {
 .back {
   z-index: 1;
   -webkit-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  -moz-transform: rotateY(-180deg);
-  transform: rotateY(-180deg); }
+          transform: rotateY(-180deg); }
 
 .back-x {
   z-index: 1;
   -webkit-transform: rotateX(-180deg);
-  -ms-transform: rotateX(-180deg);
-  -moz-transform: rotateX(-180deg);
-  transform: rotateX(-180deg); }
+          transform: rotateX(-180deg); }
 
 .brand-image-2 {
   background-image: url(../pics/brand2-bg.jpg);
@@ -198,30 +169,22 @@ img {
 .panel:hover .front {
   z-index: 1;
   -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  transform: rotateY(180deg); }
+          transform: rotateY(180deg); }
 
 .panel:hover .front-x {
   z-index: 1;
   -webkit-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  transform: rotateX(180deg); }
+          transform: rotateX(180deg); }
 
 .panel:hover .back {
   z-index: 2;
   -webkit-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  transform: rotateY(0deg); }
+          transform: rotateY(0deg); }
 
 .panel:hover .back-x {
   z-index: 2;
   -webkit-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  transform: rotateY(0deg); }
+          transform: rotateY(0deg); }
 
 .box {
   padding: 2.1em; }
@@ -231,9 +194,15 @@ img {
   padding-bottom: 1em; }
 
 .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 /* ICONS */
 .footer-icon {
@@ -290,7 +259,8 @@ li {
   text-align: center; }
 
 .skills {
-  height: 100pxblockquote;
+  height: 100px;
+  background-image: -webkit-linear-gradient(#F38BD3, #FE7880);
   background-image: linear-gradient(#F38BD3, #FE7880); }
 
 a {
@@ -305,9 +275,7 @@ a {
   width: 50%;
   height: 50%;
   margin-top: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
 
 .bgimg-1 {
   min-height: 300px;
@@ -356,6 +324,7 @@ a {
   padding: 12px 8px; }
   .contact-form .text-form:focus {
     background-color: #EFEFD2; }
+
 .contact-form .textarea-form {
   outline: none;
   border: none;
@@ -364,6 +333,7 @@ a {
   padding: 12px 8px; }
   .contact-form .textarea-form:focus {
     background-color: #EFEFD2; }
+
 .contact-form .submit-button {
   outline: none;
   border: 2px solid #DC4A5C;
@@ -372,6 +342,7 @@ a {
   width: 60%;
   padding: 10px;
   color: #4B4D54;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer; }
   .contact-form .submit-button:hover {
@@ -432,6 +403,8 @@ a {
   list-style: none; }
 
 .inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex; }
 
 /* LINKS */
@@ -446,6 +419,7 @@ a {
 
 .nav-links:hover {
   color: rgba(223, 72, 89, 0.5);
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
 .nav-mobile:hover {
@@ -475,14 +449,14 @@ a {
   position: absolute;
   top: 12px;
   -webkit-transition-duration: 0s;
-  transition-duration: 0s;
+          transition-duration: 0s;
   -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s; }
+          transition-delay: 0.2s; }
 
 input[type="checkbox"]:checked ~ .nav-icon span {
   background-color: transparent;
   -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s; }
+          transition-delay: 0.2s; }
 
 .nav-icon span:before, .nav-icon span:after {
   position: absolute;
@@ -497,34 +471,38 @@ input[type="checkbox"]:checked ~ .nav-icon span {
 .nav-icon span:before {
   margin-top: -12px;
   -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, -webkit-transform;
   transition-property: margin, transform;
+  transition-property: margin, transform, -webkit-transform;
   -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+          transition-duration: 0.2s;
   -webkit-transition-delay: 0.2s, 0s;
-  transition-delay: 0.2s, 0s; }
+          transition-delay: 0.2s, 0s; }
 
 input[type="checkbox"]:checked ~ .nav-icon span:before {
   margin-top: 0;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transition-delay: 0s, 0.2s;
-  transition-delay: 0s, 0.2s; }
+          transition-delay: 0s, 0.2s; }
 
 .nav-icon span:after {
   margin-top: 12px;
   -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, -webkit-transform;
   transition-property: margin, transform;
+  transition-property: margin, transform, -webkit-transform;
   -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+          transition-duration: 0.2s;
   -webkit-transition-delay: 0.2s, 0s;
-  transition-delay: 0.2s, 0s; }
+          transition-delay: 0.2s, 0s; }
 
 input[type="checkbox"]:checked ~ .nav-icon span:after {
   margin-top: 0;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
   -webkit-transition-delay: 0s, 0.2s;
-  transition-delay: 0s, 0.2s; }
+          transition-delay: 0s, 0.2s; }
 
 input[type="checkbox"] {
   visibility: hidden; }
@@ -536,11 +514,12 @@ input[type="checkbox"]:checked ~ .responsive-nav {
   display: block; }
 
 input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
+  -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+          transition-duration: 0.2s;
   -webkit-transition-delay: 0.2s, 0s;
-  transition-delay: 0.2s, 0s; }
+          transition-delay: 0.2s, 0s; }
 
 .responsive-nav {
   display: none;
@@ -578,6 +557,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
     position: absolute; }
   .scrollToTop:hover {
     opacity: 0.8;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease; }
 
 /* PADDINGS */
@@ -700,9 +680,15 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
 .about-border-box {
   margin: auto;
   margin-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap; }
-
-/*# sourceMappingURL=main.css.map */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }

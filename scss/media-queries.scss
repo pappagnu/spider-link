@@ -1,7 +1,26 @@
 @import 'variables';
 
 @media only screen and (min-width:$small-phone){
-   .spider-logo-footer {
+  .brand-logo {
+    top: 3.5em;
+    left: 7em;
+  }
+
+  .brand-1 {
+    top: 3em;
+    left: 0.8em;
+  }
+
+  .brand-2 {
+    top: 1.5em;
+    left: 1em;
+  }
+
+  .brand-3 {
+    top: 1em;
+    left: 0.5em;
+  }
+  .spider-logo-footer {
     display: block;
     margin: 0 auto;
   }
@@ -14,38 +33,72 @@
 }
 
 @media only screen and (min-width:$medium-phone) {
-  .brand-text {
-    font-size: 1rem;
+  .brand-logo {
+    top: 3em;
+    left: 8.2em;
   }
-  .brand-person {
-    font-size: 1.2rem;
+  .brand-1 {
+    top: 1.8em;
+    left: 1.2em;
+  }
+
+  .brand-2 {
+    top: 0.8em;
+    left: 1em;
+  }
+
+  .brand-3 {
+    top: 0;
+    left: 1.2em;
   }
   .spider-logo-footer {
     display: block;
     margin: 0 auto;
   }
-}
+
+ }
 
 @media only screen and (min-width:$large-phone) {
+  .brand-logo {
+  top: 2.5em;
+  left: 9em;
+}
+
+.brand-1 {
+  top: 1em;
+  left: 0.7em;
+}
+
+.brand-2 {
+  top: 0;
+  left: 1em;
+}
+
+.brand-3 {
+  top: 0.4em;
+  left: 0.1em;
+  font-size: 3.8vmin;
+}
+
 .spider-logo-footer {
    display: block;
    margin: 0 auto;
 }
 
-.col-m-6 {width: $w6;}
 }
 
 @media only screen and (min-width:$tablet) {
   .wrapper-center {
   padding-right: 1rem;
   padding-left: 1rem;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   }
   .wrapper-p {
    width: 70%;
    margin: auto;
- }  
+ }
 
   .wrapper-contact {
    width: 70%; margin-right: auto;
@@ -53,9 +106,9 @@
  }
   .header-text{font-size: 5rem;}
   .header-text2{font-size: 1.7rem}
-   h1{font-size: 2.7em;}
+   h1{font-size: 2.8em;}
    h2{font-size: 2em;}
-   h3{font-size: 1.2em;}
+   h3{font-size: 1.3em;}
    h4{font-size: 1em;}
    h5{font-size: 2em;}
    li {font-size: 1em;}
@@ -82,26 +135,43 @@
      width: 240px;
      height: 240px;
     }
-   
-   .brand-logo-rectangle {
-    position: absolute;
-    margin: auto;
-    width: 30%;
-    top: 2em;
-      right: 8em;
+    .brand-logo {
+      top: 5.2em;
+      left: 5.2em;
     }
-
+    .brand-logo-rectangle {
+      top: 2.5em;
+      left: 8em;
+    }
    .brand-text {
      font-size: 0.8rem;
     }
    .brand-person {
      font-size: 0.9rem;
-    } 
-
-    .brand-logo {
-      width: 38%;
     }
-  
+   .brand-1 {
+     top: 2.5em;
+     left: 0.5em;
+    }
+   .brand-2 {
+     top: 2em;
+     left: 0;
+    }
+
+  .brand-3 {
+  top: 2em;
+  left: 0;
+  }
+
+  .brand-4 {
+  top: 2em;
+  left: 0;
+  }
+
+  .brand-5 {
+  top: 2em;
+  left: 0;
+  }
   .panel-rectangle {
       width: 360px;
       height: 180px;
@@ -119,7 +189,7 @@
   body {
     margin: auto;
   }
-  
+
   .bgimg-1fix {display: none;}
   .bgimg-2fix {display: none;}
   .bgimg-3fix {display: none;}
@@ -139,12 +209,9 @@
     margin-left: auto;
   }
 
-  .textbox{padding: 2.5em;}
+  .textbox{padding: 2em;}
   .header-text{font-size: 6rem;}
   .header-text2{font-size: 2rem;}
-  h1{font-size: 2.9em;}
-  h2{font-size: 2.2em;}
-  h3{font-size: 1.4em;}
   h4{font-size: 1.2em;}
   li {font-size: 1.1em;}
   .parallax {
@@ -160,16 +227,42 @@
   .nav-links {font-size: 24px;}
   .panel {width: 95%; height: 40vmin;}
   .panel-rectangle {width: 96.5%;}
-  .brand-text {font-size: 1rem;}
+  .brand-text {font-size: 2.8vmin;}
   .brand-person {
-    font-size: 1.1rem;
+    font-size: 2.5vmin;
   }
-  
- .brand-logo-rectangle {
-    position: absolute;
-    margin: auto;
-    width: 30%;
-    top: 2.7em;
-    right: 12em;
-    }
+  .brand-1 {
+    top: 9%;
+    left: 4%;
   }
+
+  .brand-2 {
+  top: 5%;
+  left: 2%;
+  }
+
+  .brand-3 {
+  top: 1%;
+  left: 2%;
+  }
+
+  .brand-4 {
+  top: 22%;
+  left: 2%;
+  }
+
+  .brand-5 {
+  top: 22%;
+  left: 2%;
+  }
+
+  .brand-logo {
+    top: 35%;
+    left: 34%;
+  }
+
+  .brand-logo-rectangle {
+    top: 28%;
+    left: 34%;
+  }
+}
