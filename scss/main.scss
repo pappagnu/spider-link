@@ -13,12 +13,15 @@
 
 .row:after {content:""; clear:both; display:block;}
 
+.clearfix:after {content:""; clear:both; display:block;}
+
 img {max-width: $w12; height:auto; vertical-align: middle;}
 
 /* MOBILE PHONE COLUMN GRID */
 
 [class*="col-"] {width:$w12;}
 
+.col-m-6 {width: $w6;}
 
 /* TABLET COLUMN GRID */
 
@@ -95,23 +98,16 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .brand-bg {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0.8;
 }
 
 
 .brand-logo {
-  position: absolute;
-  margin: auto;
   width: 30%;
   }
-
-
-.brand-logo-rectangle {
-  position: absolute;
-  margin: auto;
-  width: 30%;
-}
 
 .back {
     z-index: 1;
@@ -172,9 +168,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
     transform: rotateY(0deg);
 }
 
-
-.box {padding: 2.1em;}
-.textbox{padding-top: 1em; padding-bottom: 1em;}
+.textbox{padding-left: 1em; padding-right: 1em; text-align: center;}
 .flex-center {@include flex(center, center);}
 
 
@@ -198,20 +192,16 @@ h4{font-size: 1em; margin:0;}
 h5{font-size: 1.3em;}
 li{font-size: 1em;}
 
-.brand-text {
-  font-size: 0.8rem;
-  font-style: italic;
-  position: absolute;
-  margin: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
 
-.brand-person {
-  font-style: oblique;
-  font-weight: bolder;
-  font-size: 1.1rem;
-}
+.brand-text {
+    font-size: 0.9rem;
+    font-style: italic;
+    }
+
+  .brand-person {
+    font-style: oblique;
+    font-weight: bolder;
+     }
 
 .services {
   display: none;
@@ -527,18 +517,17 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   background-color: #38383b;
   bottom: 0;
   right: 0;
-    i
-    {
+    i{
     color: white;
     font-size: 24px;
     left: 10px;
     top: 8px;
     position: absolute;
   }
-  &:hover {
+    &:hover{
     opacity: 0.8;
     transition: all .3s ease;
-  }
+    }
 }
 
 /* PADDINGS */
@@ -554,9 +543,12 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 .pr-10{padding-right: 10px;}
 .pl-0{padding-left: 0;}
 .pt-50{padding-top: 50px;}
+.pb-05-mobile {padding-bottom: 0.5em;}
+.pb-3-mobile {padding-bottom: 3em;}
 
 /* & MARGINS */
 .m-0{margin: 0;}
+.mb-0 {margin-bottom: 0};
 .mb-10{margin-bottom: 10px;}
 .mb-15{margin-bottom: 15px;}
 .mt-15{margin-top: 15px;}
@@ -624,7 +616,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   border: 10px solid #ececec;
   position: relative;
   transition: all 0.2s ease-in-out;
-  }
+}
 
 .about-border-box {
   margin: auto;
@@ -633,4 +625,8 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  }
+
+  .box {
+    padding: 2em 0.4em 2em 0.4em;
   }
