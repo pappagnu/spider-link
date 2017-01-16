@@ -14,15 +14,13 @@
 }
 
 @media only screen and (min-width:$medium-phone) {
-
-  .spider-logo-footer {
+ .spider-logo-footer {
     display: block;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width:$large-phone) {
-
 .spider-logo-footer {
    display: block;
    margin: 0 auto;
@@ -73,10 +71,9 @@
    .topnav {position: fixed;}
    .scrollToTop {display: none;}
    #logo {width: 90%;}
-   #hamburger {display: none;}
+   #hamburger {display: none;}   
    .panel {
-     width: 95%;
-    }
+    width: 95%;} 
   .brand-text {font-size: 0.7rem;}
   .spider-logo-footer {
    display: none;
@@ -91,9 +88,6 @@
 }
 
 @media only screen and (min-width: $desktop) {
-  body {
-    margin: auto;
-  }
   .row {padding: 2em;}
   .bgimg-1fix {display: none;}
   .bgimg-2fix {display: none;}
@@ -130,5 +124,6 @@
   #desktop-nav {padding: 12px;}
   .nav-links {font-size: 24px;}
   .brand-text {font-size: 0.8rem;}
-
  }
+
+
