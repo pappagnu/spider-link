@@ -149,8 +149,8 @@ img {
 .brand-logo {
   position: absolute;
   margin: auto;
-  top: 3em;
-  right: 6em;
+  top: 3.2rem;
+  left: 6.5rem;
   width: 32%; }
 
 .back {
@@ -173,7 +173,7 @@ img {
   background-size: cover; }
 
 .brand-image-1 {
-  background-image: url(../pics/brand1-bg.jpg);
+  background-image: url(../pics/brand1.1-bg.jpg);
   background-position: center;
   background-size: cover; }
 
@@ -273,8 +273,8 @@ li {
   position: absolute;
   margin: auto;
   width: 80%;
-  top: 2em;
-  left: 2em; }
+  top: 2rem;
+  left: 2rem; }
 
 .brand-person {
   font-size: 1rem;
@@ -310,8 +310,8 @@ a {
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
 
 .bgimg-1 {
-  min-height: 300px;
-  background-image: url(../pics/pinklady.jpg); }
+  min-height: 320px;
+  background-image: url(../pics/blackspider.jpg); }
 
 .bgimg-1fix {
   min-height: 300px;
@@ -320,8 +320,8 @@ a {
   background-image: url(../pics/pinklady-fix.jpg); }
 
 .bgimg-2 {
-  min-height: 300px;
-  background-image: url(../pics/pinklady2.jpg); }
+  min-height: 320px;
+  background-image: url(../pics/blackspider2.jpg); }
 
 .bgimg-2fix {
   min-height: 300px;
@@ -330,8 +330,8 @@ a {
   background-image: url(../pics/pinklady2-fix.jpg); }
 
 .bgimg-3 {
-  min-height: 300px;
-  background-image: url(../pics/pinklady3.jpg); }
+  min-height: 320px;
+  background-image: url(../pics/blackspider3.jpg); }
 
 .bgimg-3fix {
   min-height: 300px;
@@ -680,21 +680,20 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
 
 /*EXTRA*/
 .about-border-box:nth-child(3n+1) .service-icon:hover {
-  border: 10px solid #DF4859; }
+  border: 5px solid #DF4859; }
 
 .about-border-box:nth-child(3n+2) .service-icon:hover {
-  border: 10px solid #E48E98; }
+  border: 5px solid #E48E98; }
 
 .about-border-box:nth-child(3n+3) .service-icon:hover {
-  border: 10px solid #EFF0D1; }
+  border: 5px solid #EFF0D1; }
 
 .service-icon {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 30%;
   border: 10px solid #ececec;
   position: relative;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
 .about-border-box {

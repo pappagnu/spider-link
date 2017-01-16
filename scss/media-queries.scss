@@ -15,16 +15,21 @@
 
 @media only screen and (min-width:$medium-phone) {
   .brand-text {
-    font-size: 1rem;
-  }
-
-  .brand-person {
-    font-size: 1.1rem;
-  }
+    font-size: 0.9rem;
+    font-style: italic;
+    position: absolute;
+    margin: auto;
+    width: 85%;
+    top: 2.8rem;
+    left: 2em; 
+   }
 
   .brand-logo {
-    width: 33%;
-    left: 7em;
+    position: absolute;
+    margin: auto;
+    top: 3rem;
+    left: 7.5rem;
+    width: 32%;
   }
 
   .spider-logo-footer {
@@ -34,10 +39,22 @@
 }
 
 @media only screen and (min-width:$large-phone) {
+  .brand-text {
+    font-size: 0.9rem;
+    font-style: italic;
+    position: absolute;
+    margin: auto;
+    width: 85%;
+    top: 2.8rem;
+    left: 1.5rem; 
+   }
+
   .brand-logo {
-    width: 29%;
-    left: 7em;
-    top: 2em;
+  position: absolute;
+  margin: auto;
+  top: 2.5rem;
+  left: 9rem;
+  width: 30%;
   }
 
 .spider-logo-footer {
@@ -99,24 +116,43 @@
 
   .brand-text {
     font-size: 0.9rem;
-    }
+    font-style: italic;
+    position: absolute;
+    margin: auto;
+    width: 85%;
+    top: 2.7rem;
+    left: 1.5rem; 
+   }
 
   .brand-person {
+    position: absolute;
+    margin: auto;
     font-size: 1rem;
     }
 
   .brand-logo {
-    width: 40%;
-    left: 4.5em;
-    top: 4em;
+    position: absolute;
+    margin: auto;
+    width: 45%;
+    left: 4.3rem;
+    top: 4.5rem;
   }
+
+  .brand-text-rectangle {
+    position: absolute;
+    margin: auto;
+    font-size: 0.9rem;
+    width: 85%;
+    top: 2.2rem;
+    left: 1.5rem
+     }
   
   .brand-logo-rectangle {
     position: absolute;
     margin: auto;
     width: 30%;
-    top: 2em;
-    right: 8em;
+    top: 2rem;
+    right: 8rem;
     }
 
   .panel-rectangle {
@@ -133,9 +169,9 @@
 }
 
 @media only screen and (min-width: $desktop) {
-  body {
+ /* body {
     margin: auto;
-  }
+  }*/
   
   .bgimg-1fix {display: none;}
   .bgimg-2fix {display: none;}
@@ -179,26 +215,85 @@
   .panel-rectangle {width: 96.5%;}
 
   .brand-text {
-    font-size: 1rem;
-    width: 80%;
-    top: 4.5em;
+    position: absolute;
+    margin: auto;
+    font-size: 0.8rem;
+    width: 85%;
+    top: 2.5rem;
+    left: 1rem
      }
 
   .brand-person {
+    position: absolute;
+    margin: auto;
     font-size: 1.1rem;
     }
 
   .brand-logo {
+    position: absolute;
+    margin: auto;
     width: 35%;
-    top: 5em;
-    left: 7em;
+    top: 4rem;
+    left: 5.5rem;
   }
+
+  .brand-text-rectangle {
+    position: absolute;
+    margin: auto;
+    font-size: 0.8rem;
+    width: 85%;
+    top: 3.5rem;
+    left: 2rem
+     }
   
  .brand-logo-rectangle {
     position: absolute;
     margin: auto;
     width: 30%;
-    top: 3em;
-    left: 8em;
+    top: 3rem;
+    left: 7rem;
+    }
+ }
+
+@media only screen and (min-width: $large-desktop) {
+
+  .brand-text {
+    position: absolute;
+    margin: auto;
+    font-size: 0.9rem;
+    width: 85%;
+    top: 3rem;
+    left: 2rem
+     }
+
+  .brand-person {
+    position: absolute;
+    margin: auto;
+    font-size: 1.1rem;
+    }
+
+  .brand-logo {
+    position: absolute;
+    margin: auto;
+    width: 30%;
+    top: 3rem;
+    left: 8rem;
+  }
+
+  .brand-text-rectangle {
+    position: absolute;
+    margin: auto;
+    font-size: 0.9rem;
+    width: 85%;
+    top: 3.5rem;
+    left: 2.5rem
+     }
+  
+ .brand-logo-rectangle {
+    position: absolute;
+    margin: auto;
+    width: 25%;
+    top: 1.5rem;
+    left: 7rem;
     }
  }
