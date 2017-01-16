@@ -126,7 +126,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 }
 
 .brand-image-1 {
-  background-image: url(../pics/brand1-bg.jpg);
+  background-image: url(../pics/brand1.1-bg.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -193,15 +193,15 @@ h5{font-size: 1.3em;}
 li{font-size: 1em;}
 
 
-.brand-text {
+  .brand-text {
     font-size: 0.9rem;
     font-style: italic;
-    }
+ }
 
   .brand-person {
     font-style: oblique;
     font-weight: bolder;
-     }
+ }
 
 .services {
   display: none;
@@ -233,39 +233,39 @@ a {text-decoration: none}
 }
 
 .bgimg-1 {
-    min-height: 300px;
-    background-image: url(../pics/pinklady.jpg);
+    min-height: 320px;
+    background-image: url(../pics/blackspider.jpg);
 }
 
 .bgimg-1fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/pinklady-fix.jpg);
+  background-image: url(../pics/blackspider-fix.jpg);
 }
 
 .bgimg-2 {
-  min-height: 300px;
-  background-image: url(../pics/pinklady2.jpg)
+  min-height: 320px;
+  background-image: url(../pics/blackspider2.jpg)
 }
 
 .bgimg-2fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/pinklady2-fix.jpg);
+  background-image: url(../pics/blackspider2-fix.jpg);
 }
 
 .bgimg-3 {
-  min-height: 300px;
-  background-image: url(../pics/pinklady3.jpg)
+  min-height: 320px;
+  background-image: url(../pics/blackspider3.jpg)
 }
 
 .bgimg-3fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/pinklady3-fix.jpg);
+  background-image: url(../pics/blackspider3-fix.jpg);
 }
 
 .parallax {
@@ -600,23 +600,23 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 
 /*EXTRA*/
 .about-border-box:nth-child(3n+1) .service-icon:hover {
- border: 10px solid #DF4859;
+ border: 5px solid #DF4859;
        }
 .about-border-box:nth-child(3n+2) .service-icon:hover{
-  border: 10px solid #E48E98;
+  border: 5px solid #E48E98;
 }
 .about-border-box:nth-child(3n+3) .service-icon:hover {
-  border: 10px solid #EFF0D1;
+  border: 5px solid #EFF0D1;
 }
 
 .service-icon {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 30%;
   border: 10px solid #ececec;
   position: relative;
-  transition: all 0.2s ease-in-out;
-}
+ transition: all 0.2s ease-in-out;
+ }
 
 .about-border-box {
   margin: auto;
