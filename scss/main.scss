@@ -13,12 +13,15 @@
 
 .row:after {content:""; clear:both; display:block;}
 
+.clearfix:after {content:""; clear:both; display:block;}
+
 img {max-width: $w12; height:auto; vertical-align: middle;}
 
 /* MOBILE PHONE COLUMN GRID */
 
 [class*="col-"] {width:$w12;}
 
+.col-m-6 {width: $w6;}
 
 /* TABLET COLUMN GRID */
 
@@ -79,14 +82,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .card {
     width: 100%;
     height: 100%;
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
     transition: all .5s;
-    -webkit-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
     top: 0px;
@@ -102,32 +98,24 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .brand-bg {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0.8;
 }
 
 
 .brand-logo {
-  position: absolute;
-  margin: auto;
-  top: 3.2rem;
-  left: 6.5rem;
-  width: 32%;
+  width: 30%;
   }
 
 .back {
     z-index: 1;
-    -webkit-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 }
 
 .back-x {
     z-index: 1;
-    -webkit-transform: rotateX(-180deg);
-    -ms-transform: rotateX(-180deg);
-    -moz-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
 
@@ -163,38 +151,24 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 .panel:hover .front {
     z-index: 1;
-    -webkit-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .panel:hover .front-x {
     z-index: 1;
-    -webkit-transform: rotateX(180deg);
-    -ms-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
     transform: rotateX(180deg);
 }
 
 .panel:hover .back {
     z-index: 2;
-    -webkit-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
 .panel:hover .back-x {
     z-index: 2;
-    -webkit-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
 
-
-.box {padding: 2.1em;}
-.textbox{padding-top: 1em; padding-bottom: 1em;}
+.textbox{padding-left: 1em; padding-right: 1em; text-align: center;}
 .flex-center {@include flex(center, center);}
 
 
@@ -222,17 +196,9 @@ li{font-size: 1em;}
   .brand-text {
     font-size: 0.9rem;
     font-style: italic;
-    position: absolute;
-    margin: auto;
-    width: 80%;
-    top: 2rem;
-    left: 2rem;
-    }
+ }
 
   .brand-person {
-    font-size: 1rem;
-    position: absolute;
-    margin: auto;
     font-style: oblique;
     font-weight: bolder;
  }
@@ -246,7 +212,7 @@ li{font-size: 1em;}
 }
 
 .skills{
-  height: 100pxblockquote;
+  height: 100px;
   background-image: linear-gradient(#F38BD3, #FE7880);
 }
 
@@ -264,8 +230,6 @@ a {text-decoration: none}
     height: 50%;
     margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 }
 
 .bgimg-1 {
@@ -282,14 +246,14 @@ a {text-decoration: none}
 
 .bgimg-2 {
   min-height: 320px;
-  background-image: url(../pics/blackspider4.jpg)
+  background-image: url(../pics/blackspider2.jpg)
 }
 
 .bgimg-2fix {
   min-height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(../pics/blackspider4-fix.jpg);
+  background-image: url(../pics/blackspider2-fix.jpg);
 }
 
 .bgimg-3 {
@@ -386,12 +350,10 @@ a {text-decoration: none}
 
   /* ANIMATIONS */
     .ease-08 {
-      -webkit-transition: all 0.8s ease;
       transition: all 0.8s ease;
     }
 
     .linear-05 {
-      -webkit-transition: all 0.5s linear;
       transition: all 0.5s linear;
     }
 
@@ -460,13 +422,13 @@ a {text-decoration: none}
   margin: 0 auto;
 	position: absolute;
 	top: 12px;
-  -webkit-transition-duration: 0s; transition-duration: 0s;
-	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+  transition-duration: 0s;
+	transition-delay: 0.2s;
 }
 
 input[type="checkbox"]:checked ~ .nav-icon span {
   background-color: rgba(0,0,0,0.0);
-	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+	transition-delay: 0.2s;
 }
 
 .nav-icon span:before, .nav-icon span:after {
@@ -483,28 +445,28 @@ input[type="checkbox"]:checked ~ .nav-icon span {
 
 .nav-icon span:before {
   margin-top: -12px;
-  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
--webkit-transition-duration: 0.2s; transition-duration: 0.2s;
--webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+  transition-property: margin, transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s, 0s;
 }
 
 input[type="checkbox"]:checked ~ .nav-icon span:before {
   margin-top: 0;
-	-webkit-transform: rotate(45deg); transform: rotate(45deg);
-	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+	transform: rotate(45deg);
+	transition-delay: 0s, 0.2s;
 }
 
 .nav-icon span:after {
   margin-top: 12px;
-  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
--webkit-transition-duration: 0.2s; transition-duration: 0.2s;
--webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+  transition-property: margin, transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s, 0s;
 }
 
 input[type="checkbox"]:checked ~ .nav-icon span:after {
   margin-top: 0;
-	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
-	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+	transform: rotate(-45deg);
+	transition-delay: 0s, 0.2s;
 }
 
 input[type="checkbox"] {
@@ -521,8 +483,8 @@ input[type="checkbox"]:checked ~ .responsive-nav{
 
 input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   transition: all 0.8s ease;
-  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
-  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s, 0s;
 }
 
 .responsive-nav {
@@ -555,18 +517,17 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   background-color: #38383b;
   bottom: 0;
   right: 0;
-    i
-    {
+    i{
     color: white;
     font-size: 24px;
     left: 10px;
     top: 8px;
     position: absolute;
   }
-  &:hover {
+    &:hover{
     opacity: 0.8;
     transition: all .3s ease;
-  }
+    }
 }
 
 /* PADDINGS */
@@ -582,9 +543,12 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 .pr-10{padding-right: 10px;}
 .pl-0{padding-left: 0;}
 .pt-50{padding-top: 50px;}
+.pb-05-mobile {padding-bottom: 0.5em;}
+.pb-3-mobile {padding-bottom: 3em;}
 
 /* & MARGINS */
 .m-0{margin: 0;}
+.mb-0 {margin-bottom: 0};
 .mb-10{margin-bottom: 10px;}
 .mb-15{margin-bottom: 15px;}
 .mt-15{margin-top: 15px;}
@@ -652,7 +616,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   border: 10px solid #ececec;
   position: relative;
  transition: all 0.2s ease-in-out;
-  }
+ }
 
 .about-border-box {
   margin: auto;
@@ -661,4 +625,8 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  }
+
+  .box {
+    padding: 2em 0.4em 2em 0.4em;
   }
