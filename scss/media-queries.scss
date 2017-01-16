@@ -73,8 +73,10 @@
    #logo {width: 90%;}
    #hamburger {display: none;}   
    .panel {
-    width: 95%;} 
-  .brand-text {font-size: 0.7rem;}
+    width: 95%;
+    height: 250px;
+  } 
+  .brand-text {font-size: 0.9rem;}
   .spider-logo-footer {
    display: none;
 }
@@ -123,7 +125,8 @@
   #logo{width: 115%; padding: 8px;}
   #desktop-nav {padding: 12px;}
   .nav-links {font-size: 24px;}
-  .brand-text {font-size: 0.8rem;}
+  .brand-text {font-size: 1rem;}
+  .panel {height: 300px;}
  }
 
 
