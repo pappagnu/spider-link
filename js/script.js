@@ -74,6 +74,14 @@ function scrollEffects() {
       scroller.style.display = "none";
     }
   }
+  if (mobile.matches) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    scroller.style.bottom = "2rem";
+  }
+  else {
+    scroller.style.bottom = "0";
+  }
+}
 
 if (!desktop.matches && !mobile.matches) {
   if (scrollBarPosition < 50) {
