@@ -9,7 +9,7 @@
 
 [class*="col-"] {float:left;}
 
-.row {padding: 0.5em;}
+.row {padding-top: 1rem;}
 
 .row:after {content:""; clear:both; display:block;}
 
@@ -71,6 +71,11 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 .tablet {display: none;}
 .desktop {display: none;}
+
+.divider {
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
 
 .panel {
     width: 100%;
@@ -170,7 +175,7 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 
 .textbox{padding-left: 1em; padding-right: 1em; text-align: center;}
 .flex-center {@include flex(center, center);}
-
+.flex-column {display: flex; flex-direction: column;}
 
 /* ICONS */
 
@@ -203,9 +208,6 @@ li{font-size: 1em;}
     font-weight: bolder;
  }
 
-.services {
-  display: none;
-}
 
 .text-center {
   text-align: center;
@@ -339,13 +341,15 @@ a {text-decoration: none}
   margin-top: 220px;
   font-size: 2.9rem;
   text-align: center;
-  z-index: 0;
 }
 
 .header-text2{
   width:100%;
   font-size: 1rem;
   text-align: center;
+}
+
+.z-0 {
   z-index: 0;
 }
 
@@ -543,15 +547,23 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 .pr-0{padding-right: 0;}
 .pr-10{padding-right: 10px;}
 .pl-0{padding-left: 0;}
+.pt-0 {padding-top: 0;}
 .pt-50{padding-top: 50px;}
-.pb-05-mobile {padding-bottom: 0.5em;}
-.pb-3-mobile {padding-bottom: 3em;}
+.pb-3 {padding-bottom: 3rem;}
+.p-05 {padding: 0.5em};
+.pt-1 {
+  padding-top: 1rem;
+}
+.pt-2 {
+  padding-top: 2rem;
+}
 
 /* & MARGINS */
 .m-0{margin: 0;}
 .mb-0 {margin-bottom: 0};
 .mb-10{margin-bottom: 10px;}
 .mb-15{margin-bottom: 15px;}
+.mt-0 {margin-top: 0;}
 .mt-15{margin-top: 15px;}
 .mt-50 {margin-top: 50px;}
 .mt-200 {margin-top: 200px};
@@ -599,6 +611,10 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   color: #2a2b2f;
 }
 
+.tc-kind-grey {
+  color: #676468;
+}
+
 /*EXTRA*/
 .about-border-box:nth-child(3n+1) .service-icon:hover {
  border: 5px solid #DF4859;
@@ -619,15 +635,19 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
  transition: all 0.2s ease-in-out;
  }
 
-.about-border-box {
-  margin: auto;
-  margin-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  }
-
-  .box {
-    padding: 2em 0.4em 2em 0.4em;
+  /* BUTTONS */
+  .large-button{
+    outline: none;
+    text-align: center;
+    border: 2px solid #DC4A5C;
+    background-color: white;
+    width: 40%;
+    padding: 10px;
+    color: #4B4D54;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover{
+      background-color: #DC4A5C;
+      color: white;
+    }
   }
