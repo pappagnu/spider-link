@@ -5,7 +5,7 @@
 
 * {box-sizing:border-box;}
 
-.canvas {font: 1em 'roboto', sans-serif; line-height: 1.5; overflow-x: hidden;}
+.canvas {font: 0.9em 'roboto', sans-serif; line-height: 1.5; overflow-x: hidden;}
 
 [class*="col-"] {float:left;}
 
@@ -66,7 +66,8 @@ img {max-width: $w12; height:auto; vertical-align: middle;}
 .wrapper-center {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .tablet {display: none;}
@@ -175,7 +176,7 @@ padding-bottom: 3rem;
 
 .textbox{
   padding-left: 1em;
-  padding-right: 1em; 
+  padding-right: 1em;
   text-align: center;
   margin-top: 1em;
 }
@@ -187,6 +188,7 @@ padding-bottom: 3rem;
 
 .footer-icon{
   text-decoration: none;
+  padding: 0.2em;
   color: white;
   &:hover{
     opacity: 0.5;
@@ -194,31 +196,35 @@ padding-bottom: 3rem;
 }
 
 /* TEXT SETTINGS */
-
-body{
-  font-size: 0.9rem;
+h1,h2,h3,h4,h5,h6 {
+  color: #505054;
 }
+
+p, li {
+  color: #676468;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+a {text-decoration: none;}
+
+.footer-header {margin-bottom: 0.5rem;}
 
 .header-text{
   width:100%;
   margin-top: 220px;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   text-align: center;
 }
 
 .header-text2{
   width:100%;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
-}
-
-p{
-  font-weight: 600;
-  margin-top: 0.5rem; 
-  margin-bottom: 0;
-  line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -261,23 +267,25 @@ li{font-size: 1em;
   background-image: linear-gradient(#F38BD3, #FE7880);
 }
 
-li {color: white;}
-a {text-decoration: none}
-
 .font-bold {
   font-weight: bold;
+}
+
+.section-header {
+  font-variant: small-caps;
+  text-align: center;
 }
 
 .service-text {
   margin: 1em 0 1em 0;
 }
 
-.footer-text {
-  margin-bottom: 1em;
-}
-
-.footer-minitext{
-  font-size: 0.6rem;
+.footer-minitext {
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0;
 }
 
 /* IMAGES */
@@ -335,6 +343,10 @@ a {text-decoration: none}
 
 .grow {
   width: 85%;
+}
+
+.spider-logo-footer {
+  width: 15%;
 }
 
 /* FORMS */
@@ -441,8 +453,8 @@ a {text-decoration: none}
   height: 40px;
 }
 
-.no-style{list-style: none;}
-.inline-flex {display: inline-flex;}
+.no-style{list-style: none; padding: 0; margin: 0;}
+.inline-block {display: inline-block;}
 
 /* LINKS */
 .nav-links {
@@ -456,12 +468,12 @@ a {text-decoration: none}
 }
 
 .nav-links:hover {
-  color: rgba(223, 72, 89, 0.5);
+  color: rgb(223, 72, 89);
   transition: all 0.3s ease;
 }
 
 .nav-mobile:hover {
-  color: rgba(223, 72, 89, 0.5);
+  color: rgb(223, 72, 89);
 }
 
 .links{
@@ -470,7 +482,7 @@ a {text-decoration: none}
 }
 
 .active {
-  color: rgba(223, 72, 89, 0.5);
+  color: rgb(223, 72, 89);
 }
 
 .nav-icon {
@@ -625,7 +637,9 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 .m-0{margin: 0;}
 .mb-0 {margin-bottom: 0};
 .mb-10{margin-bottom: 10px;}
+.mb-2 {margin-bottom: 2rem;}
 .mb-15{margin-bottom: 15px;}
+.mb-1 {margin-bottom: 1rem;}
 .mt-0 {margin-top: 0;}
 .mt-15{margin-top: 15px;}
 .mt-50 {margin-top: 50px;}
@@ -644,7 +658,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   background-color: #DF4859;
 }
 
-.bgc-eggshell {
+.bgc-purple-haze {
   background-color: #430318;
 }
 .bgc-blue-bird {
@@ -654,28 +668,12 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   background-color: #4c9a17;
 }
 
-.bgc-grey-wolf {
-  background-color: #20879d;
+.bgc-gold-rush {
+  background-color: #4f481c;
 }
 
 .tc-white {
   color: white;
-}
-
-.tc-rudy-pink {
-  color: #E48E98;
-}
-
-.tc-grey {
-  color: #4B4D54;
-}
-
-.tc-headerblack {
-  color: #2a2b2f;
-}
-
-.tc-kind-grey {
-  color: #676468;
 }
 
 /*EXTRA*/
@@ -718,4 +716,10 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
       background-color: #DC4A5C;
       color: white;
     }
+  }
+
+  .line-small {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
