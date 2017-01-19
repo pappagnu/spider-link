@@ -12,12 +12,12 @@ function scrollEffects() {
     const desktop = window.matchMedia("(min-width: 1024px)");
     const mobile = window.matchMedia("(max-width: 600px)");
     if (desktop.matches) {
-      if (scrollBarPosition < 900) {
+      if (scrollBarPosition < 700) {
         desktopNav.style.backgroundColor = "transparent";
         desktopNav.style.padding = "12px";
         logo.style.padding = "8px";
         logo.style.width = "115%";
-            navLinks[4].style.color = 'rgba(223, 72, 89, 0.5)';
+            navLinks[4].style.color = 'rgb(223, 72, 89)';
             for (let i = 4; i < navLinks.length; i++) {
                 if (i !== 4) {
                     navLinks[i].style.color = 'white';
@@ -27,8 +27,8 @@ function scrollEffects() {
           navLinks[i].style.fontSize = "24px";
         }
       }
-        if (scrollBarPosition > 900) {
-              navLinks[5].style.color = 'rgba(223, 72, 89, 0.5)';
+        if (scrollBarPosition > 700) {
+              navLinks[5].style.color = 'rgb(223, 72, 89)';
               desktopNav.style.backgroundColor = "black";
               desktopNav.style.padding = "5px";
               logo.style.padding = "0px";
@@ -44,21 +44,21 @@ function scrollEffects() {
             }
 
  if (scrollBarPosition > 2700) {
-        navLinks[6].style.color = 'rgba(223, 72, 89, 0.5)';
+        navLinks[6].style.color = 'rgb(223, 72, 89)';
         for (let i = 4; i < navLinks.length; i++) {
             if (i !== 6) {
                 navLinks[i].style.color = 'white';
             }
         }
     } if (scrollBarPosition > 4000) {
-        navLinks[7].style.color = 'rgba(223, 72, 89, 0.5)';
+        navLinks[7].style.color = 'rgb(223, 72, 89)';
         for (let i = 4; i < navLinks.length; i++) {
             if (i !== 7) {
                 navLinks[i].style.color = 'white';
             }
         }
     } if (scrollBarPosition > 4900) {
-        navLinks[8].style.color = 'rgba(223, 72, 89, 0.5)';
+        navLinks[8].style.color = 'rgb(223, 72, 89)';
         for (let i = 4; i < navLinks.length; i++) {
             if (i !== 8) {
                 navLinks[i].style.color = 'white';
