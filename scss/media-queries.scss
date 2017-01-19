@@ -14,38 +14,18 @@
 }
 
 @media only screen and (min-width:$medium-phone) {
-  .brand-text {
-    font-size: 1rem;
-  }
-
-  .brand-person {
-    font-size: 1.1rem;
-  }
-
-  .brand-logo {
-    width: 33%;
-    left: 7em;
-  }
-
-  .spider-logo-footer {
+ .spider-logo-footer {
     display: block;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width:$large-phone) {
-  .brand-logo {
-    width: 29%;
-    left: 7em;
-    top: 2em;
-  }
-
 .spider-logo-footer {
    display: block;
    margin: 0 auto;
 }
 
-.col-m-6 {width: $w6;}
 }
 
 
@@ -59,7 +39,21 @@
   .wrapper-p {
    width: 70%;
    margin: auto;
- }  
+ }
+ .row {padding-top: 2rem; padding-bottom: 0;}
+
+ .divider {
+ padding-top: 5rem;
+ padding-bottom: 5rem;
+}
+
+.pb-5-tablet {padding-bottom: 5rem;}
+.pt-1 {padding-top: 0;}
+.p-3 {padding-bottom: 0};
+.pt-2 {
+  padding-top: 0;
+}
+.pb-45 {padding-bottom: 0;}
 
   .wrapper-contact {
    width: 70%; margin-right: auto;
@@ -73,10 +67,9 @@
    h4{font-size: 1em;}
    h5{font-size: 2em;}
    li {font-size: 1em;}
-   .box {padding: 2.2em;}
-   .textbox{padding: 2em;}
+   .box {padding: 0 3em 0 3em;}
+   .textbox{padding-left: 3em; padding-right: 3em;}
    .parallax {display: none;}
-   .services {display: block; font-size: 1em;}
    .service-icon {
     height: 170px;
     width: 170px;
@@ -93,39 +86,16 @@
    #logo {width: 90%;}
    #hamburger {display: none;}
    .panel {
-     width: 240px;
-     height: 240px;
-    }
-
-  .brand-text {
-    font-size: 0.9rem;
-    }
-
-  .brand-person {
-    font-size: 1rem;
-    }
-
-  .brand-logo {
-    width: 40%;
-    left: 4.5em;
-    top: 4em;
-  }
-  
-  .brand-logo-rectangle {
-    position: absolute;
-    margin: auto;
-    width: 30%;
-    top: 2em;
-    right: 8em;
-    }
-
-  .panel-rectangle {
-      width: 360px;
-      height: 180px;
-  }
+    width: 95%;
+    height: 250px;
+  } 
+  .brand-text {font-size: 0.9rem;}
   .spider-logo-footer {
    display: none;
 }
+  .textbox{text-align: left;}
+  .pt-35-tablet {padding-top: 3.5rem;}
+
 }
 
 @media only screen and (max-width: $tablet) {
@@ -133,10 +103,7 @@
 }
 
 @media only screen and (min-width: $desktop) {
-  body {
-    margin: auto;
-  }
-  
+  .row {padding-top: 2rem; padding-bottom: 0;}
   .bgimg-1fix {display: none;}
   .bgimg-2fix {display: none;}
   .bgimg-3fix {display: none;}
@@ -147,7 +114,10 @@
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+
   }
+
+  .textbox{padding-left: 6em; padding-right: 6em;}
 
   .wrapper-p{width: 60%; margin: auto;}
   .wrapper-contact {
@@ -155,8 +125,6 @@
     margin-right: auto;
     margin-left: auto;
   }
-
-  .textbox{padding: 2.5em;}
   .header-text{font-size: 6rem;}
   .header-text2{font-size: 2rem;}
   h1{font-size: 2.9em;}
@@ -165,40 +133,17 @@
   h4{font-size: 1.2em;}
   li {font-size: 1.1em;}
   .parallax {
-    display: block;
     display: flex;
   }
-  .services{font-size: 1em;}
   .contact-form .submit-button {width: 20%;}
   input[type=submit]{width: 50%;}
   .desktop {display: block;}
   #logo{width: 115%; padding: 8px;}
   #desktop-nav {padding: 12px;}
   .nav-links {font-size: 24px;}
-  .panel {width: 95%; height: 40vmin;}
-  .panel-rectangle {width: 96.5%;}
+  .brand-text {font-size: 1rem;}
+  .panel {height: 300px;}
+  .pt-35-tablet {padding-top: 0;}
+  .pt-35-dektop {padding-top: 3.5rem;}
 
-  .brand-text {
-    font-size: 1rem;
-    width: 80%;
-    top: 4.5em;
-     }
-
-  .brand-person {
-    font-size: 1.1rem;
-    }
-
-  .brand-logo {
-    width: 35%;
-    top: 5em;
-    left: 7em;
-  }
-  
- .brand-logo-rectangle {
-    position: absolute;
-    margin: auto;
-    width: 30%;
-    top: 3em;
-    left: 8em;
-    }
  }
