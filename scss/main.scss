@@ -5,7 +5,7 @@
 
 * {box-sizing:border-box;}
 
-.canvas {font: 1em 'roboto', sans-serif; line-height: 1.5; overflow-x: hidden;}
+.canvas {font: 0.9em 'roboto', sans-serif; line-height: 1.5; overflow-x: hidden;}
 
 [class*="col-"] {float:left;}
 
@@ -174,7 +174,13 @@ padding-bottom: 3rem;
     transform: rotateY(0deg);
 }
 
-.textbox{padding-left: 1em; padding-right: 1em; text-align: center;}
+.textbox{
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  margin-top: 1em;
+}
+
 .flex-center {@include flex(center, center);}
 .flex-column {display: flex; flex-direction: column;}
 
@@ -198,19 +204,48 @@ p, li {
   color: #676468;
   font-weight: 400;
   line-height: 1.8;
-
+  margin: 0;
+  padding: 0;
 }
 
-p{font-size: 1rem; margin-top: 0.5rem; margin-bottom: 0;}
-h1{font-size: 1.7em; margin-bottom: 0; }
-h2{font-size: 1.6em; font-weight: bold;}
-h3{font-size: 1.1em; margin: 0;}
-h4{font-size: 1em; margin:0;}
-h5{font-size: 1.3em;}
-li{font-size: 1em;}
-a {text-decoration: none}
+a {text-decoration: none;}
 
 .footer-header {margin-bottom: 0.5rem;}
+
+.header-text{
+  width:100%;
+  margin-top: 220px;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header-text2{
+  width:100%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+li{font-size: 1em;
+  }
+  h1{font-size: 1.8em;
+  }
+  h2{font-size: 1.6em;
+  }
+  h3{font-size: 1.2em;
+  }
+  h4{font-size: 1.1em; margin: 0;
+  }
+  h5{font-size: 1em; margin: 0;
+  }
+  h6{font-size: 1.4em;
+  }
 
   .brand-text {
     font-size: 0.9rem;
@@ -239,6 +274,18 @@ a {text-decoration: none}
 .section-header {
   font-variant: small-caps;
   text-align: center;
+}
+
+.service-text {
+  margin: 1em 0 1em 0;
+}
+
+.footer-minitext {
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0;
 }
 
 /* IMAGES */
@@ -375,19 +422,6 @@ a {text-decoration: none}
   background-image: url(../pics/header1.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.header-text{
-  width:100%;
-  margin-top: 220px;
-  font-size: 2.9rem;
-  text-align: center;
-}
-
-.header-text2{
-  width:100%;
-  font-size: 1rem;
-  text-align: center;
 }
 
 .z-0 {
@@ -642,12 +676,15 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   color: white;
 }
 
-
-
 /*EXTRA*/
+
+.about-border-box {
+  margin-top: 3em;
+}
+
 .about-border-box:nth-child(3n+1) .service-icon:hover {
  border: 5px solid #DF4859;
-       }
+}
 .about-border-box:nth-child(3n+2) .service-icon:hover{
   border: 5px solid #E48E98;
 }
