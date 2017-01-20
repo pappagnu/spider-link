@@ -12,12 +12,12 @@ function scrollEffects() {
     const desktop = window.matchMedia("(min-width: 1024px)");
     const mobile = window.matchMedia("(max-width: 600px)");
     if (desktop.matches) {
-      if (scrollBarPosition < 900) {
+      if (scrollBarPosition < 700) {
         desktopNav.style.backgroundColor = "transparent";
         desktopNav.style.padding = "12px";
         logo.style.padding = "8px";
         logo.style.width = "115%";
-            navLinks[4].style.color = 'rgba(223, 72, 89, 0.5)';
+            navLinks[4].style.color = 'rgb(223, 72, 89)';
             for (let i = 4; i < navLinks.length; i++) {
                 if (i !== 4) {
                     navLinks[i].style.color = 'white';
@@ -27,8 +27,8 @@ function scrollEffects() {
           navLinks[i].style.fontSize = "24px";
         }
       }
-        if (scrollBarPosition > 600) {
-              navLinks[5].style.color = 'rgba(223, 72, 89, 0.5)';
+        if (scrollBarPosition > 700) {
+              navLinks[5].style.color = 'rgb(223, 72, 89)';
               desktopNav.style.backgroundColor = "black";
               desktopNav.style.padding = "5px";
               logo.style.padding = "0px";
@@ -44,21 +44,21 @@ function scrollEffects() {
             }
 
  if (scrollBarPosition > 2700) {
-        navLinks[6].style.color = 'rgba(223, 72, 89, 0.5)';
+        navLinks[6].style.color = 'rgb(223, 72, 89)';
         for (let i = 4; i < navLinks.length; i++) {
             if (i !== 6) {
                 navLinks[i].style.color = 'white';
             }
         }
     } if (scrollBarPosition > 4000) {
-        navLinks[7].style.color = 'rgba(223, 72, 89, 0.5)';
+        navLinks[7].style.color = 'rgb(223, 72, 89)';
         for (let i = 4; i < navLinks.length; i++) {
             if (i !== 7) {
                 navLinks[i].style.color = 'white';
             }
         }
     } if (scrollBarPosition > 4900) {
-        navLinks[8].style.color = 'rgba(223, 72, 89, 0.5)';
+        navLinks[8].style.color = 'rgb(223, 72, 89)';
         for (let i = 4; i < navLinks.length; i++) {
             if (i !== 8) {
                 navLinks[i].style.color = 'white';
@@ -94,27 +94,6 @@ if (!desktop.matches && !mobile.matches) {
 
     }
 }
-
-
-// CONTACT MAP
-function initMap() {
-  let mapCanvas = document.getElementById("map");
-  let cord = new google.maps.LatLng(33.1791817, -81.0961495);
-  let mapOptions = {
-    center: cord,
-    zoom: 13,
-    scrollwheel: false
-  };
-  let map = new google.maps.Map(mapCanvas, mapOptions);
-  let marker = new google.maps.Marker({
-  position: cord,
-  title:"Vi finns på Spider Road"
-  });
-  marker.setMap(map);
-}
-
-
-
 
 //ABOUT US CLICKER
 var matte = 'Halloj, mitt namn är JavaScript!';
@@ -179,4 +158,93 @@ function closeAboutPersonBox(){
   var clicked = event.target;
   var parent = clicked.parentElement;
   parent.parentNode.removeChild(parent);
+}
+
+// Styles a map in night mode.
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 59.3279808, lng: 18.05849},
+    zoom: 13,
+    scrollwheel: false,
+    styles: [
+      {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+      {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+      {elementType: 'labels.text.fill', stylers: [{color: '#E48E98;'}]},
+      {
+        featureType: 'administrative.locality',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#d59563'}]
+      },
+      {
+        featureType: 'poi',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#d59563'}]
+      },
+      {
+        featureType: 'poi.park',
+        elementType: 'geometry',
+        stylers: [{color: '#263c3f'}]
+      },
+      {
+        featureType: 'poi.park',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#6b9a76'}]
+      },
+      {
+        featureType: 'road',
+        elementType: 'geometry',
+        stylers: [{color: '#38414e'}]
+      },
+      {
+        featureType: 'road',
+        elementType: 'geometry.stroke',
+        stylers: [{color: '#212a37'}]
+      },
+      {
+        featureType: 'road',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#9ca5b3'}]
+      },
+      {
+        featureType: 'road.highway',
+        elementType: 'geometry',
+        stylers: [{color: '#DF4859'}]
+      },
+      {
+        featureType: 'road.highway',
+        elementType: 'geometry.stroke',
+        stylers: [{color: '#1f2835'}]
+      },
+      {
+        featureType: 'road.highway',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#f3d19c'}]
+      },
+      {
+        featureType: 'transit',
+        elementType: 'geometry',
+        stylers: [{color: '#2f3948'}]
+      },
+      {
+        featureType: 'transit.station',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#d59563'}]
+      },
+      {
+        featureType: 'water',
+        elementType: 'geometry',
+        stylers: [{color: '#17263c'}]
+      },
+      {
+        featureType: 'water',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#515c6d'}]
+      },
+      {
+        featureType: 'water',
+        elementType: 'labels.text.stroke',
+        stylers: [{color: '#17263c'}]
+      }
+    ]
+  });
 }
