@@ -184,7 +184,9 @@ function initMap() {
             }
           ]
         });
+
 var image = 'https://github.com/JazzBrotha/spider-link/blob/master/icons/cobweb.png?raw=true';
+
 var beachMarker = new google.maps.Marker({
   position: {lat: 59.3279808, lng: 18.05849},
   map: map,
