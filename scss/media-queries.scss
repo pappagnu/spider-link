@@ -30,6 +30,9 @@
 
 
 @media only screen and (min-width:$tablet) {
+  .img-clicked {
+    height: 20%;
+  }
   .wrapper-center {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -103,6 +106,9 @@
 }
 
 @media only screen and (min-width: $desktop) {
+  .img-clicked {
+    height: 40%;
+  }
   .row {padding-top: 2rem; padding-bottom: 0;}
   .bgimg-1fix {display: none;}
   .bgimg-2fix {display: none;}
@@ -125,7 +131,7 @@
     margin-right: auto;
     margin-left: auto;
   }
-  .header-text{font-size: 6rem;}
+  font-size: 6rem;
   .header-text2{font-size: 2rem;}
   h1{font-size: 2.9em;}
   h2{font-size: 2.2em;}

@@ -27,7 +27,7 @@ function scrollEffects() {
           navLinks[i].style.fontSize = "24px";
         }
       }
-        if (scrollBarPosition > 900) {
+        if (scrollBarPosition > 600) {
               navLinks[5].style.color = 'rgba(223, 72, 89, 0.5)';
               desktopNav.style.backgroundColor = "black";
               desktopNav.style.padding = "5px";
@@ -111,4 +111,72 @@ function initMap() {
   title:"Vi finns på Spider Road"
   });
   marker.setMap(map);
+}
+
+
+
+
+//ABOUT US CLICKER
+var matte = 'Halloj, mitt namn är JavaScript!';
+var andreas = 'Jag älskar warpar! Andreas Engström här...';
+var nico = 'WARPKUNGEN HÄR! NICOLAS FUENTES!';
+
+var circle = document.getElementsByClassName('circle-img');
+for (var i = 0; i < circle.length; i++){
+  circle[i].addEventListener('click', circleClicked);
+}
+
+function circleClicked(text){
+  var name = this.id;
+  var img = this.src;
+  if (name === 'matte'){
+    text = matte;
+  } else if (name === 'andreas'){
+    text = andreas;
+  } else {
+    text = nico;
+  }
+  return render(text, name, img);
+}
+
+function render(text, name, img){
+  var renderAboutPersonBox = document.getElementById('overlay');
+  var textToRender = document.createTextNode(text);
+  var aboutPersonBox = document.createElement('div');
+  aboutPersonBox.appendChild(textToRender);
+  var textForBtn = document.createTextNode('Stäng');
+  var btn = document.createElement('span');
+  btn.appendChild(textForBtn);
+  var image = document.createElement('img');
+  image.style.width = '25%';
+  image.src = img;
+  aboutPersonBox.appendChild(image);
+
+  if (name === 'matte') {
+    aboutPersonBox.className = "img-clicked overlay-matte";
+    btn.className = "btnClose";
+  } else if (name === 'andreas') {
+    aboutPersonBox.className = "img-clicked overlay-andreas";
+    btn.className = "btnClose";
+  } else {
+    aboutPersonBox.className = "img-clicked overlay-nico";
+    btn.className = "btnClose";
+  }
+  var borderbox = document.getElementsByClassName('about-border-box');
+  for (var i = 0; i < borderbox.length; i++){
+    borderbox[i].className += ' pointer-event';
+  }
+  aboutPersonBox.appendChild(btn);
+  renderAboutPersonBox.appendChild(aboutPersonBox);
+  btn.addEventListener('click', closeAboutPersonBox);
+}
+
+function closeAboutPersonBox(){
+  var borderbox = document.getElementsByClassName('about-border-box');
+  for (var i = 0; i < borderbox.length; i++){
+    borderbox[i].className = 'col-t-4 about-border-box flex-center flex-column';
+  }
+  var clicked = event.target;
+  var parent = clicked.parentElement;
+  parent.parentNode.removeChild(parent);
 }
