@@ -95,9 +95,72 @@ if (!desktop.matches && !mobile.matches) {
     }
 }
 
+//ABOUT US CLICKER
+var matte = 'Halloj, mitt namn är JavaScript!';
+var andreas = 'Jag älskar warpar! Andreas Engström här...';
+var nico = 'WARPKUNGEN HÄR! NICOLAS FUENTES!';
 
-// CONTACT MAP
+var circle = document.getElementsByClassName('circle-img');
+for (var i = 0; i < circle.length; i++){
+  circle[i].addEventListener('click', circleClicked);
+}
 
+function circleClicked(text){
+  var name = this.id;
+  var img = this.src;
+  if (name === 'matte'){
+    text = matte;
+  } else if (name === 'andreas'){
+    text = andreas;
+  } else {
+    text = nico;
+  }
+  return render(text, name, img);
+}
+
+function render(text, name, img){
+  var renderAboutPersonBox = document.getElementById('overlay');
+  var textToRender = document.createTextNode(text);
+  var aboutPersonBox = document.createElement('div');
+  aboutPersonBox.appendChild(textToRender);
+  var textForBtn = document.createTextNode('Stäng');
+  var btn = document.createElement('span');
+  btn.appendChild(textForBtn);
+  var image = document.createElement('img');
+  image.style.width = '25%';
+  image.src = img;
+  aboutPersonBox.appendChild(image);
+
+  if (name === 'matte') {
+    aboutPersonBox.className = "img-clicked overlay-matte";
+    btn.className = "btnClose";
+  } else if (name === 'andreas') {
+    aboutPersonBox.className = "img-clicked overlay-andreas";
+    btn.className = "btnClose";
+  } else {
+    aboutPersonBox.className = "img-clicked overlay-nico";
+    btn.className = "btnClose";
+  }
+  var borderbox = document.getElementsByClassName('about-border-box');
+  for (var i = 0; i < borderbox.length; i++){
+    borderbox[i].className += ' pointer-event';
+  }
+  aboutPersonBox.appendChild(btn);
+  renderAboutPersonBox.appendChild(aboutPersonBox);
+  btn.addEventListener('click', closeAboutPersonBox);
+}
+
+function closeAboutPersonBox(){
+  var borderbox = document.getElementsByClassName('about-border-box');
+  for (var i = 0; i < borderbox.length; i++){
+    borderbox[i].className = 'col-t-4 about-border-box flex-center flex-column';
+  }
+  var clicked = event.target;
+  var parent = clicked.parentElement;
+  parent.parentNode.removeChild(parent);
+}
+
+// Styles a map in night mode.
 function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 59.3279808, lng: 18.05849},
@@ -204,100 +267,4 @@ var beachMarker = new google.maps.Marker({
 });
 
 
-
 }
-//
-// // var map;
-// //       function initMap() {
-// //         map = new google.maps.Map(document.getElementById('map'), {
-// //           zoom: 16,
-// //           center: new google.maps.LatLng(-33.91722, 151.23064),
-// //           mapTypeId: 'roadmap'
-// //         });
-// //
-// //         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-// //         var icons = {
-// //           parking: {
-// //             icon: iconBase + 'parking_lot_maps.png'
-// //           },
-// //           library: {
-// //             icon: iconBase + 'library_maps.png'
-// //           },
-// //           info: {
-// //             icon: iconBase + 'info-i_maps.png'
-// //           }
-// //         };
-// //
-// //         function addMarker(feature) {
-// //           var marker = new google.maps.Marker({
-// //             position: feature.position,
-// //             icon: icons[feature.type].icon,
-// //             map: map
-// //           });
-// //         }
-// //
-// //         var features = [
-// //           {
-// //             position: new google.maps.LatLng(-33.91721, 151.22630),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91539, 151.22820),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91747, 151.22912),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91910, 151.22907),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91725, 151.23011),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91872, 151.23089),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91784, 151.23094),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91682, 151.23149),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91790, 151.23463),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91666, 151.23468),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.916988, 151.233640),
-// //             type: 'info'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91662347903106, 151.22879464019775),
-// //             type: 'parking'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.916365282092855, 151.22937399734496),
-// //             type: 'parking'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91665018901448, 151.2282474695587),
-// //             type: 'parking'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.919543720969806, 151.23112279762267),
-// //             type: 'parking'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91608037421864, 151.23288232673644),
-// //             type: 'parking'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91851096391805, 151.2344058214569),
-// //             type: 'parking'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91818154739766, 151.2346203981781),
-// //             type: 'parking'
-// //           }, {
-// //             position: new google.maps.LatLng(-33.91727341958453, 151.23348314155578),
-// //             type: 'library'
-// //           }
-// //         ];
-// //
-// //         for (var i = 0, feature; feature = features[i]; i++) {
-// //           addMarker(feature);
-// //         }
-//       }
