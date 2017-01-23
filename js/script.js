@@ -263,7 +263,7 @@ var beachMarker = new google.maps.Marker({
   position: {lat: 59.3279808, lng: 18.05849},
   map: map,
   icon: image,
-  title: 'Akta dig för spindeln'
+  title: 'Välkommen in på en bira!'
 });
 
 
