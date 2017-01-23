@@ -11,6 +11,8 @@ function scrollEffects() {
     const logo = document.getElementById("logo");
     const desktop = window.matchMedia("(min-width: 1024px)");
     const mobile = window.matchMedia("(max-width: 600px)");
+    const aboutUsBox = document.getElementsByClassName('circle-img');
+
     if (desktop.matches) {
       if (scrollBarPosition < 700) {
         desktopNav.style.backgroundColor = "transparent";
@@ -50,7 +52,10 @@ function scrollEffects() {
                 navLinks[i].style.color = 'white';
             }
         }
-    } if (scrollBarPosition > 4000) {
+    } if (scrollBarPosition > 3370) {
+        for (let y = 0; y < aboutUsBox.length; y++){
+          aboutUsBox[y].className += ' slideUp';
+        }
         navLinks[7].style.color = 'rgb(223, 72, 89)';
         for (let i = 4; i < navLinks.length; i++) {
             if (i !== 7) {
