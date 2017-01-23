@@ -299,13 +299,13 @@ li{font-size: 1em;
 
 /* IMAGES */
 
-  .circle-img{
-    border-radius: 50%;
-    width: 50%;
-    height: 50%;
-    margin-top: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-    cursor: pointer;
+.circle-img{
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+  cursor: pointer;
 }
 
 .bgimg-1 {
@@ -349,10 +349,6 @@ li{font-size: 1em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.grow {
-  width: 85%;
 }
 
 .spider-logo-footer {
@@ -440,14 +436,14 @@ li{font-size: 1em;
   z-index: 0;
 }
 
-  /* ANIMATIONS */
-    .ease-08 {
-      transition: all 0.8s ease;
-    }
+/* ANIMATIONS */
+.ease-08 {
+  transition: all 0.8s ease;
+}
 
-    .linear-05 {
-      transition: all 0.5s linear;
-    }
+.linear-05 {
+  transition: all 0.5s linear;
+}
 
 /* LISTS */
 
