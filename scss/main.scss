@@ -728,28 +728,6 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   }
 
 //CLICKEVENT ABOUT US
-@-webkit-keyframes aboutborderboxin {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(100%) scaleX(0.5); }
-  30% {
-    -webkit-transform: translateY(-8%) scaleX(0.5); }
-  40% {
-    -webkit-transform: translateY(2%) scaleX(0.5); }
-  50% {
-    -webkit-transform: translateY(0%) scaleX(1.1); }
-  60% {
-    -webkit-transform: translateY(0%) scaleX(0.9); }
-  70% {
-    opacity: 0.9;
-    -webkit-transform: translateY(0%) scaleX(1.05); }
-  80% {
-    -webkit-transform: translateY(0%) scaleX(0.95); }
-  90% {
-    -webkit-transform: translateY(0%) scaleX(1.02); }
-  100% {
-    -webkit-transform: translateY(0%) scaleX(1); } }
-
 .overlay-matte {
   background-color: #DF4859;
   color: #ffffff;
@@ -822,7 +800,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
       }
     }
   }
-
+  
 .slideUp {
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
@@ -830,35 +808,5 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
   -webkit-animation-duration: 1.5s;
   animation-timing-function: ease;
   -webkit-animation-timing-function: ease;
-  visibility: visible !important; }
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(100%); }
-  50% {
-    transform: translateY(-10%); }
-  65% {
-    opacity: 1;
-    transform: translateY(4%); }
-  80% {
-    transform: translateY(-4%); }
-  95% {
-    transform: translateY(2%); }
-  100% {
-    transform: translateY(0%); } }
-@-webkit-keyframes slideUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(100%); }
-  50% {
-    -webkit-transform: translateY(-10%); }
-  65% {
-    opacity: 1;
-    -webkit-transform: translateY(4%); }
-  80% {
-    -webkit-transform: translateY(-4%); }
-  95% {
-    -webkit-transform: translateY(2%); }
-  100% {
-    -webkit-transform: translateY(0%); } }
+  visibility: visible !important; 
+}
