@@ -11,13 +11,38 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="shortcut icon" type="image/png" href="pics/logo.png" />
-    <link rel="stylesheet" href="css/animations.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <noscript>
+      <style>
+          #map {display:none;}
+          .desktop-nav {
+            background-color: black;
+            position: fixed;
+            margin: 0;
+            padding: 5px;
+            text-align: right;
+            list-style-type: none;
+            width: 100%;
+          }
+          .active {color: white;}
+          @media only screen and (min-width:768px) {
+          .nav-logo {margin-top: 40px;}
+          }
+      </style>
+    </noscript>
 </head>
 
 <body>
+
   <header class="fp-header">
     <nav class="topnav">
+      <noscript>
+        <section class="wrapper tablet">
+          <article class="bgc-paradise-pink p-05">
+            <p class="text-center tc-white">För bästa användarupplevelse, var god aktivera javascript.</p>
+          </article>
+        </section>
+    </noscript>
         <a class="nav-logo"><img class="linear-05" id="logo" src="pics/spider-logo2.png" alt="Spider Link Logo"></a>
       <input type="checkbox" id="hamburger"/>
       <label for="hamburger" class="nav-icon"><span></span></label>
@@ -63,7 +88,10 @@
     </article>
     <article class="row">
       <div class="flex-center">
-        <a class="large-button" href="#contact">KONTAKTA OSS</a>
+        <a class="large-button tablet" href="#contact">KONTAKTA OSS</a>
+      </div>
+      <div class="flex-center">
+        <a class="large-button mobile" href="#contact-mobile">KONTAKTA OSS</a>
       </div>
     </article>
 
