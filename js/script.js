@@ -101,9 +101,9 @@ if (!desktop.matches && !mobile.matches) {
 }
 
 //ABOUT US CLICKER
-var matte = 'Halloj, mitt namn är JavaScript!';
-var andreas = 'Jag älskar warpar! Andreas Engström här...';
-var nico = 'WARPKUNGEN HÄR! NICOLAS FUENTES!';
+var matte = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
+var andreas = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
+var nico = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
 
 var circle = document.getElementsByClassName('circle-img');
 for (var i = 0; i < circle.length; i++){
@@ -112,7 +112,6 @@ for (var i = 0; i < circle.length; i++){
 
 function circleClicked(text){
   var name = this.id;
-  var img = this.src;
   if (name === 'matte'){
     text = matte;
   } else if (name === 'andreas'){
@@ -120,10 +119,10 @@ function circleClicked(text){
   } else {
     text = nico;
   }
-  return render(text, name, img);
+  return render(text, name);
 }
 
-function render(text, name, img){
+function render(text, name){
   var renderAboutPersonBox = document.getElementById('overlay');
   var textToRender = document.createTextNode(text);
   var aboutPersonBox = document.createElement('div');
@@ -131,10 +130,6 @@ function render(text, name, img){
   var textForBtn = document.createTextNode('Stäng');
   var btn = document.createElement('span');
   btn.appendChild(textForBtn);
-  var image = document.createElement('img');
-  image.style.width = '25%';
-  image.src = img;
-  aboutPersonBox.appendChild(image);
 
   if (name === 'matte') {
     aboutPersonBox.className = "img-clicked overlay-matte";
@@ -155,7 +150,7 @@ function render(text, name, img){
   btn.addEventListener('click', closeAboutPersonBox);
 }
 
-function closeAboutPersonBox(){
+function closeAboutPersonBox(event){
   var borderbox = document.getElementsByClassName('about-border-box');
   for (var i = 0; i < borderbox.length; i++){
     borderbox[i].className = 'col-t-4 about-border-box flex-center flex-column';
@@ -270,6 +265,7 @@ var beachMarker = new google.maps.Marker({
   icon: image,
   title: 'Akta dig för spindeln'
 });
+
 
 
 }
