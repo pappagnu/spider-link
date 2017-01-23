@@ -2,6 +2,9 @@
 window.onscroll = function() {
     scrollEffects();
 };
+  
+const desktop = window.matchMedia("(min-width: 1024px)");
+const mobile = window.matchMedia("(max-width: 600px)");
 
 function scrollEffects() {
     const scrollBarPosition = window.pageYOffset | document.body.scrollTop;
@@ -105,9 +108,11 @@ var matte = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustri
 var andreas = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
 var nico = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
 
-var circle = document.getElementsByClassName('circle-img');
-for (var i = 0; i < circle.length; i++){
-  circle[i].addEventListener('click', circleClicked);
+if(desktop.matches){
+  var circle = document.getElementsByClassName('circle-img');
+  for (var i = 0; i < circle.length; i++){
+    circle[i].addEventListener('click', circleClicked);
+  }
 }
 
 function circleClicked(text){

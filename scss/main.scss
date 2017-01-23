@@ -220,6 +220,14 @@ p, li {
   padding: 0;
 }
 
+li{font-size: 1em;}
+h1{font-size: 1.8em; margin-bottom: 0;}
+h2{font-size: 1.6em;}
+h3{font-size: 1.2em; margin: 0;}
+h4{font-size: 1.1em; margin:0;}
+h5{font-size: 1em;}
+h6{font-size: 1.4em;}
+
 a {text-decoration: none;}
 
 .footer-header {margin-bottom: 0.5rem;}
@@ -352,12 +360,13 @@ li{font-size: 1em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: none;
 }
 
 .spider-logo-footer {
   width: 15%;
-
-
+  display: block;
+  margin: 0 auto;
 }
 
 /* FORMS */
@@ -802,4 +811,10 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 
 .fixed {
   position: fixed;
+}
+
+.wrapper-contact {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
