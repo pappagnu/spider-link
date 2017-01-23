@@ -269,3 +269,8 @@ var beachMarker = new google.maps.Marker({
 
 
 }
+
+var logoanim = document.getElementById('logo');
+logoanim.addEventListener('click', function(){
+ this.className += ' hatch';
+});
