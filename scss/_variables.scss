@@ -2,11 +2,9 @@
 $font-primary: 'Roboto', sans-serif;
 $base-font: 1rem;
 // DEVICES
-$phone: 320px;
-$tablet: 600px;
-$desktop: 1024px;
-// COLUMNS
-
+$phone-landscape: "only screen and (min-width: 320px) and (orientation: landscape)";
+$tablet: "only screen and (min-width: 600px)";
+$desktop: "only screen and (min-width: 1024px)";
 // COLORS
 $pink: #E5959E;
 $red: #DF4859;
