@@ -155,7 +155,7 @@ function closeAboutPersonBox(aboutPersonBox, name) {
     this.parentElement.style = 'display:none;';
     const circle = document.getElementsByClassName('circle-img');
     for (let i = 0; i < circle.length; i++){
-        circle[i].className = 'circle-img mb-10 slideUpt';
+        circle[i].className = 'circle-img mb-10';
     }
 }
 
