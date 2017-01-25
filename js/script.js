@@ -12,7 +12,7 @@ function scrollEffects() {
     const navLinks = document.getElementsByClassName('nav-links');
     const desktopNav = document.getElementById("desktop-nav");
     const logo = document.getElementById("logo");
-    const aboutUsBox = document.getElementsByClassName('circle-img');
+    const aboutUsBox = document.getElementsByClassName('about-border-box');
 
     if (desktop.matches) {
         if (scrollBarPosition < 600) {
@@ -63,7 +63,7 @@ function scrollEffects() {
   }
         if (scrollBarPosition > 3370) {
             for (let y = 0; y < aboutUsBox.length; y++) {
-                aboutUsBox[y].className += ' slideUp';
+                aboutUsBox[y].className = 'col-t-4 about-border-box flex-center flex-column pt-1 slideUp';
             }
             navLinks[7].style.color = 'rgb(223, 72, 89)';
             for (let i = 4; i < navLinks.length; i++) {
@@ -155,7 +155,7 @@ function closeAboutPersonBox(aboutPersonBox, name) {
     this.parentElement.style = 'display:none;';
     const circle = document.getElementsByClassName('circle-img');
     for (let i = 0; i < circle.length; i++){
-        circle[i].className = 'circle-img mb-10 slideUpt';
+        circle[i].className = 'circle-img mb-10';
     }
 }
 
