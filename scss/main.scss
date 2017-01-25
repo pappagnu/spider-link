@@ -1242,7 +1242,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
     }
 }
 
-.overlay-nico {
+.overlay-nicolas {
     background-color: $yellow;
     @include autoColor($yellow);
     .btnClose {
@@ -1256,7 +1256,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
     padding: 2em;
     left: 30%;
     width: 40%;
-    height: 30%;
+    height: 50%;
     opacity: 0.9;
     border-radius: 10px;
     -webkit-animation: aboutborderboxin 1s ease-in-out;
@@ -1265,10 +1265,6 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
     -webkit-box-shadow: 0 -1px 27px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 -1px 27px -1px rgba(0,0,0,0.75);
     box-shadow: 0 -1px 27px -1px rgba(0,0,0,0.75);
-
-    @media #{$desktop} {
-      height: 40%;
-    }
 }
 
 .btnClose {
@@ -1339,4 +1335,24 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
 
 .fc-inherit {
   color: inherit;
+}
+
+#popup-matte {
+    display: none;
+}
+
+#popup-andreas {
+    display: none;
+}
+
+#popup-nico {
+    display: none;
+}
+
+.heading-person {
+    font-size: 2rem;
+}
+
+.title-person {
+    font-style: italic;
 }

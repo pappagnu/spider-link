@@ -111,10 +111,6 @@ function scrollEffects() {
 }
 
 //ABOUT US CLICKER
-const matte = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
-const andreas = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
-const nico = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
-
 if (desktop.matches) {
     const circle = document.getElementsByClassName('circle-img');
     for (let i = 0; i < circle.length; i++) {
@@ -122,54 +118,45 @@ if (desktop.matches) {
     }
 }
 
-function circleClicked(text) {
+function circleClicked() {
     let name = this.id;
     if (name === 'matte') {
-        text = matte;
+        const aboutPersonBox = document.getElementById('popup-matte');
+        return render(aboutPersonBox, name);
     } else if (name === 'andreas') {
-        text = andreas;
+        const aboutPersonBox = document.getElementById('popup-andreas');
+        return render(aboutPersonBox, name);
     } else {
-        text = nico;
+        const aboutPersonBox = document.getElementById('popup-nico');
+        return render(aboutPersonBox, name);
     }
-    return render(text, name);
 }
 
-function render(text, name) {
+function render(aboutPersonBox, name) {
     const renderAboutPersonBox = document.getElementById('overlay');
-    const textToRender = document.createTextNode(text);
-    const aboutPersonBox = document.createElement('div');
-    const textForBtn = document.createTextNode('Stäng');
-    const btn = document.createElement('span');
-    aboutPersonBox.appendChild(textToRender);
-    btn.appendChild(textForBtn);
-
-    if (name === 'matte') {
-        aboutPersonBox.className = "img-clicked overlay-matte";
-        btn.className = "btnClose";
-    } else if (name === 'andreas') {
-        aboutPersonBox.className = "img-clicked overlay-andreas";
-        btn.className = "btnClose";
-    } else {
-        aboutPersonBox.className = "img-clicked overlay-nico";
-        btn.className = "btnClose";
-    }
-    const borderbox = document.getElementsByClassName('about-border-box');
-    for (let i = 0; i < borderbox.length; i++) {
-        borderbox[i].className += ' pointer-event';
-    }
-    aboutPersonBox.appendChild(btn);
     renderAboutPersonBox.appendChild(aboutPersonBox);
-    btn.addEventListener('click', closeAboutPersonBox);
+    aboutPersonBox.className += ` img-clicked overlay-${name}`;
+    aboutPersonBox.style = 'display:block;';
+
+    const btn = document.getElementsByClassName('btnClose');
+    for (let i = 0; i < btn.length; i++){
+        btn[i].addEventListener('click', closeAboutPersonBox);
+    }
+
+    const circle = document.getElementsByClassName('circle-img');
+    for (let y = 0; y < circle.length; y++){
+        circle[y].className += ' pointer-event';
+    }
 }
 
-function closeAboutPersonBox(event) {
-    const borderbox = document.getElementsByClassName('about-border-box');
-    for (let i = 0; i < borderbox.length; i++) {
-        borderbox[i].className = 'col-t-4 about-border-box flex-center flex-column';
+function closeAboutPersonBox(aboutPersonBox, name) {
+    console.log(this.parentElement);
+    this.parentElement.className -= ` img-clicked overlay-${name}`;
+    this.parentElement.style = 'display:none;';
+    const circle = document.getElementsByClassName('circle-img');
+    for (let i = 0; i < circle.length; i++){
+        circle[i].className = 'circle-img mb-10 slideUpt';
     }
-    let clicked = event.target;
-    let parent = clicked.parentElement;
-    parent.parentNode.removeChild(parent);
 }
 
 // Styles a map in night mode.
