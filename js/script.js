@@ -4,6 +4,7 @@ window.onscroll = function() {
 };
 
 const desktop = window.matchMedia("(min-width: 1024px)");
+const tablet = window.matchMedia("(min-width: 768px)");
 const mobile = window.matchMedia("(max-width: 600px)");
 
 function scrollEffects() {
@@ -12,7 +13,23 @@ function scrollEffects() {
     const navLinks = document.getElementsByClassName('nav-links');
     const desktopNav = document.getElementById("desktop-nav");
     const logo = document.getElementById("logo");
-    const aboutUsBox = document.getElementsByClassName('about-border-box');
+    const aboutUsBox = document.getElementsByClassName('circle-img');
+
+    if (tablet.matches){
+        if (scrollBarPosition > 3100){
+            for (let y = 0; y < aboutUsBox.length; y++) {
+                aboutUsBox[y].className += ' slideUp';
+            }
+        }
+    }
+
+    if (mobile.matches){
+        if (scrollBarPosition > 2840){
+            for (let y = 0; y < aboutUsBox.length; y++) {
+                aboutUsBox[y].className += ' slideUp';
+            }
+        }
+    }
 
     if (desktop.matches) {
         if (scrollBarPosition < 600) {
@@ -66,7 +83,7 @@ function scrollEffects() {
   }
         if (scrollBarPosition > 3370) {
             for (let y = 0; y < aboutUsBox.length; y++) {
-                aboutUsBox[y].className = 'col-t-4 about-border-box flex-center flex-column pt-1 slideUp';
+                aboutUsBox[y].className += ' slideUp';
             }
             navLinks[7].style.color = 'rgb(223, 72, 89)';
             for (let i = 4; i < navLinks.length; i++) {
