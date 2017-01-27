@@ -17,20 +17,22 @@ function scrollEffects() {
     if (desktop.matches) {
         if (scrollBarPosition < 600) {
             desktopNav.style.backgroundColor = "transparent";
-            desktopNav.style.padding = "12px";
-            logo.style.padding = "8px";
-            logo.style.width = "115%";
-            for (let i = 0; i < navLinks.length; i++) {
-                navLinks[i].style.fontSize = "24px";
+            desktopNav.style.height = "6rem";
+            logo.style.width  = "115%";
+            logo.style.padding  = "1rem";
+            for (let i = 4; i < navLinks.length; i++) {
+                navLinks[i].style.transform  = "scale(1)";
+                navLinks[i].style.padding = "0.8em";
             }
         }
         if (scrollBarPosition > 600) {
             desktopNav.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
-            desktopNav.style.padding = "5px";
-            logo.style.padding = "0px";
-            logo.style.width = "90%";
-            for (let i = 0; i < navLinks.length; i++) {
-                navLinks[i].style.fontSize = "19.2px";
+            desktopNav.style.height = "4rem";
+            logo.style.width  = "90%";
+            logo.style.padding  = "0";
+            for (let i = 4; i < navLinks.length; i++) {
+                navLinks[i].style.transform  = "scale(0.7)";
+                navLinks[i].style.padding  = "0";
             }
         }
 
@@ -290,8 +292,6 @@ function initMap() {
         icon: image,
         title: 'Välkommen in på en bira!'
     });
-
-
 
 }
 
