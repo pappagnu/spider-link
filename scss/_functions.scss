@@ -23,10 +23,10 @@
       font-size: $base-heading;
       @media #{$tablet} {
         font-size: $base-heading * 1.25;
-        }
+      }
       @media #{$desktop} {
         font-size: $base-heading * 1.75;
-        }
-      }
-      $base-heading: $base-heading - 0.3;
+    }
   }
+    $base-heading: $base-heading - 0.3;
+}
