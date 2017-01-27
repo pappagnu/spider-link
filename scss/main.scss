@@ -4,13 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-  @media #{$tablet} {
-    font-size: 1rem;
-  }
-}
-
-.canvas {
+html {
     font-size: 0.9em;
     font-family: $font-primary;
     line-height: 1.5;
@@ -372,7 +366,6 @@ li,
 p {
     @include autoColor(none);
     font-weight: 400;
-    line-height: 1.8;
     margin: 0;
     padding: 0;
 }
@@ -415,69 +408,12 @@ a {
   }
 }
 
-li {
-    font-size: $base-font;
-    @media #{$tablet} {
-      font-size: 1.1rem;
-    }
-}
-
-h1 {
-    font-size: $base-font * 1.8;
-    @media #{$tablet} {
-      font-size: 2.8rem;
-    }
-    @media #{$desktop} {
-      font-size: 2.9rem;
-    }
-}
-
-h2 {
-    font-size: $base-font * 1.6;
-    @media #{$tablet} {
-      font-size: 1.9rem;
-    }
-    @media #{$desktop} {
-      font-size: 2.2rem;
-    }
-}
-
-h3 {
-    font-size: $base-font * 1.2;
-
-    @media #{$tablet} {
-      font-size: 1.5rem;
-    }
-    @media #{$desktop} {
-      font-size: 1.4rem;
-    }
-}
-
-h4 {
-    font-size: $base-font * 1.1;
-    margin: 0;
-
-    @media #{$tablet} {
-      font-size: 1.2rem;
-    }
-}
-
-h5 {
-    font-size: $base-font;
-    margin: 0;
-
-    @media #{$tablet} {
-      font-size: 1.1rem;
-    }
-}
-
-h6 {
-    font-size: $base-font * 1.4;
-
-    @media #{$tablet} {
-      font-size: 1.8rem;
-    }
-}
+// li {
+//     font-size: $base-font;
+//     @media #{$tablet} {
+//       font-size: 1.1rem;
+//     }
+// }
 
 .brand-text {
     font-size: $base-font * 0.9;
@@ -735,7 +671,10 @@ input[type=submit] {
     list-style-type: none;
 
   @media #{$desktop} {
-    padding: 12px;
+    height: 6rem;
+    padding: 0.7em;
+    transition: height 0.3s;
+    background-color: transparent;
   }
 }
 
@@ -760,21 +699,22 @@ input[type=submit] {
     display: inline-block;
     color: $white;
     text-align: center;
-    padding: 5px 15px;
     text-decoration: none;
     font-size: 6vmin;
     min-height: 40px;
+    transition: all 0.7s ease;
 
     @media #{$tablet} {
       font-size: 19px;
     }
     &:hover {
-      color: $red;
-      transition: all 0.3s ease;
+      color: $red !important;
+      transform: scale(1.1) !important;
     }
 
     @media #{$desktop} {
-      font-size: 24px;
+      font-size: $base-font * 1.8;
+      padding: 0.8em;
     }
 }
 
@@ -787,16 +727,11 @@ input[type=submit] {
 }
 
 .nav-item {
-
   @media #{$tablet} {
     display: inline-block;
   }
 }
 
-.nav-links:hover {
-    color: $red;
-    transition: all 0.3s ease;
-}
 
 .nav-mobile:hover {
     color: $red;
@@ -911,6 +846,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
     left: 0;
     top: 0;
     padding: 5px;
+
   }
 
 #logo {
@@ -920,7 +856,8 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
 
     @media #{$desktop} {
       width: 115%;
-      padding: 8px;
+      padding: 1rem;
+      transition: all 0.5s ease;
     }
 
   }
@@ -1032,7 +969,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
     padding-top: 2rem;
 
     @media #{$tablet} {
-      padding-top: 0;
+      padding-top: 3.5rem;
     }
 }
 
@@ -1041,6 +978,7 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
     padding-bottom: 5rem;
   }
 }
+
 
 .pt-35-tablet {
   @media #{$tablet} {
@@ -1058,7 +996,6 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
     padding-top: 3.5rem;
   }
 }
-
 
 /* & MARGINS */
 .m-0 {
@@ -1303,9 +1240,10 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
 
 .box {
     transition: all 0.2s ease-in-out;
+    padding: 2em 0 0 0;
 
     @media #{$tablet} {
-      padding: 0 3em;
+      padding: 0 3em 3.5em 3em;
     }
 
     &:hover {
