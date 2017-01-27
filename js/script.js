@@ -50,6 +50,7 @@ function scrollEffects() {
             for (let i = 4; i < navLinks.length; i++) {
                 if (i != 5) {
                     navLinks[i].style.color = 'white';
+
                 }
 
             }
@@ -111,7 +112,6 @@ function scrollEffects() {
 
     }
 }
-
 //ABOUT US CLICKER
 if (desktop.matches) {
     const circle = document.getElementsByClassName('circle-img');
