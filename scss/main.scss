@@ -24,7 +24,12 @@ html {
 
     @media #{$tablet} {
       padding-top: 2rem;
-      padding-bottom: 0;
+      padding-bottom: 2rem;
+    }
+
+    @media #{$tablet} {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
 }
 
@@ -673,7 +678,8 @@ input[type=submit] {
 /* LISTS */
 .desktop-nav {
     margin: 0;
-    padding: 5px;
+    padding: 0.5em;
+    height: 4rem;
     text-align: right;
     list-style-type: none;
 
@@ -707,8 +713,8 @@ input[type=submit] {
     color: $white;
     text-align: center;
     text-decoration: none;
-    font-size: 6vmin;
-    min-height: 40px;
+    font-size: $base-font * 1.7;
+    padding: 0.3em;
     transition: all 0.7s ease;
 
     @media #{$tablet} {
@@ -728,12 +734,21 @@ input[type=submit] {
     }
 }
 
+.small-links:hover {
+  color: $red !important;
+  transform: scale(0.8) !important;
+}
+
 .active {
     color: $red;
 
       @media #{$tablet} {
         color: $white;
       }
+}
+
+.underline:hover {
+  text-decoration: underline;
 }
 
 .nav-item {
@@ -985,6 +1000,10 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item {
 
 .mt-5 {
     margin-top: 5rem;
+
+    @media #{$tablet} {
+      margin-top: 0;
+    }
 }
 
 .pb-5-tablet {
@@ -1350,4 +1369,3 @@ figure {
         font-size: $base-font * 1.6;
     }
 }
-
