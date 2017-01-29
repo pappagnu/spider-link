@@ -18,7 +18,7 @@ function scrollEffects() {
     if (tablet.matches){
         if (scrollBarPosition > 3100){
             for (let y = 0; y < aboutUsBox.length; y++) {
-                aboutUsBox[y].className += ' slideUp';
+                aboutUsBox[y].className = 'circle-img mb-10 slideUp';
             }
         }
     }
@@ -26,7 +26,7 @@ function scrollEffects() {
     if (mobile.matches){
         if (scrollBarPosition > 2840){
             for (let y = 0; y < aboutUsBox.length; y++) {
-                aboutUsBox[y].className += ' slideUp';
+                aboutUsBox[y].className = 'circle-img mb-10 slideUp';
             }
         }
     }
@@ -83,7 +83,7 @@ function scrollEffects() {
   }
         if (scrollBarPosition > 3370) {
             for (let y = 0; y < aboutUsBox.length; y++) {
-                aboutUsBox[y].className += ' slideUp';
+                aboutUsBox[y].className = 'circle-img mb-10 slideUp';
             }
             navLinks[7].style.color = 'rgb(223, 72, 89)';
             for (let i = 4; i < navLinks.length; i++) {
